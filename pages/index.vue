@@ -1,4 +1,5 @@
 <template>
+  <LandingBanner />
   <Promo />
   <WhyChooseUs />
   <ImageFeature />
@@ -7,7 +8,6 @@
   <PricingSection />
   <FaqSection />
   <IntegrationSection />
-  <CtaSubscribe />
 </template>
 <script>
 export default {
