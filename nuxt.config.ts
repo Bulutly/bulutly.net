@@ -6,9 +6,6 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/*", href: "/favicon.svg" }],
       script: [
         {
-          src: "/js/vendors/aos.js",
-        },
-        {
           src: "/js/vendors/bootstrap.bundle.min.js",
         },
         {
@@ -17,15 +14,7 @@ export default defineNuxtConfig({
         {
           src: "/js/vendors/jquery.magnific-popup.min.js",
         },
-        {
-          src: "/js/vendors/massonry.min.js",
-        },
-        /*  {
-          src: "/js/vendors/parallax.min.js",
-        },  */
-        {
-          src: "/js/vendors/swiper-bundle.min.js",
-        },
+
         {
           src: "/js/app.js",
         },
