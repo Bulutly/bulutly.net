@@ -444,12 +444,15 @@
                     <div class="dropdown-grid rounded-custom width-full">
                       <div class="dropdown-grid-item">
                         <h6 class="drop-heading">Useful Links</h6>
-                        <a href="about-us.html" class="dropdown-link px-0">
+                        <nuxt-link
+                          :to="{ name: 'about-us' }"
+                          class="dropdown-link px-0"
+                        >
                           <span class="me-2"
                             ><i class="far fa-fingerprint"></i
                           ></span>
                           <div class="drop-title">About Us</div>
-                        </a>
+                        </nuxt-link>
                         <a href="contact-us.html" class="dropdown-link px-0">
                           <span class="me-2"
                             ><i class="far fa-address-book"></i
@@ -1163,12 +1166,15 @@
                   <div class="dropdown-grid rounded-custom width-full">
                     <div class="dropdown-grid-item">
                       <h6 class="drop-heading">Useful Links</h6>
-                      <a href="about-us.html" class="dropdown-link px-0">
+                      <nuxt-link
+                        :to="{ name: 'about-us' }"
+                        class="dropdown-link px-0"
+                      >
                         <span class="me-2"
                           ><i class="far fa-fingerprint"></i
                         ></span>
                         <div class="drop-title">About Us</div>
-                      </a>
+                      </nuxt-link>
                       <a href="contact-us.html" class="dropdown-link px-0">
                         <span class="me-2"
                           ><i class="far fa-address-book"></i
