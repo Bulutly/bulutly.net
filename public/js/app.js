@@ -7,7 +7,7 @@ var THEMETAGS = THEMETAGS || {};
     $("#preloader").fadeOut("fade");
   });
 
-  //dropdown menu hover js
+  /*   //dropdown menu hover js
   $("ul.nav li.dropdown").hover(
     function () {
       $(this).find(".dropdown-menu").stop(true, true).delay(100).fadeIn(200);
@@ -16,6 +16,16 @@ var THEMETAGS = THEMETAGS || {};
       $(this).find(".dropdown-menu").stop(true, true).delay(100).fadeOut(200);
     }
   );
+ */
+  //sticky header
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 2) {
+      $("nav.sticky-header").removeClass("affix");
+    } else {
+      $("nav.sticky-header").addClass("affix");
+    }
+  });
 
   //hd accordion
   $(".hd-accordion .accordion-header a").each(function () {
