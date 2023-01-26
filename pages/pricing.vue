@@ -7,7 +7,7 @@
               value. Globally embrace strategic data through frictionless
               expertise."
       />
-      <PricingSection />
+      <IndexPricingSection />
       <PricingFaq />
       <AboutUsTestimonial />
       <CtaSubscribe />

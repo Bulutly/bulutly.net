@@ -1,7 +1,8 @@
 <template>
   <div>
     <!--preloader start-->
-    <div id="preloader">
+    <!-- TODO:add custom preloader with vue -->
+    <!-- <div id="preloader">
       <div class="preloader-wrap">
         <img
           src="~/assets/img/favicon.png"
@@ -10,7 +11,7 @@
         />
         <div class="loading-bar"></div>
       </div>
-    </div>
+    </div> -->
     <!--preloader end-->
     <!--main content wrapper start-->
     <div class="main-wrapper">

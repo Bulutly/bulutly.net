@@ -1,13 +1,13 @@
 <template>
-  <LandingBanner />
-  <Promo />
-  <WhyChooseUs />
-  <ImageFeature />
-  <CustomerReview />
-  <WorkProcess />
-  <PricingSection />
-  <FaqSection />
-  <IntegrationSection />
+  <IndexLandingBanner />
+  <IndexPromo />
+  <IndexWhyChooseUs />
+  <IndexImageFeature />
+  <IndexCustomerReview />
+  <IndexWorkProcess />
+  <IndexPricingSection />
+  <IndexFaqSection />
+  <IndexIntegrationSection />
   <CtaSubscribe />
 </template>
 <script>
