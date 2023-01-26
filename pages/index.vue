@@ -8,6 +8,7 @@
   <PricingSection />
   <FaqSection />
   <IntegrationSection />
+  <CtaSubscribe />
 </template>
 <script>
 export default {

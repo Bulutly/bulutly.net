@@ -10,6 +10,7 @@
       <PricingSection />
       <PricingFaq />
       <AboutUsTestimonial />
+      <CtaSubscribe />
     </div>
   </div>
 </template>

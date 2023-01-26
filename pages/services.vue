@@ -9,6 +9,7 @@
       />
       <ServicesFeautreSection />
       <AboutUsTestimonial />
+      <CtaSubscribe />
     </div>
   </div>
 </template>
