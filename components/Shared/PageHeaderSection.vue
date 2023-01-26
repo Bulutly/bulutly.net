@@ -7,11 +7,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-12">
-            <h1 class="display-5 fw-bold">We are Development Experts</h1>
+            <h1 class="display-5 fw-bold">{{ title }}</h1>
             <p class="lead">
-              Seamlessly actualize client-based users after out-of-the-box
-              value. Globally embrace strategic data through frictionless
-              expertise.
+              {{ desc }}
             </p>
           </div>
         </div>
@@ -24,6 +22,18 @@
 </template>
 <script>
 export default {
-  name: "ServiceHeaderSection",
+  name: "SharedPageHeaderSection",
+  props: {
+    title: {
+      type: String,
+      default: "Page Title",
+      required: false,
+    },
+    desc: {
+      type: String,
+      default: "Page desc",
+      required: false,
+    },
+  },
 };
 </script>

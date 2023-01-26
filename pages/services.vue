@@ -1,7 +1,12 @@
 <template>
   <div>
     <div class="main-wrapper">
-      <ServicesHeaderSection />
+      <SharedPageHeaderSection
+        title="We are Development Experts"
+        desc="eamlessly actualize client-based users after out-of-the-box
+              value. Globally embrace strategic data through frictionless
+              expertise."
+      />
       <ServicesFeautreSection />
       <AboutUsTestimonial />
     </div>
