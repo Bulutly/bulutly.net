@@ -565,7 +565,7 @@
                           ></span>
                           <div class="drop-title">Request for Demo</div>
                         </nuxt-link>
-                        <nuxt-link
+                        <!-- <nuxt-link
                           :to="{ name: 'login' }"
                           class="dropdown-link"
                         >
@@ -573,7 +573,7 @@
                             ><i class="far fa-sign-in"></i
                           ></span>
                           <div class="drop-title">User Login</div>
-                        </nuxt-link>
+                        </nuxt-link> -->
                         <a href="register.html" class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-user-plus"></i
@@ -605,11 +605,11 @@
             <div
               class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block"
             >
-              <nuxt-link
+              <!-- <nuxt-link
                 :to="{ name: 'login' }"
                 class="btn btn-link text-decoration-none me-2"
                 >Sign In</nuxt-link
-              >
+              > -->
               <nuxt-link :to="{ name: 'request' }" class="btn btn-primary"
                 >Get Started</nuxt-link
               >
@@ -1302,10 +1302,10 @@
                         ></span>
                         <div class="drop-title">Request for Demo</div>
                       </nuxt-link>
-                      <nuxt-link :to="{ name: 'login' }" class="dropdown-link">
+                      <!--   <nuxt-link :to="{ name: 'login' }" class="dropdown-link">
                         <span class="me-2"><i class="far fa-sign-in"></i></span>
                         <div class="drop-title">User Login</div>
-                      </nuxt-link>
+                      </nuxt-link> -->
                       <a href="register.html" class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-user-plus"></i
@@ -1334,11 +1334,11 @@
               </li>
             </ul>
             <div class="action-btns mt-4 ps-3">
-              <nuxt-link
+              <!--  <nuxt-link
                 :to="{ name: 'login' }"
                 class="btn btn-outline-primary me-2"
                 >Sign In</nuxt-link
-              >
+              > -->
               <nuxt-link :to="{ name: 'request' }" class="btn btn-primary"
                 >Get Started</nuxt-link
               >
