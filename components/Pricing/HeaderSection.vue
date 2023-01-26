@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-12">
-            <h1 class="display-5 fw-bold">We are Development Experts</h1>
+            <h1 class="display-5 fw-bold">Price Suit to Your Business</h1>
             <p class="lead">
               Seamlessly actualize client-based users after out-of-the-box
               value. Globally embrace strategic data through frictionless
@@ -24,6 +24,6 @@
 </template>
 <script>
 export default {
-  name: "ServiceHeaderSection",
+  name: "PricingHeaderSection",
 };
 </script>
