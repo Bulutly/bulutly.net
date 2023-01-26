@@ -21,8 +21,8 @@
           <div
             class="container d-flex align-items-center justify-content-lg-between position-relative"
           >
-            <a
-              href="index.html"
+            <nuxt-link
+              :to="{ name: 'index' }"
               class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none"
             >
               <img
@@ -35,7 +35,7 @@
                 alt="logo"
                 class="img-fluid logo-color"
               />
-            </a>
+            </nuxt-link>
             <a
               class="navbar-toggler position-absolute right-0 border-0"
               href="#offcanvasWithBackdrop"
@@ -71,7 +71,10 @@
                     >
                       <div class="dropdown-grid-item">
                         <h6 class="drop-heading">Different Home</h6>
-                        <a href="index.html" class="dropdown-link">
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
                           <span
                             class="demo-list bg-primary rounded text-white fw-bold"
                             >1</span
@@ -82,7 +85,7 @@
                               It's for <strong>SaaS Software</strong> Company
                             </p>
                           </div>
-                        </a>
+                        </nuxt-link>
                         <a href="index-2.html" class="dropdown-link">
                           <span
                             class="demo-list bg-primary rounded text-white fw-bold"
@@ -318,7 +321,11 @@
                     </div>
                   </div>
                 </li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li>
+                  <nuxt-link :to="{ name: 'services' }" class="nav-link"
+                    >Services</nuxt-link
+                  >
+                </li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -428,7 +435,11 @@
                     </div>
                   </div>
                 </li>
-                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li>
+                  <nuxt-link :to="{ name: 'pricing' }" class="nav-link"
+                    >Pricing</nuxt-link
+                  >
+                </li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -453,18 +464,24 @@
                           ></span>
                           <div class="drop-title">About Us</div>
                         </nuxt-link>
-                        <a href="contact-us.html" class="dropdown-link px-0">
+                        <nuxt-link
+                          :to="{ name: 'contact-us' }"
+                          class="dropdown-link px-0"
+                        >
                           <span class="me-2"
                             ><i class="far fa-address-book"></i
                           ></span>
                           <div class="drop-title">Contact Us</div>
-                        </a>
-                        <a href="services.html" class="dropdown-link">
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'services' }"
+                          class="dropdown-link"
+                        >
                           <span class="me-2"
                             ><i class="far fa-code-branch"></i
                           ></span>
                           <div class="drop-title">Services</div>
-                        </a>
+                        </nuxt-link>
                         <a
                           href="service-single.html"
                           class="dropdown-link px-0"
@@ -538,18 +555,24 @@
                           <span class="me-2"><i class="far fa-user"></i></span>
                           <div class="drop-title">Our Team</div>
                         </a>
-                        <a href="request-demo.html" class="dropdown-link">
+                        <nuxt-link
+                          :to="{ name: 'request' }"
+                          class="dropdown-link"
+                        >
                           <span class="me-2"
                             ><i class="far fa-laptop-code"></i
                           ></span>
                           <div class="drop-title">Request for Demo</div>
-                        </a>
-                        <a href="login.html" class="dropdown-link">
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'login' }"
+                          class="dropdown-link"
+                        >
                           <span class="me-2"
                             ><i class="far fa-sign-in"></i
                           ></span>
                           <div class="drop-title">User Login</div>
-                        </a>
+                        </nuxt-link>
                         <a href="register.html" class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-user-plus"></i
@@ -581,13 +604,13 @@
             <div
               class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block"
             >
-              <a
-                href="login.html"
+              <nuxt-link
+                :to="{ name: 'login' }"
                 class="btn btn-link text-decoration-none me-2"
-                >Sign In</a
+                >Sign In</nuxt-link
               >
-              <a href="request-demo.html" class="btn btn-primary"
-                >Get Started</a
+              <nuxt-link :to="{ name: 'request' }" class="btn btn-primary"
+                >Get Started</nuxt-link
               >
             </div>
           </div>
@@ -599,8 +622,8 @@
           id="offcanvasWithBackdrop"
         >
           <div class="offcanvas-header d-flex align-items-center mt-4">
-            <a
-              href="index.html"
+            <nuxt-link
+              :to="{ name: 'index' }"
               class="d-flex align-items-center mb-md-0 text-decoration-none"
             >
               <img
@@ -608,7 +631,7 @@
                 alt="logo"
                 class="img-fluid ps-2"
               />
-            </a>
+            </nuxt-link>
             <button
               type="button"
               class="close-btn text-danger"
@@ -636,7 +659,7 @@
                   <div class="dropdown-grid rounded-custom width-half">
                     <div class="dropdown-grid-item">
                       <h6 class="drop-heading">Different Home</h6>
-                      <a href="index.html" class="dropdown-link">
+                      <nuxt-link :to="{ name: 'index' }" class="dropdown-link">
                         <span
                           class="demo-list bg-primary rounded text-white fw-bold"
                           >1</span
@@ -645,7 +668,7 @@
                           <div class="drop-title">Saas Company 1</div>
                           <p>It's for <strong>SaaS Software</strong> Company</p>
                         </div>
-                      </a>
+                      </nuxt-link>
                       <a href="index-2.html" class="dropdown-link">
                         <span
                           class="demo-list bg-primary rounded text-white fw-bold"
@@ -870,7 +893,11 @@
                   </div>
                 </div>
               </li>
-              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li>
+                <nuxt-link :to="{ name: 'services' }" class="nav-link"
+                  >Services</nuxt-link
+                >
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -1045,7 +1072,11 @@
                   </div>
                 </div>
               </li>
-              <li><a href="services.html" class="nav-link">Services</a></li>
+              <li>
+                <nuxt-link :to="{ name: 'services' }" class="nav-link"
+                  >Services</nuxt-link
+                >
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -1150,7 +1181,11 @@
                   </div>
                 </div>
               </li>
-              <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+              <li>
+                <nuxt-link :to="{ name: 'pricing' }" class="nav-link"
+                  >Pricing</nuxt-link
+                >
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -1175,18 +1210,24 @@
                         ></span>
                         <div class="drop-title">About Us</div>
                       </nuxt-link>
-                      <a href="contact-us.html" class="dropdown-link px-0">
+                      <nuxt-link
+                        :to="{ name: 'contact-us' }"
+                        class="dropdown-link px-0"
+                      >
                         <span class="me-2"
                           ><i class="far fa-address-book"></i
                         ></span>
                         <div class="drop-title">Contact Us</div>
-                      </a>
-                      <a href="services.html" class="dropdown-link">
+                      </nuxt-link>
+                      <nuxt-link
+                        :to="{ name: 'services' }"
+                        class="dropdown-link"
+                      >
                         <span class="me-2"
                           ><i class="far fa-code-branch"></i
                         ></span>
                         <div class="drop-title">Services</div>
-                      </a>
+                      </nuxt-link>
                       <a href="service-single.html" class="dropdown-link px-0">
                         <span class="me-2"><i class="far fa-server"></i></span>
                         <div class="drop-title">Services Single</div>
@@ -1251,16 +1292,19 @@
                         <span class="me-2"><i class="far fa-user"></i></span>
                         <div class="drop-title">Our Team</div>
                       </a>
-                      <a href="request-demo.html" class="dropdown-link">
+                      <nuxt-link
+                        :to="{ name: 'request' }"
+                        class="dropdown-link"
+                      >
                         <span class="me-2"
                           ><i class="far fa-laptop-code"></i
                         ></span>
                         <div class="drop-title">Request for Demo</div>
-                      </a>
-                      <a href="login.html" class="dropdown-link">
+                      </nuxt-link>
+                      <nuxt-link :to="{ name: 'login' }" class="dropdown-link">
                         <span class="me-2"><i class="far fa-sign-in"></i></span>
                         <div class="drop-title">User Login</div>
-                      </a>
+                      </nuxt-link>
                       <a href="register.html" class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-user-plus"></i
@@ -1289,11 +1333,13 @@
               </li>
             </ul>
             <div class="action-btns mt-4 ps-3">
-              <a href="login.html" class="btn btn-outline-primary me-2"
-                >Sign In</a
+              <nuxt-link
+                :to="{ name: 'login' }"
+                class="btn btn-outline-primary me-2"
+                >Sign In</nuxt-link
               >
-              <a href="request-demo.html" class="btn btn-primary"
-                >Get Started</a
+              <nuxt-link :to="{ name: 'request' }" class="btn btn-primary"
+                >Get Started</nuxt-link
               >
             </div>
           </div>

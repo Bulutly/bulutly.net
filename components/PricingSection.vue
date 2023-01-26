@@ -94,8 +94,10 @@
                 </li>
               </ul>
             </div>
-            <a href="request-demo.html" class="btn btn-outline-primary mt-2"
-              >Buy Now</a
+            <nuxt-link
+              :to="{ name: 'request' }"
+              class="btn btn-outline-primary mt-2"
+              >Buy Now</nuxt-link
             >
 
             <!--pattern start-->
@@ -150,7 +152,9 @@
                 </li>
               </ul>
             </div>
-            <a href="request-demo.html" class="btn btn-primary mt-2">Buy Now</a>
+            <nuxt-link :to="{ name: 'request' }" class="btn btn-primary mt-2"
+              >Buy Now</nuxt-link
+            >
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
@@ -196,8 +200,10 @@
                 </li>
               </ul>
             </div>
-            <a href="request-demo.html" class="btn btn-outline-primary mt-2"
-              >Buy Now</a
+            <nuxt-link
+              :to="{ name: 'request' }"
+              class="btn btn-outline-primary mt-2"
+              >Buy Now</nuxt-link
             >
 
             <!--pattern start-->

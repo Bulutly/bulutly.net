@@ -21,8 +21,10 @@
               <div
                 class="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex"
               >
-                <a href="request-demo.html" class="btn btn-primary me-3"
-                  >Request For Demo</a
+                <nuxt-link
+                  :to="{ name: 'request' }"
+                  class="btn btn-primary me-3"
+                  >Request For Demo</nuxt-link
                 >
                 <a
                   href="http://www.youtube.com/watch?v=hAP2QF--2Dg"

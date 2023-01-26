@@ -76,16 +76,24 @@
                   <h3>Primary Pages</h3>
                   <ul class="list-unstyled footer-nav-list mb-lg-0">
                     <li>
-                      <a href="index.html" class="text-decoration-none">Home</a>
-                    </li>
-                    <li>
-                      <a href="about-us.html" class="text-decoration-none"
-                        >About Us</a
+                      <nuxt-link
+                        :to="{ name: 'index' }"
+                        class="text-decoration-none"
+                        >Home</nuxt-link
                       >
                     </li>
                     <li>
-                      <a href="services.html" class="text-decoration-none"
-                        >Services</a
+                      <nuxt-link
+                        :to="{ name: 'about-us' }"
+                        class="text-decoration-none"
+                        >About Us</nuxt-link
+                      >
+                    </li>
+                    <li>
+                      <nuxt-link
+                        :to="{ name: 'services' }"
+                        class="text-decoration-none"
+                        >Services</nuxt-link
                       >
                     </li>
                     <li>
@@ -113,8 +121,10 @@
                   <h3>Pages</h3>
                   <ul class="list-unstyled footer-nav-list mb-lg-0">
                     <li>
-                      <a href="pricing.html" class="text-decoration-none"
-                        >Pricing</a
+                      <nuxt-link
+                        :to="{ name: 'pricing' }"
+                        class="text-decoration-none"
+                        >Pricing</nuxt-link
                       >
                     </li>
                     <li>
@@ -126,8 +136,10 @@
                       >
                     </li>
                     <li>
-                      <a href="contact-us.html" class="text-decoration-none"
-                        >Contact</a
+                      <nuxt-link
+                        :to="{ name: 'contact-us' }"
+                        class="text-decoration-none"
+                        >Contact</nuxt-link
                       >
                     </li>
                     <li>
@@ -148,8 +160,10 @@
                   <h3>Template</h3>
                   <ul class="list-unstyled footer-nav-list mb-lg-0">
                     <li>
-                      <a href="contact-us.html" class="text-decoration-none"
-                        >Contact</a
+                      <nuxt-link
+                        :to="{ name: 'contact-us' }"
+                        class="text-decoration-none"
+                        >Contact</nuxt-link
                       >
                     </li>
                     <li>

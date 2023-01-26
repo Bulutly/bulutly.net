@@ -22,11 +22,11 @@
               manufactured products.
             </p>
 
-            <a
-              href="about-us.html"
+            <nuxt-link
+              :to="{ name: 'about-us' }"
               class="read-more-link text-decoration-none d-block mt-4"
               >Know More About Us <i class="far fa-arrow-right ms-2"></i
-            ></a>
+            ></nuxt-link>
           </div>
         </div>
         <div class="col-lg-6 col-12 order-lg-0">

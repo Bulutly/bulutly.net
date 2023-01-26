@@ -2,9 +2,9 @@
   <div>
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-5 col-md-8 col-12">
-        <a href="index.html" class="mb-4 d-block text-center"
+        <nuxt-link :to="{ name: 'index' }" class="mb-4 d-block text-center"
           ><img src="@/assets/img/logo-white.png" alt="logo" class="img-fluid"
-        /></a>
+        /></nuxt-link>
         <div class="register-wrap p-5 bg-light shadow rounded-custom">
           <h1 class="h3">Nice to Seeing You Again</h1>
           <p class="text-muted">

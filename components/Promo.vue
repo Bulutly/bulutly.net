@@ -72,8 +72,10 @@
               </p>
             </div>
             <div class="mt-auto">
-              <a href="request-demo.html" class="btn btn-outline-primary btn-sm"
-                >Start For Free</a
+              <nuxt-link
+                :to="{ name: 'request' }"
+                class="btn btn-outline-primary btn-sm"
+                >Start For Free</nuxt-link
               >
             </div>
             <div class="cta-img position-absolute right-0 bottom-0">
@@ -97,8 +99,10 @@
               </p>
             </div>
             <div class="mt-auto">
-              <a href="request-demo.html" class="btn btn-outline-primary btn-sm"
-                >Start For Free</a
+              <nuxt-link
+                :to="{ name: 'request' }"
+                class="btn btn-outline-primary btn-sm"
+                >Start For Free</nuxt-link
               >
             </div>
             <div class="cta-img position-absolute right-0 bottom-0">

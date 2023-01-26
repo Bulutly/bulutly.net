@@ -17,8 +17,8 @@
                 </p>
               </div>
               <div class="form-block-banner mw-60 m-auto mt-5">
-                <a href="contact-us.html" class="btn btn-primary"
-                  >Contact with Us</a
+                <nuxt-link :to="{ name: 'contact-us' }" class="btn btn-primary"
+                  >Contact with Us</nuxt-link
                 >
                 <a
                   href="http://www.youtube.com/watch?v=hAP2QF--2Dg"

@@ -42,9 +42,11 @@
                 compliance
               </li>
             </ul>
-            <a href="about-us.html" class="read-more-link text-decoration-none"
+            <nuxt-link
+              :to="{ name: 'about-us' }"
+              class="read-more-link text-decoration-none"
               >Know More About Us <i class="far fa-arrow-right ms-2"></i
-            ></a>
+            ></nuxt-link>
           </div>
         </div>
         <div class="col-lg-6 col-12">
