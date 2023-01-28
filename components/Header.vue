@@ -71,308 +71,283 @@
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    @mouseenter="
-                      (isShowResourcesMenu = true), (isShowCompanyMenu = false)
-                    "
+                    role="button"
                     aria-expanded="false"
                     >Resources</a
                   >
-                  <transition name="fade" v-show="isShowResourcesMenu">
-                    <div
-                      class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
-                      style="display: block"
-                      @mouseleave="isShowResourcesMenu = false"
-                      @click="isShowResourcesMenu = false"
-                    >
-                      <div class="dropdown-grid rounded-custom width-full-3">
-                        <div class="dropdown-grid-item">
-                          <h6 class="drop-heading">Reusable Section</h6>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-bars"></i
-                            ></span>
-                            <div class="drop-title">Navigations</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-browser"></i
-                            ></span>
-                            <div class="drop-title">Hero Sections</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-address-card"></i
-                            ></span>
-                            <div class="drop-title">Testimonials</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-bolt"></i
-                            ></span>
-                            <div class="drop-title">Call to Action</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-eject"></i
-                            ></span>
-                            <div class="drop-title">Tab Style</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-code-branch"></i
-                            ></span>
-                            <div class="drop-title">Services Style</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-hourglass-start"></i
-                            ></span>
-                            <div class="drop-title">Work Process</div>
-                          </nuxt-link>
-                        </div>
-                        <div class="dropdown-grid-item">
-                          <h6 class="drop-heading">Reusable Section</h6>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-usd-square"></i
-                            ></span>
-                            <div class="drop-title">Pricing Style</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-th-list"></i
-                            ></span>
-                            <div class="drop-title">Accordions</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-chart-network"></i
-                            ></span>
-                            <div class="drop-title">Features</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-closed-captioning"></i
-                            ></span>
-                            <div class="drop-title">Footers</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-user"></i
-                            ></span>
-                            <div class="drop-title">Our Team</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-paper-plane"></i
-                            ></span>
-                            <div class="drop-title">Integration Style</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'index' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-th-large"></i
-                            ></span>
-                            <div class="drop-title">Blog Style</div>
-                          </nuxt-link>
-                        </div>
-                        <div
-                          class="dropdown-grid-item last-item bg-light radius-right-side"
+
+                  <div
+                    class="dropdown-menu border-0 rounded-custom shadow mt-1 py-0 bg-white"
+                  >
+                    <div class="dropdown-grid rounded-custom width-full-3">
+                      <div class="dropdown-grid-item">
+                        <h6 class="drop-heading">Reusable Section</h6>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
                         >
-                          <nuxt-link :to="{ name: 'index' }"
-                            ><img
-                              src="~/assets/img/feature-img3.jpg"
-                              alt="add"
-                              class="img-fluid rounded-custom"
-                          /></nuxt-link>
-                        </div>
+                          <span class="me-2"><i class="far fa-bars"></i></span>
+                          <div class="drop-title">Navigations</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-browser"></i
+                          ></span>
+                          <div class="drop-title">Hero Sections</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-address-card"></i
+                          ></span>
+                          <div class="drop-title">Testimonials</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"><i class="far fa-bolt"></i></span>
+                          <div class="drop-title">Call to Action</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"><i class="far fa-eject"></i></span>
+                          <div class="drop-title">Tab Style</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-code-branch"></i
+                          ></span>
+                          <div class="drop-title">Services Style</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-hourglass-start"></i
+                          ></span>
+                          <div class="drop-title">Work Process</div>
+                        </nuxt-link>
+                      </div>
+                      <div class="dropdown-grid-item">
+                        <h6 class="drop-heading">Reusable Section</h6>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-usd-square"></i
+                          ></span>
+                          <div class="drop-title">Pricing Style</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-th-list"></i
+                          ></span>
+                          <div class="drop-title">Accordions</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-chart-network"></i
+                          ></span>
+                          <div class="drop-title">Features</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-closed-captioning"></i
+                          ></span>
+                          <div class="drop-title">Footers</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"><i class="far fa-user"></i></span>
+                          <div class="drop-title">Our Team</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-paper-plane"></i
+                          ></span>
+                          <div class="drop-title">Integration Style</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'index' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-th-large"></i
+                          ></span>
+                          <div class="drop-title">Blog Style</div>
+                        </nuxt-link>
+                      </div>
+                      <div
+                        class="dropdown-grid-item last-item bg-light radius-right-side"
+                      >
+                        <nuxt-link :to="{ name: 'index' }"
+                          ><img
+                            src="~/assets/img/feature-img3.jpg"
+                            alt="add"
+                            class="img-fluid rounded-custom"
+                        /></nuxt-link>
                       </div>
                     </div>
-                  </transition>
+                  </div>
                 </li>
                 <li>
                   <nuxt-link :to="{ name: 'pricing' }" class="nav-link"
                     >Pricing</nuxt-link
                   >
                 </li>
+
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    @mouseenter="
-                      (isShowCompanyMenu = true), (isShowResourcesMenu = false)
-                    "
+                    role="button"
                     aria-expanded="false"
                     >Company</a
                   >
-                  <transition name="fade" v-show="isShowCompanyMenu">
-                    <div
-                      class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
-                      style="display: block"
-                      @mouseleave="isShowCompanyMenu = false"
-                      @click="isShowCompanyMenu = false"
-                    >
-                      <div class="dropdown-grid rounded-custom width-full">
-                        <div class="dropdown-grid-item">
-                          <h6 class="drop-heading">Useful Links</h6>
-                          <nuxt-link
-                            :to="{ name: 'about-us' }"
-                            class="dropdown-link px-0"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-fingerprint"></i
-                            ></span>
-                            <div class="drop-title">About Us</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'contact-us' }"
-                            class="dropdown-link px-0"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-address-book"></i
-                            ></span>
-                            <div class="drop-title">Contact Us</div>
-                          </nuxt-link>
-                          <nuxt-link
-                            :to="{ name: 'services' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-code-branch"></i
-                            ></span>
-                            <div class="drop-title">Services</div>
-                          </nuxt-link>
-                          <a
-                            href="service-single.html"
-                            class="dropdown-link px-0"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-server"></i
-                            ></span>
-                            <div class="drop-title">Services Single</div>
-                          </a>
-                          <a href="blog.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-th-large"></i
-                            ></span>
-                            <div class="drop-title">Our Latest News</div>
-                          </a>
-                          <a href="blog-single.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-bars"></i
-                            ></span>
-                            <div class="drop-title">News Details</div>
-                          </a>
-                          <a href="career.html" class="dropdown-link px-0">
-                            <span class="me-2"
-                              ><i class="far fa-graduation-cap"></i
-                            ></span>
-                            <div class="drop-title">Career</div>
-                          </a>
-                          <a
-                            href="career-single.html"
-                            class="dropdown-link px-0"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-user-graduate"></i
-                            ></span>
-                            <div class="drop-title">Career Single</div>
-                          </a>
-                          <a href="integrations.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-rocket-launch"></i
-                            ></span>
-                            <div class="drop-title">Integrations</div>
-                          </a>
-                          <a
-                            href="integration-single.html"
-                            class="dropdown-link px-0"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-paper-plane"></i
-                            ></span>
-                            <div class="drop-title">Integration Single</div>
-                          </a>
-                        </div>
-                        <div
-                          class="dropdown-grid-item radius-right-side bg-light"
+
+                  <div
+                    class="dropdown-menu border-0 rounded-custom shadow mt-1 py-0 bg-white"
+                  >
+                    <div class="dropdown-grid rounded-custom width-full">
+                      <div class="dropdown-grid-item">
+                        <h6 class="drop-heading">Useful Links</h6>
+                        <nuxt-link
+                          :to="{ name: 'about-us' }"
+                          class="dropdown-link px-0"
                         >
-                          <h6 class="drop-heading">Utility Pages</h6>
-                          <a href="style-guide.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-code-branch"></i
-                            ></span>
-                            <div class="drop-title">Style Guide</div>
-                          </a>
-                          <a href="support.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-life-ring"></i
-                            ></span>
-                            <div class="drop-title">Help Center</div>
-                          </a>
-                          <a href="support-single.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-headset"></i
-                            ></span>
-                            <div class="drop-title">Help Details</div>
-                          </a>
-                          <a href="team.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-user"></i
-                            ></span>
-                            <div class="drop-title">Our Team</div>
-                          </a>
-                          <nuxt-link
-                            :to="{ name: 'request' }"
-                            class="dropdown-link"
-                          >
-                            <span class="me-2"
-                              ><i class="far fa-laptop-code"></i
-                            ></span>
-                            <div class="drop-title">Request for Demo</div>
-                          </nuxt-link>
-                          <!-- <nuxt-link
+                          <span class="me-2"
+                            ><i class="far fa-fingerprint"></i
+                          ></span>
+                          <div class="drop-title">About Us</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'contact-us' }"
+                          class="dropdown-link px-0"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-address-book"></i
+                          ></span>
+                          <div class="drop-title">Contact Us</div>
+                        </nuxt-link>
+                        <nuxt-link
+                          :to="{ name: 'services' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-code-branch"></i
+                          ></span>
+                          <div class="drop-title">Services</div>
+                        </nuxt-link>
+                        <a
+                          href="service-single.html"
+                          class="dropdown-link px-0"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-server"></i
+                          ></span>
+                          <div class="drop-title">Services Single</div>
+                        </a>
+                        <a href="blog.html" class="dropdown-link">
+                          <span class="me-2"
+                            ><i class="far fa-th-large"></i
+                          ></span>
+                          <div class="drop-title">Our Latest News</div>
+                        </a>
+                        <a href="blog-single.html" class="dropdown-link">
+                          <span class="me-2"><i class="far fa-bars"></i></span>
+                          <div class="drop-title">News Details</div>
+                        </a>
+                        <a href="career.html" class="dropdown-link px-0">
+                          <span class="me-2"
+                            ><i class="far fa-graduation-cap"></i
+                          ></span>
+                          <div class="drop-title">Career</div>
+                        </a>
+                        <a href="career-single.html" class="dropdown-link px-0">
+                          <span class="me-2"
+                            ><i class="far fa-user-graduate"></i
+                          ></span>
+                          <div class="drop-title">Career Single</div>
+                        </a>
+                        <a href="integrations.html" class="dropdown-link">
+                          <span class="me-2"
+                            ><i class="far fa-rocket-launch"></i
+                          ></span>
+                          <div class="drop-title">Integrations</div>
+                        </a>
+                        <a
+                          href="integration-single.html"
+                          class="dropdown-link px-0"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-paper-plane"></i
+                          ></span>
+                          <div class="drop-title">Integration Single</div>
+                        </a>
+                      </div>
+                      <div
+                        class="dropdown-grid-item radius-right-side bg-light"
+                      >
+                        <h6 class="drop-heading">Utility Pages</h6>
+                        <a href="style-guide.html" class="dropdown-link">
+                          <span class="me-2"
+                            ><i class="far fa-code-branch"></i
+                          ></span>
+                          <div class="drop-title">Style Guide</div>
+                        </a>
+                        <a href="support.html" class="dropdown-link">
+                          <span class="me-2"
+                            ><i class="far fa-life-ring"></i
+                          ></span>
+                          <div class="drop-title">Help Center</div>
+                        </a>
+                        <a href="support-single.html" class="dropdown-link">
+                          <span class="me-2"
+                            ><i class="far fa-headset"></i
+                          ></span>
+                          <div class="drop-title">Help Details</div>
+                        </a>
+                        <a href="team.html" class="dropdown-link">
+                          <span class="me-2"><i class="far fa-user"></i></span>
+                          <div class="drop-title">Our Team</div>
+                        </a>
+                        <nuxt-link
+                          :to="{ name: 'request' }"
+                          class="dropdown-link"
+                        >
+                          <span class="me-2"
+                            ><i class="far fa-laptop-code"></i
+                          ></span>
+                          <div class="drop-title">Request for Demo</div>
+                        </nuxt-link>
+                        <!-- <nuxt-link
                           :to="{ name: 'login' }"
                           class="dropdown-link"
                         >
@@ -381,34 +356,31 @@
                           ></span>
                           <div class="drop-title">User Login</div>
                         </nuxt-link> -->
-                          <a href="register.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-user-plus"></i
-                            ></span>
-                            <div class="drop-title">User SignUp</div>
-                          </a>
-                          <a href="password-reset.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-trash-undo"></i
-                            ></span>
-                            <div class="drop-title">Recovery Account</div>
-                          </a>
-                          <a href="404.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-exclamation-triangle"></i
-                            ></span>
-                            <div class="drop-title">404 Page</div>
-                          </a>
-                          <a href="coming-soon.html" class="dropdown-link">
-                            <span class="me-2"
-                              ><i class="far fa-clock"></i
-                            ></span>
-                            <div class="drop-title">Coming Soon</div>
-                          </a>
-                        </div>
+                        <a href="register.html" class="dropdown-link">
+                          <span class="me-2"
+                            ><i class="far fa-user-plus"></i
+                          ></span>
+                          <div class="drop-title">User SignUp</div>
+                        </a>
+                        <a href="password-reset.html" class="dropdown-link">
+                          <span class="me-2"
+                            ><i class="far fa-trash-undo"></i
+                          ></span>
+                          <div class="drop-title">Recovery Account</div>
+                        </a>
+                        <a href="404.html" class="dropdown-link">
+                          <span class="me-2"
+                            ><i class="far fa-exclamation-triangle"></i
+                          ></span>
+                          <div class="drop-title">404 Page</div>
+                        </a>
+                        <a href="coming-soon.html" class="dropdown-link">
+                          <span class="me-2"><i class="far fa-clock"></i></span>
+                          <div class="drop-title">Coming Soon</div>
+                        </a>
                       </div>
                     </div>
-                  </transition>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -1165,25 +1137,29 @@
 <script lang="ts">
 export default defineComponent({
   name: "Header",
-  setup() {
-    const isShowCompanyMenu = ref<boolean>(false);
-    const isShowResourcesMenu = ref<boolean>(false);
-    return {
-      isShowCompanyMenu,
-      isShowResourcesMenu,
-    };
-  },
+  setup() {},
 });
 </script>
 
 <style>
-.fade-enter-active {
-  transition: opacity 0.2s;
-}
-.fade-leave-active {
-  transition: opacity 0.2s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
+@media (min-width: 1200px) {
+  .dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    display: unset;
+  }
+  .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    animation: fadeIn 0.4s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 </style>
