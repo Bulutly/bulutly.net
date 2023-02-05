@@ -67,6 +67,11 @@
                     >Services</nuxt-link
                   >
                 </li>
+                 <li>
+                  <nuxt-link :to="{ name: 'products-supply-demand' }" class="nav-link"
+                    >Sample products supply demand</nuxt-link
+                  >
+                </li>
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
