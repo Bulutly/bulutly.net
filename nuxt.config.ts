@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Quiety - Software & IT Solutions HTML Template",
+      title: "Trader4 - Just A Trader, Level Up Your Trading",
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         //twitter
@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         {
           name: "twitter:title",
           content:
-            "Quiety - Creative SAAS Technology &amp; IT Solutions Bootstrap 5 HTML Template",
+            "Trader4 - Just A Trader, Level Up Your Trading",
         },
         {
           name: "twitter:description",
@@ -39,10 +39,10 @@ export default defineNuxtConfig({
           content:
             "Quiety creative Saas, software technology, Saas agency &amp; business Bootstrap 5 Html template. It is best and famous software company and Saas website template.",
         },
-        { name: "author", content: "ThemeTags" },
+        { name: "author", content: "Trader4" },
       ],
 
-      link: [{ rel: "icon", type: "image/*", href: "/img/favicon.png" }],
+      link: [{ rel: "icon", type: "image/*", href: "/favicon.svg" }],
       script: [
         {
           src: "/js/vendors/bootstrap.bundle.min.js",
