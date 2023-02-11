@@ -1,8 +1,5 @@
 <template>
-  <!--footer section start-->
   <footer class="footer-section">
-    <!--footer top start-->
-    <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
     <div
       class="footer-top bg-gradient text-white ptb-120"
       style="
