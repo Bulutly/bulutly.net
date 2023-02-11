@@ -233,9 +233,7 @@
         </div>
       </div>
     </div>
-    <!--footer bottom end-->
   </footer>
-  <!--footer section end-->
 </template>
 <script>
 export default {
