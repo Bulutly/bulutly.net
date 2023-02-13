@@ -6,56 +6,82 @@
         <div class="col-lg-5 col-12">
           <div class="why-choose-content">
             <div
-              class="icon-box rounded-custom bg-primary shadow-sm d-inline-block"
-            >
-              <i class="fal fa-shield-check fa-2x text-white"></i>
+              class="icon-box rounded-custom bg-primary shadow-sm d-inline-block">
+              <i class="fal fa-chart-line fa-2x text-white"></i>
             </div>
-            <h2>Advanced Analytics, Understand Business</h2>
+            <h2>Supply and Demand</h2>
             <p>
-              Distinctively promote parallel vortals with ubiquitous e-markets.
-              Proactively benchmark turnkey optimize next-generation strategic
-              leadership without resource sucking ideas.
+              Every move on market, has basic and deep reason! Yes, supply and
+              demand. We are here to introduce you best selling supply and
+              demand product on the internet.
             </p>
             <ul class="list-unstyled d-flex flex-wrap list-two-col mt-4 mb-4">
               <li class="py-1">
-                <i class="fas fa-check-circle me-2 text-primary"></i>Thought
-                leadership
+                <i class="fas fa-check-circle me-2 text-primary"></i>Auto zones
               </li>
               <li class="py-1">
-                <i class="fas fa-check-circle me-2 text-primary"></i>Personal
-                branding
+                <i class="fas fa-check-circle me-2 text-primary"></i>Multi time
+                frames
               </li>
               <li class="py-1">
-                <i class="fas fa-check-circle me-2 text-primary"></i>Modernized
-                prospecting
+                <i class="fas fa-check-circle me-2 text-primary"></i>Trail entry
+                price
               </li>
               <li class="py-1">
-                <i class="fas fa-check-circle me-2 text-primary"></i>Better win
-                rates
+                <i class="fas fa-check-circle me-2 text-primary"></i>Draw custom
+                zones
               </li>
               <li class="py-1">
-                <i class="fas fa-check-circle me-2 text-primary"></i>Showcasing
-                success
+                <i class="fas fa-check-circle me-2 text-primary"></i>Position
+                techniques
               </li>
               <li class="py-1">
-                <i class="fas fa-check-circle me-2 text-primary"></i>Sales
-                compliance
+                <i class="fas fa-check-circle me-2 text-primary"></i>Risk
+                management
+              </li>
+              <li class="py-1">
+                <i class="fas fa-check-circle me-2 text-primary"></i>Zones
+                filters
+              </li>
+              <li class="py-1">
+                <i class="fas fa-check-circle me-2 text-primary"></i>Dashboard
+                mode
+                <small class="rounded bg-primary-soft">Portfolio</small>
+              </li>
+              <li class="py-1">
+                <i class="fas fa-check-circle me-2 text-primary"></i>Trend line
+                entries
+              </li>
+              <li class="py-1">
+                <i class="fas fa-check-circle me-2 text-primary"></i>Buy Sell
+                mode
+              </li>
+              <li class="py-1">
+                <i class="fas fa-check-circle me-2 text-primary"></i>Additional
+                patterns
+              </li>
+              <li class="py-1">
+                <i class="fas fa-check-circle me-2 text-primary"></i>Reward
+                Multiplier
+              </li>
+              <li class="py-1">
+                <i class="fas fa-check-circle me-2 text-primary"></i
+                >MT4/MT5/TradingView
               </li>
             </ul>
-            <nuxt-link
-              :to="{ name: 'about-us' }"
+            <a
+              href="http://127.0.0.1:8001/products/supply-demand"
               class="read-more-link text-decoration-none"
-              >Know More About Us <i class="far fa-arrow-right ms-2"></i
-            ></nuxt-link>
+              >Find out Supply Demand <i class="far fa-arrow-right ms-2"></i
+            ></a>
           </div>
         </div>
         <div class="col-lg-6 col-12">
           <div class="feature-img-holder mt-4 mt-lg-0 mt-xl-0">
             <img
-              src="~/assets/img/screen/widget-11.png"
+              src="~/assets/img/screen/supply-demand.png"
               class="img-fluid"
-              alt="feature-image"
-            />
+              alt="feature-image" />
           </div>
         </div>
       </div>

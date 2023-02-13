@@ -1,220 +1,159 @@
 <template>
   <!--pricing section start-->
-  <section class="pricing-section pt-60 pb-120 position-relative z-2">
+  <section
+    class="pricing-section position-relative overflow-hidden bg-dark text-white pt-120"
+    style="
+      background: url('~/assets/img/page-header-bg.svg') no-repeat center center;
+    ">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-6 col-md-10">
-          <div class="section-heading text-center">
-            <h4 class="h5 text-primary">Pricing</h4>
+        <div class="col-lg-6 col-md-12">
+          <div
+            class="section-heading text-center z-5 position-relative"
+            data-aos="fade-up">
+            <h4 class="h5 text-warning">Premium Account</h4>
             <h2>Check Our Valuable Price</h2>
             <p>
-              Conveniently mesh cooperative services via magnetic outsourcing.
-              Dynamically grow value whereas accurate e-commerce vectors.
+              Boost your account with premium plan to use full-featured services
+              & products.
             </p>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-3">
-          <div class="media d-flex align-items-center py-2 p-sm-2">
-            <div
-              class="icon-box mb-0 bg-primary-soft rounded-circle d-block me-3"
-            >
-              <i class="fal fa-credit-card text-primary"></i>
-            </div>
-            <div class="media-body fw-medium h6 mb-0">
-              No credit card required
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="media d-flex align-items-center py-2 p-sm-2">
-            <div
-              class="icon-box mb-0 bg-success-soft rounded-circle d-block me-3"
-            >
-              <i class="fal fa-calendar-check text-success"></i>
-            </div>
-            <div class="media-body fw-medium h6 mb-0">
-              Get 30 day free trial
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="media d-flex align-items-center py-2 p-sm-2">
-            <div
-              class="icon-box mb-0 bg-danger-soft rounded-circle d-block me-3"
-            >
-              <i class="fal fa-calendar-times text-danger"></i>
-            </div>
-            <div class="media-body fw-medium h6 mb-0">Cancel anytime</div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
           <div
-            class="position-relative single-pricing-wrap rounded-custom bg-white custom-shadow p-5 mb-4 mb-lg-0"
-          >
-            <div class="pricing-header mb-32">
-              <h3 class="package-name text-primary d-block">Stater</h3>
-              <h4 class="display-6 fw-semi-bold">$25<span>/month</span></h4>
-            </div>
-            <div class="pricing-info mb-4">
-              <ul class="pricing-feature-list list-unstyled">
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i> 1 Team
+            class="pricing-content-wrap mb--100 bg-white rounded-custom shadow-lg border d-fle z-10 position-relative">
+            <div
+              class="price-feature-col pricing-feature-info left-radius bg-primary-soft p-5">
+              <h5>Our Products</h5>
+              <ul
+                class="list-unstyled pricing-feature-list pricing-included-list mb-0"
+                data-aos="fade-left">
+                <li class="py-1">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+                  <a
+                    href="http://127.0.0.1:8001/products/supply-demand"
+                    class="text-decoration-none text-body"
+                    >Supply Demand</a
+                  >
                 </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i> 1
-                  Installed Agent
+                <li class="py-1">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+                  <a
+                    href="http://127.0.0.1:8001/products/algo-portfolio"
+                    class="text-decoration-none text-body"
+                    >Algo Portfolio</a
+                  >
                 </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  Real-Time Feedback
+                <li class="py-1">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+                  <a
+                    href="http://127.0.0.1:8001/products/trend-friend"
+                    class="text-decoration-none text-body"
+                    >Trend Friend</a
+                  >
                 </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  Video Dedicated Support
+                <li class="py-1">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+                  <a
+                    href="http://127.0.0.1:8001/products/dashboard-x"
+                    class="text-decoration-none text-body"
+                    >Dashboard X</a
+                  >
                 </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i> 1
-                  Attacked Targets Per Month
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  Team Collaboration Tools
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  Automated Updated Features
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  24/7 Life time Support
+                <li class="py-1">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+                  <a
+                    href="http://127.0.0.1:8001/products/trend-line"
+                    class="text-decoration-none text-body"
+                    >Trend Line</a
+                  >
                 </li>
               </ul>
             </div>
-            <nuxt-link
-              :to="{ name: 'request' }"
-              class="btn btn-outline-primary mt-2"
-              >Buy Now</nuxt-link
-            >
-
-            <!--pattern start-->
             <div
-              class="dot-shape-bg position-absolute z--1 left--40 bottom--40"
-            >
-              <img src="~/assets/img/shape/dot-big-square.svg" alt="shape" />
-            </div>
-            <!--pattern end-->
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div
-            class="position-relative single-pricing-wrap rounded-custom bg-gradient text-white p-5 mb-4 mb-lg-0"
-          >
-            <div class="pricing-header mb-32">
-              <h3 class="package-name text-warning d-block">Advanced</h3>
-              <h4 class="display-6 fw-semi-bold">$45<span>/month</span></h4>
-            </div>
-            <div class="pricing-info mb-4">
-              <ul class="pricing-feature-list list-unstyled">
-                <li>
-                  <i class="fas fa-circle fa-2xs text-warning me-2"></i> 5 Team
+              class="price-feature-col pricing-action-info p-5"
+              data-aos="fade-right">
+              <ul
+                class="nav nav-pills mb-4 pricing-tab-list"
+                id="pills-tab"
+                role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true">
+                    Premium
+                  </button>
                 </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-warning me-2"></i> 3
-                  Installed Agent
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-warning me-2"></i>
-                  Real-Time Feedback
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-warning me-2"></i>
-                  Video Dedicated Support
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-warning me-2"></i> 24
-                  Attacked Targets Per Month
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-warning me-2"></i>
-                  Team Collaboration Tools
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-warning me-2"></i>
-                  Automated Updated Features
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-warning me-2"></i>
-                  24/7 Life time Support
+                <li class="nav-item" role="presentation">
+                  <button
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                    class="">
+                    Advance
+                  </button>
                 </li>
               </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade active show"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab">
+                  <h3 class="h5">Premium</h3>
+                  <p>Experience world-class of trading softwares on Trader4.</p>
+                  <div class="pricing-price mt-5">
+                    <h4 class="h1 fw-bold">
+                      $99<small>.99</small> <span>/month</span>
+                    </h4>
+                  </div>
+                  <a
+                    href="http://127.0.0.1:8001/panel/accounts/subscription"
+                    class="btn btn-primary mt-3"
+                    >Let`s Start</a
+                  >
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab">
+                  <h3 class="h5">Advance</h3>
+                  <p>
+                    Discover uniquely AI portfolio and super feature softwares.
+                  </p>
+                  <div class="pricing-price mt-5">
+                    <h4 class="h1 fw-bold">
+                      $999<small>.99</small> <span>/month</span>
+                    </h4>
+                  </div>
+                  <a
+                    href="http://127.0.0.1:8001/panel/accounts/subscription"
+                    class="btn btn-primary mt-3"
+                    >Let`s Start</a
+                  >
+                </div>
+              </div>
             </div>
-            <nuxt-link :to="{ name: 'request' }" class="btn btn-primary mt-2"
-              >Buy Now</nuxt-link
-            >
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div
-            class="position-relative single-pricing-wrap rounded-custom bg-white custom-shadow p-5 mb-4 mb-lg-0"
-          >
-            <div class="pricing-header mb-32">
-              <h3 class="package-name text-primary d-block">Premium</h3>
-              <h4 class="display-6 fw-semi-bold">$75<span>/month</span></h4>
-            </div>
-            <div class="pricing-info mb-4">
-              <ul class="pricing-feature-list list-unstyled">
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i> 6 Team
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i> 8
-                  Installed Agent
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  Real-Time Feedback
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  Video Dedicated Support
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i> 40
-                  Attacked Targets Per Month
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  Team Collaboration Tools
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  Automated Updated Features
-                </li>
-                <li>
-                  <i class="fas fa-circle fa-2xs text-primary me-2"></i>
-                  24/7 Life time Support
-                </li>
-              </ul>
-            </div>
-            <nuxt-link
-              :to="{ name: 'request' }"
-              class="btn btn-outline-primary mt-2"
-              >Buy Now</nuxt-link
-            >
-
-            <!--pattern start-->
-            <div class="dot-shape-bg position-absolute z--1 right--40 top--40">
-              <img src="~/assets/img/shape/dot-big-square.svg" alt="shape" />
-            </div>
-            <!--pattern end-->
           </div>
         </div>
       </div>
     </div>
+    <div
+      class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning left-5"></div>
+    <div class="white-space-100 bg-white w-100"></div>
   </section>
   <!--pricing section end-->
 </template>

@@ -1,117 +1,83 @@
 <template>
   <!--feature promo section start-->
-  <section class="feature-promo ptb-120 bg-light">
+  <section class="feature-section ptb-120">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-6 col-md-10">
-          <div class="section-heading text-center">
-            <h2>With all the Features You Need</h2>
+        <div class="col-lg-6 col-md-12">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <h4 class="text-primary h5">Build Better Financial Life</h4>
+            <h2>Our Values, Our Features</h2>
             <p>
-              Credibly grow premier ideas rather than bricks-and-clicks
-              strategic theme areas distributed for stand-alone web-readiness.
+              The values is our difference, Our roadmap comes from our values,
+              our hearts.
             </p>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row align-items-center">
         <div class="col-lg-4 col-md-6">
-          <div class="single-feature-promo p-lg-5 p-4 text-center mt-3">
+          <div class="position-relative" data-aos="fade-up" data-aos-delay="50">
             <div
-              class="feature-icon icon-center pb-5 rounded-custom bg-primary"
-            >
-              <i class="fal fa-layer-group fa-2x text-white"></i>
+              class="cta-card rounded-custom text-center custom-shadow p-5 bg-white mt-4 mt-lg-0 mt-md-0 z-2">
+              <div
+                class="feature-icon d-inline-block bg-primary-soft rounded-circle mb-32">
+                <i class="fad fa-shield-alt text-primary fa-2x"></i>
+              </div>
+              <h3 class="h5">Security</h3>
+              <p class="mb-0">
+                The most important value to our work in everywhere and everytime
+                is to keep your data in secure for better financial life.
+              </p>
             </div>
-            <div class="feature-info-wrap">
-              <h3 class="h5">Good Performance</h3>
-              <p>
-                Appropriately grow competitive leadership rather than strategic
-                technically sound processes without state.
+            <!--pattern start-->
+            <div class="dot-shape-bg position-absolute z--1 left--40 top--40">
+              <img src="~/assets/img/shape/dot-big-square.svg" alt="shape" />
+            </div>
+            <!--pattern end-->
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div
+            class="position-relative"
+            data-aos="fade-up"
+            data-aos-delay="100">
+            <div
+              class="cta-card rounded-custom text-center custom-shadow p-5 bg-white mt-4 mt-lg-0 mt-md-0">
+              <div
+                class="feature-icon d-inline-block bg-danger-soft rounded-circle mb-32">
+                <i class="fad fa-comment-alt-smile text-danger fa-2x"></i>
+              </div>
+              <h3 class="h5">Support</h3>
+              <p class="mb-0">
+                Realtime first-class support system with human agents that
+                provide an excellent experience with Trader4.
               </p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="single-feature-promo p-lg-5 p-4 text-center mt-3">
-            <div class="feature-icon icon-center pb-5 rounded-custom bg-danger">
-              <i class="fal fa-shield-check fa-2x text-white"></i>
-            </div>
-            <div class="feature-info-wrap">
-              <h3 class="h5">Highly Secure</h3>
-              <p>
-                Appropriately grow competitive leadership rather than strategic
-                technically sound processes without state.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-feature-promo p-lg-5 p-4 text-center mt-3">
-            <div class="feature-icon icon-center pb-5 rounded-custom bg-dark">
-              <i class="fal fa-code fa-2x text-white"></i>
-            </div>
-            <div class="feature-info-wrap">
-              <h3 class="h5">Fast Development</h3>
-              <p>
-                Appropriately grow competitive leadership rather than strategic
-                technically sound processes without state.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row pt-lg-5 pt-3">
-        <div class="col-lg-6 mt-4">
           <div
-            class="position-relative d-flex flex-column h-100 flex-wrap bg-danger-soft p-5 rounded-custom"
-          >
-            <div class="cta-left-info mb-2">
-              <h5>Utilize your software data</h5>
-              <p>
-                Progressively reinvent models and niche revolutionary benefits
-                for integrated niches.
+            class="position-relative"
+            data-aos="fade-up"
+            data-aos-delay="150">
+            <div
+              class="cta-card rounded-custom text-center custom-shadow p-5 bg-white mt-4 mt-lg-0">
+              <div
+                class="feature-icon d-inline-block bg-success-soft rounded-circle mb-32">
+                <i class="fad fa-grin-stars text-success fa-2x"></i>
+              </div>
+              <h3 class="h5">Automations</h3>
+              <p class="mb-0">
+                We provide thousands of tasks that our infrastructure machines
+                do that clear, fast, and safe.
               </p>
             </div>
-            <div class="mt-auto">
-              <nuxt-link
-                :to="{ name: 'request' }"
-                class="btn btn-outline-primary btn-sm"
-                >Start For Free</nuxt-link
-              >
+            <!--pattern start-->
+            <div
+              class="dot-shape-bg position-absolute z--1 right--40 bottom--40">
+              <img src="~/assets/img/shape/dot-big-square.svg" alt="shape" />
             </div>
-            <div class="cta-img position-absolute right-0 bottom-0">
-              <img
-                src="~/assets/img/cta-img-1.png"
-                alt="cta img"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mt-4">
-          <div
-            class="position-relative d-flex flex-column h-100 flex-wrap bg-primary-soft p-5 rounded-custom"
-          >
-            <div class="cta-left-info mb-2">
-              <h5>Get real time updated anytime</h5>
-              <p>
-                Progressively reinvent models and niche revolutionary benefits
-                for integrated niches.
-              </p>
-            </div>
-            <div class="mt-auto">
-              <nuxt-link
-                :to="{ name: 'request' }"
-                class="btn btn-outline-primary btn-sm"
-                >Start For Free</nuxt-link
-              >
-            </div>
-            <div class="cta-img position-absolute right-0 bottom-0">
-              <img
-                src="~/assets/img/cta-img-2.png"
-                alt="cta img"
-                class="img-fluid"
-              />
-            </div>
+            <!--pattern end-->
           </div>
         </div>
       </div>

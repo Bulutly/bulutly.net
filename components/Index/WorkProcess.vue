@@ -1,94 +1,77 @@
 <template>
   <!--our work process start-->
-  <section class="work-process ptb-120">
+  <section class="process-section bg-light ptb-120">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-6 col-md-10">
-          <div class="section-heading text-center">
-            <h4 class="h5 text-primary">Process</h4>
-            <h2>We Follow Our Work Process</h2>
+        <div class="col-lg-6 col-md-12">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <h4 class="h5 text-primary">Instant Start</h4>
+            <h2>Simple & Effortless Process</h2>
             <p>
-              Enthusiastically engage cross-media leadership skills for
-              alternative experiences. Proactively drive vertical systems than
-              intuitive architectures.
+              Everyone on Trader4`s team try to make simple and fast flows for
+              your works.
             </p>
           </div>
         </div>
       </div>
-      <div class="row align-items-center justify-content-between">
-        <div class="col-lg-5 col-md-12 order-1 order-lg-0">
-          <div class="img-wrap">
-            <img
-              src="~/assets/img/office-img-1.jpg"
-              alt="work process"
-              class="img-fluid rounded-custom"
-            />
+      <div class="row">
+        <div class="col-12">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="process-card text-center px-4 py-5 rounded-custom shadow-hover mt-4">
+                <div
+                  class="process-icon border border-light bg-custom-light rounded-custom p-3">
+                  <span class="h2 mb-0 text-primary fw-bold">1</span>
+                </div>
+                <h3 class="h5">Join us</h3>
+                <p class="mb-0">Create an account on Trader4 app/website.</p>
+              </div>
+            </div>
+            <div class="dots-line first"></div>
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="process-card text-center px-4 py-5 rounded-custom shadow-hover mt-4">
+                <div
+                  class="process-icon border border-light bg-custom-light rounded-custom p-3">
+                  <span class="h2 mb-0 text-primary fw-bold">2</span>
+                </div>
+                <h3 class="h5">Start Service/Product</h3>
+                <p class="mb-0">
+                  Check out our rich options for suitable item for yourself.
+                </p>
+              </div>
+            </div>
+            <div class="dots-line first"></div>
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="process-card text-center px-4 py-5 rounded-custom shadow-hover mt-4">
+                <div
+                  class="process-icon border border-light bg-custom-light rounded-custom p-3">
+                  <span class="h2 mb-0 text-primary fw-bold">3</span>
+                </div>
+                <h3 class="h5">Deliver Result</h3>
+                <p class="mb-0">
+                  We deliver reliable and satisfaction result as we introduced.
+                </p>
+              </div>
+            </div>
+            <div class="dots-line first"></div>
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="process-card text-center px-4 py-5 rounded-custom shadow-hover mt-4">
+                <div
+                  class="process-icon border border-light bg-custom-light rounded-custom p-3">
+                  <span class="h2 mb-0 text-primary fw-bold">4</span>
+                </div>
+                <h3 class="h5">Level up your Trading</h3>
+                <p class="mb-0">
+                  The only one target, make level up trades with
+                  <strong>Trader4</strong>.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-6 col-md-12 order-0 order-lg-1">
-          <ul class="work-process-list list-unstyled">
-            <li class="d-flex align-items-start mb-4">
-              <div
-                class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2"
-              >
-                <i class="far fa-folder-tree fa-2x"></i>
-              </div>
-              <div class="icon-content">
-                <span class="text-primary h6">Step 1</span>
-                <h3 class="h5 mb-2">Research and Content Planing</h3>
-                <p>
-                  Progressively foster enterprise-wide systems whereas equity
-                  invested web-readiness harness installed base bandwidth.
-                </p>
-              </div>
-            </li>
-            <li class="d-flex align-items-start mb-4">
-              <div
-                class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2"
-              >
-                <i class="far fa-bezier-curve fa-2x"></i>
-              </div>
-              <div class="icon-content">
-                <span class="text-primary h6">Step 2</span>
-                <h3 class="h5 mb-2">Publishing and Execution</h3>
-                <p>
-                  Dramatically administrate progressive metrics without
-                  error-free globally simplify standardized alignments
-                  plagiarize distributed.
-                </p>
-              </div>
-            </li>
-            <li class="d-flex align-items-start mb-4">
-              <div
-                class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2"
-              >
-                <i class="far fa-layer-group fa-2x"></i>
-              </div>
-              <div class="icon-content">
-                <span class="text-primary h6">Step 3</span>
-                <h3 class="h5 mb-2">Product Prototyping</h3>
-                <p>
-                  Interactively whiteboard transparent testing procedures before
-                  bricks-and-clicks initiatives administrate competencies.
-                </p>
-              </div>
-            </li>
-            <li class="d-flex align-items-start mb-4 mb-lg-0">
-              <div
-                class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2"
-              >
-                <i class="far fa-truck fa-2x"></i>
-              </div>
-              <div class="icon-content">
-                <span class="text-primary h6">Step 4</span>
-                <h3 class="h5 mb-2">Deliver the Final Product</h3>
-                <p>
-                  Dramatically plagiarize distributed progressive metrics
-                  without error-free globally simplify standardized alignments.
-                </p>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

@@ -2,195 +2,106 @@
   <div>
     <!--hero section start-->
     <section
-      class="hero-section ptb-120 text-white bg-gradient"
+      class="hero-section ptb-120"
       style="
-        background: url('assets/img/hero-dot-bg.png') no-repeat center right;
-      "
-    >
+        background: url('~/assets/img/shape/dot-dot-wave-shape.svg') no-repeat
+          bottom center;
+      ">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-10">
-            <div class="hero-content-wrap mt-5 mt-lg-0 mt-xl-0">
-              <h1 class="fw-bold display-5">
-                Get Fully Control and Visibility your Company
-              </h1>
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-xl-5 col-lg-5">
+            <div
+              class="hero-content-wrap text-center text-xl-start text-lg-start aos-init aos-animate"
+              data-aos="fade-right">
+              <h1 class="fw-bold display-5">ONE Subscription, All Products</h1>
               <p class="lead">
-                Proactively coordinate quality quality vectors vis-a-vis supply
-                chains. Quickly engage client-centric web services.
+                For first time we introduce subscription plan to level up your
+                trading by accessing basket of trading softwares.
               </p>
               <div
-                class="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex"
-              >
-                <nuxt-link
-                  :to="{ name: 'request' }"
-                  class="btn btn-primary me-3"
-                  >Request For Demo</nuxt-link
-                >
-                <a
-                  href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
-                  class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn mt-3 mt-lg-0 mt-md-0"
-                >
-                  <i class="fas fa-play"></i> Watch Demo
-                </a>
-              </div>
-              <div class="row justify-content-lg-start mt-60">
-                <h6 class="text-white-70 mb-2">Our Top Clients:</h6>
-                <div class="col-4 col-sm-3 my-2 ps-lg-0">
-                  <img
-                    src="~/assets/img/clients/client-1.svg"
-                    alt="client"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-4 col-sm-3 my-2">
-                  <img
-                    src="~/assets/img/clients/client-2.svg"
-                    alt="client"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-4 col-sm-3 my-2">
-                  <img
-                    src="~/assets/img/clients/client-3.svg"
-                    alt="client"
-                    class="img-fluid"
-                  />
-                </div>
+                class="hero-subscribe-form-wrap pt-4 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block">
+                <form
+                  action="http://127.0.0.1:8001/start"
+                  method="post"
+                  id="subscribe-form"
+                  name="email-form"
+                  class="hero-subscribe-form d-block d-lg-flex d-md-flex">
+                  <input
+                    type="hidden"
+                    name="_token"
+                    value="sR8tISnh8GA9P7UzhJJ6hKuogm2XpMRYXpr5R2Gw" />
+                  <input
+                    type="email"
+                    class="form-control me-2"
+                    name="email"
+                    data-name="email"
+                    placeholder="Enter Your Email Address"
+                    id="email-address"
+                    required="" />
+                  <input
+                    type="submit"
+                    value="Start Now"
+                    data-wait="Please wait..."
+                    class="btn btn-primary mt-3 mt-lg-0 mt-md-0" />
+                </form>
+                <ul class="nav subscribe-feature-list mt-3">
+                  <li class="nav-item">
+                    <span class="ms-0"
+                      ><i class="far fa-check-circle text-primary me-2"></i
+                      >Money back guarantee</span
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <span
+                      ><i class="far fa-check-circle text-primary me-2"></i>No
+                      credit card required</span
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-8 mt-5">
-            <div class="hero-img position-relative circle-shape-images">
-              <!--animated shape start-->
+          <div class="col-xl-6 col-lg-6 mt-4 mt-xl-0">
+            <div
+              class="hero-img-wrap position-relative aos-init aos-animate"
+              data-aos="fade-left">
               <ul
-                class="position-absolute animate-element parallax-element circle-shape-list"
-                style="
-                  transform: translate3d(0px, 0px, 0px);
-                  transform-style: preserve-3d;
-                  backface-visibility: hidden;
-                "
-              >
-                <li
-                  class="layer"
-                  data-depth="0.03"
-                  style="
-                    position: relative;
-                    display: block;
-                    left: 0px;
-                    top: 0px;
-                    transform: translate3d(5.61189px, 7.03965px, 0px);
-                    transform-style: preserve-3d;
-                    backface-visibility: hidden;
-                  "
-                >
+                class="position-absolute animate-element parallax-element shape-service hide-medium">
+                <li class="layer" data-depth="0.03">
                   <img
-                    src="~/assets/img/shape/circle-1.svg"
+                    src="~/assets/img/color-shape/image-1.svg"
                     alt="shape"
-                    class="circle-shape-item type-0 hero-1"
-                  />
+                    class="img-fluid position-absolute color-shape-1" />
                 </li>
-                <li
-                  class="layer"
-                  data-depth="0.02"
-                  style="
-                    position: absolute;
-                    display: block;
-                    left: 0px;
-                    top: 0px;
-                    transform: translate3d(3.74126px, 4.6931px, 0px);
-                    transform-style: preserve-3d;
-                    backface-visibility: hidden;
-                  "
-                >
+                <li class="layer" data-depth="0.02">
                   <img
-                    src="~/assets/img/shape/circle-1.svg"
+                    src="~/assets/img/color-shape/feature-2.svg"
                     alt="shape"
-                    class="circle-shape-item type-1 hero-1"
-                  />
+                    class="img-fluid position-absolute color-shape-2 z-5" />
                 </li>
-                <li
-                  class="layer"
-                  data-depth="0.04"
-                  style="
-                    position: absolute;
-                    display: block;
-                    left: 0px;
-                    top: 0px;
-                    transform: translate3d(7.48252px, 9.3862px, 0px);
-                    transform-style: preserve-3d;
-                    backface-visibility: hidden;
-                  "
-                >
+                <li class="layer" data-depth="0.03">
                   <img
-                    src="~/assets/img/shape/circle-1.svg"
+                    src="~/assets/img/color-shape/feature-3.svg"
                     alt="shape"
-                    class="circle-shape-item type-2 hero-1"
-                  />
-                </li>
-                <li
-                  class="layer"
-                  data-depth="0.04"
-                  style="
-                    position: absolute;
-                    display: block;
-                    left: 0px;
-                    top: 0px;
-                    transform: translate3d(7.48252px, 9.3862px, 0px);
-                    transform-style: preserve-3d;
-                    backface-visibility: hidden;
-                  "
-                >
-                  <img
-                    src="~/assets/img/shape/circle-1.svg"
-                    alt="shape"
-                    class="circle-shape-item type-3 hero-1"
-                  />
-                </li>
-                <li
-                  class="layer"
-                  data-depth="0.03"
-                  style="
-                    position: absolute;
-                    display: block;
-                    left: 0px;
-                    top: 0px;
-                    transform: translate3d(5.61189px, 7.03965px, 0px);
-                    transform-style: preserve-3d;
-                    backface-visibility: hidden;
-                  "
-                >
-                  <img
-                    src="~/assets/img/shape/circle-1.svg"
-                    alt="shape"
-                    class="circle-shape-item type-4 hero-1"
-                  />
-                </li>
-                <li
-                  class="layer"
-                  data-depth="0.03"
-                  style="
-                    position: absolute;
-                    display: block;
-                    left: 0px;
-                    top: 0px;
-                    transform: translate3d(5.61189px, 7.03965px, 0px);
-                    transform-style: preserve-3d;
-                    backface-visibility: hidden;
-                  "
-                >
-                  <img
-                    src="~/assets/img/shape/circle-1.svg"
-                    alt="shape"
-                    class="circle-shape-item type-5 hero-1"
-                  />
+                    class="img-fluid position-absolute color-shape-3" />
                 </li>
               </ul>
-              <!--animated shape end-->
-              <img
-                src="~/assets/img/hero-1.png"
-                alt="hero img"
-                class="img-fluid position-relative z-5"
-              />
+              <div class="hero-img-wrap position-relative">
+                <div class="hero-screen-wrap">
+                  <div class="phone-screen">
+                    <img
+                      src="~/assets/img/screen/iphone-metatrader-notifications.png"
+                      alt="supply demand trading strategy"
+                      class="position-relative img-fluid" />
+                  </div>
+                  <div class="mac-screen">
+                    <img
+                      src="~/assets/img/screen/supply-demand.png"
+                      alt="supply demand trading indicator"
+                      class="position-relative img-fluid rounded-custom" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

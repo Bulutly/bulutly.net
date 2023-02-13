@@ -1,8 +1,7 @@
 <template>
   <!--customer review tab section start-->
   <section
-    class="customer-review-tab ptb-120 bg-gradient text-white position-relative z-2"
-  >
+    class="customer-review-tab ptb-120 bg-gradient text-white position-relative z-2">
     <div class="container">
       <div class="row justify-content-center align-content-center">
         <div class="col-md-10 col-lg-6">
@@ -22,8 +21,7 @@
             <div
               class="tab-pane fade active show"
               id="testimonial-tab-1"
-              role="tabpanel"
-            >
+              role="tabpanel">
               <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6">
                   <div class="testimonial-tab-content mb-5 mb-lg-0 mb-md-0">
@@ -31,8 +29,7 @@
                       src="~/assets/img/testimonial/quotes-left.svg"
                       alt="testimonial quote"
                       width="65"
-                      class="img-fluid mb-32"
-                    />
+                      class="img-fluid mb-32" />
                     <div class="blockquote-title-review mb-4">
                       <h3 class="mb-0 h4 fw-semi-bold">
                         The Best Template You Got to Have it!
@@ -78,11 +75,9 @@
                       <img
                         src="~/assets/img/testimonial/t-1.jpg"
                         class="img-fluid rounded-custom shadow-lg"
-                        alt="testimonial author"
-                      />
+                        alt="testimonial author" />
                       <div
-                        class="customer-info text-white d-flex align-items-center"
-                      >
+                        class="customer-info text-white d-flex align-items-center">
                         <a
                           href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
                           class="video-icon popup-youtube text-decoration-none"
@@ -93,8 +88,7 @@
                         >
                       </div>
                       <div
-                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"
-                      ></div>
+                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
                     </div>
                   </div>
                 </div>
@@ -108,8 +102,7 @@
                       src="~/assets/img/testimonial/quotes-left.svg"
                       alt="testimonial quote"
                       width="65"
-                      class="img-fluid mb-32"
-                    />
+                      class="img-fluid mb-32" />
                     <div class="blockquote-title-review mb-4">
                       <h3 class="mb-0 h4 fw-semi-bold">
                         Embarrassed by the First Version.
@@ -153,11 +146,9 @@
                       <img
                         src="~/assets/img/testimonial/t-2.jpg"
                         class="img-fluid rounded-custom shadow-lg"
-                        alt="testimonial author"
-                      />
+                        alt="testimonial author" />
                       <div
-                        class="customer-info text-white d-flex align-items-center"
-                      >
+                        class="customer-info text-white d-flex align-items-center">
                         <a
                           href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
                           class="video-icon popup-youtube text-decoration-none"
@@ -168,8 +159,7 @@
                         >
                       </div>
                       <div
-                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"
-                      ></div>
+                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
                     </div>
                   </div>
                 </div>
@@ -183,8 +173,7 @@
                       src="~/assets/img/testimonial/quotes-left.svg"
                       alt="testimonial quote"
                       width="65"
-                      class="img-fluid mb-32"
-                    />
+                      class="img-fluid mb-32" />
                     <div class="blockquote-title-review mb-4">
                       <h3 class="mb-0 h4 fw-semi-bold">
                         Amazing Quiety template!
@@ -228,11 +217,9 @@
                       <img
                         src="~/assets/img/testimonial/t-3.jpg"
                         class="img-fluid rounded-custom shadow-lg"
-                        alt="testimonial author"
-                      />
+                        alt="testimonial author" />
                       <div
-                        class="customer-info text-white d-flex align-items-center"
-                      >
+                        class="customer-info text-white d-flex align-items-center">
                         <a
                           href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
                           class="video-icon popup-youtube text-decoration-none"
@@ -243,8 +230,7 @@
                         >
                       </div>
                       <div
-                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"
-                      ></div>
+                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
                     </div>
                   </div>
                 </div>
@@ -258,8 +244,7 @@
                       src="~/assets/img/testimonial/quotes-left.svg"
                       alt="testimonial quote"
                       width="65"
-                      class="img-fluid mb-32"
-                    />
+                      class="img-fluid mb-32" />
                     <div class="blockquote-title-review mb-4">
                       <h3 class="mb-0 h4 fw-semi-bold">
                         Best Template for SAAS Company!
@@ -303,11 +288,9 @@
                       <img
                         src="~/assets/img/testimonial/t-4.jpg"
                         class="img-fluid rounded-custom shadow-lg"
-                        alt="testimonial author"
-                      />
+                        alt="testimonial author" />
                       <div
-                        class="customer-info text-white d-flex align-items-center"
-                      >
+                        class="customer-info text-white d-flex align-items-center">
                         <a
                           href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
                           class="video-icon popup-youtube text-decoration-none"
@@ -318,8 +301,7 @@
                         >
                       </div>
                       <div
-                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"
-                      ></div>
+                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
                     </div>
                   </div>
                 </div>
@@ -333,8 +315,7 @@
                       src="~/assets/img/testimonial/quotes-left.svg"
                       alt="testimonial quote"
                       width="65"
-                      class="img-fluid mb-32"
-                    />
+                      class="img-fluid mb-32" />
                     <div class="blockquote-title-review mb-4">
                       <h3 class="mb-0 h4 fw-semi-bold">
                         It is Undeniably Good!
@@ -379,11 +360,9 @@
                       <img
                         src="~/assets/img/testimonial/t-5.jpg"
                         class="img-fluid rounded-custom shadow-lg"
-                        alt="testimonial author"
-                      />
+                        alt="testimonial author" />
                       <div
-                        class="customer-info text-white d-flex align-items-center"
-                      >
+                        class="customer-info text-white d-flex align-items-center">
                         <a
                           href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
                           class="video-icon popup-youtube text-decoration-none"
@@ -394,8 +373,7 @@
                         >
                       </div>
                       <div
-                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"
-                      ></div>
+                        class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
                     </div>
                   </div>
                 </div>
@@ -409,23 +387,20 @@
           <ul
             class="nav nav-pills testimonial-tab-menu mt-60"
             id="testimonial"
-            role="tablist"
-          >
+            role="tablist">
             <li class="nav-item" role="presentation">
               <div
                 class="nav-link d-flex align-items-center rounded-custom border border-light border-2 testimonial-tab-link active"
                 data-bs-toggle="pill"
                 data-bs-target="#testimonial-tab-1"
                 role="tab"
-                aria-selected="true"
-              >
+                aria-selected="true">
                 <div class="testimonial-thumb me-3">
                   <img
                     src="~/assets/img/testimonial/1.jpg"
                     width="50"
                     class="rounded-circle"
-                    alt="testimonial thumb"
-                  />
+                    alt="testimonial thumb" />
                 </div>
                 <div class="author-info">
                   <h6 class="mb-0">Joe Richard</h6>
@@ -440,15 +415,13 @@
                 data-bs-target="#testimonial-tab-2"
                 role="tab"
                 aria-selected="false"
-                tabindex="-1"
-              >
+                tabindex="-1">
                 <div class="testimonial-thumb me-3">
                   <img
                     src="~/assets/img/testimonial/2.jpg"
                     width="50"
                     class="rounded-circle"
-                    alt="testimonial thumb"
-                  />
+                    alt="testimonial thumb" />
                 </div>
                 <div class="author-info">
                   <h6 class="mb-0">Rupan Oberoi</h6>
@@ -463,15 +436,13 @@
                 data-bs-target="#testimonial-tab-3"
                 role="tab"
                 aria-selected="false"
-                tabindex="-1"
-              >
+                tabindex="-1">
                 <div class="testimonial-thumb me-3">
                   <img
                     src="~/assets/img/testimonial/3.jpg"
                     width="50"
                     class="rounded-circle"
-                    alt="testimonial thumb"
-                  />
+                    alt="testimonial thumb" />
                 </div>
                 <div class="author-info">
                   <h6 class="mb-0">Jon Doe</h6>
@@ -486,15 +457,13 @@
                 data-bs-target="#testimonial-tab-4"
                 role="tab"
                 aria-selected="false"
-                tabindex="-1"
-              >
+                tabindex="-1">
                 <div class="testimonial-thumb me-3">
                   <img
                     src="~/assets/img/testimonial/4.jpg"
                     width="50"
                     class="rounded-circle"
-                    alt="testimonial thumb"
-                  />
+                    alt="testimonial thumb" />
                 </div>
                 <div class="author-info">
                   <h6 class="mb-0">Hanry Luice</h6>
@@ -509,15 +478,13 @@
                 data-bs-target="#testimonial-tab-5"
                 role="tab"
                 aria-selected="false"
-                tabindex="-1"
-              >
+                tabindex="-1">
                 <div class="testimonial-thumb me-3">
                   <img
                     src="~/assets/img/testimonial/5.jpg"
                     width="50"
                     class="rounded-circle"
-                    alt="testimonial thumb"
-                  />
+                    alt="testimonial thumb" />
                 </div>
                 <div class="author-info">
                   <h6 class="mb-0">Ami Nijai</h6>
