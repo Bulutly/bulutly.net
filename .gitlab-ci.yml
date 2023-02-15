@@ -29,11 +29,13 @@ deploy:
   script:
     - helm upgrade --install 
       "${CI_PROJECT_NAME}.main"
-      --namespace web
+      --namespace trader4-web
       --set name="web-prod"
       --set domainName="trader4.net"
       --set image.repository="${IMG_NAME}"
       --set image.tag="${IMG_TAG}"
+      --set tls.enabled="true"
+      --set tls.secretName="web-prod-tls"
       --create-namespace
       .ci/chart
   environment:
@@ -49,11 +51,13 @@ deploy_next:
   script:
     - helm upgrade --install 
       "${CI_PROJECT_NAME}.next"
-      --namespace web
+      --namespace trader4-web
       --set name="web-next"
       --set domainName="next.trader4.net"
       --set image.repository="${IMG_NAME}"
       --set image.tag="${IMG_TAG}"
+      --set tls.enabled="true"
+      --set tls.secretName="web-next-tls"
       --create-namespace
       .ci/chart
   environment:

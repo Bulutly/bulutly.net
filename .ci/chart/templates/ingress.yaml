@@ -4,11 +4,14 @@ metadata:
   name: {{ .Values.name }}
   annotations:
     kubernetes.io/ingress.class: {{ .Values.ingressController }}
+    cert-manager.io/cluster-issuer: le-clusterissuer
 spec:
+  {{- if .Values.tls.enabled }}
   tls:
   - hosts:
       - {{ .Values.domainName }}
     secretName: {{ .Values.tls.secretName }}
+  {{- end }}
   rules:
     - host: {{ .Values.domainName }}
       http:
