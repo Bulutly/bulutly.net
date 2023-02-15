@@ -28,7 +28,7 @@ deploy:
   stage: deploy
   script:
     - helm upgrade --install 
-      "${CI_PROJECT_NAME}.production"
+      "${CI_PROJECT_NAME}.main"
       --namespace web
       --set name="web-prod"
       --set domainName="trader4.net"
@@ -48,7 +48,7 @@ deploy_next:
   stage: deploy
   script:
     - helm upgrade --install 
-      "${CI_PROJECT_NAME}.production"
+      "${CI_PROJECT_NAME}.next"
       --namespace web
       --set name="web-next"
       --set domainName="next.trader4.net"
