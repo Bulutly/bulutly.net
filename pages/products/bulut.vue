@@ -3,13 +3,13 @@
     <SharedPageHeaderSection
       title="Sample Title"
       desc="eamlessly actualize client-based users after out-of-the-box
-              value. Globally embrace strategic data through frictionless
-              expertise." />
-    ProdcutsSupplyDemand
+                value. Globally embrace strategic data through frictionless
+                expertise." />
+    ProductsBulut
   </div>
 </template>
 <script>
 export default {
-  name: "ProdcutsSupplyDemand",
+  name: "ProductsBulut",
 };
 </script>
