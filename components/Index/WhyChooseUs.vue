@@ -69,12 +69,11 @@
                 >MT4/MT5/TradingView
               </li>
             </ul>
-
-            <NuxtLink
-              :to="{ name: 'products-supply-demand' }"
+            <a
+              href="http://127.0.0.1:8001/products/supply-demand"
               class="read-more-link text-decoration-none"
-              >Find out Supply Demand <i class="far fa-arrow-right ms-2"></i>
-            </NuxtLink>
+              >Find out Supply Demand <i class="far fa-arrow-right ms-2"></i
+            ></a>
           </div>
         </div>
         <div class="col-lg-6 col-12">

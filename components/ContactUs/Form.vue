@@ -3,9 +3,10 @@
     <section
       class="contact-us-form pt-60 pb-120"
       style="
-        background: url('~/assets/img/shape/contact-us-bg.svg') no-repeat center
+        background: url('assets/img/shape/contact-us-bg.svg') no-repeat center
           bottom;
-      ">
+      "
+    >
       <div class="container">
         <div class="row justify-content-lg-between align-items-center">
           <div class="col-lg-6 col-md-8">
@@ -29,7 +30,8 @@
                       id="firstName"
                       required=""
                       placeholder="First name"
-                      aria-label="First name" />
+                      aria-label="First name"
+                    />
                   </div>
                 </div>
                 <div class="col-sm-6">
@@ -40,7 +42,8 @@
                       class="form-control"
                       id="lastName"
                       placeholder="Last name"
-                      aria-label="Last name" />
+                      aria-label="Last name"
+                    />
                   </div>
                 </div>
                 <div class="col-sm-6">
@@ -54,7 +57,8 @@
                       id="phone"
                       required=""
                       placeholder="Phone"
-                      aria-label="Phone" />
+                      aria-label="Phone"
+                    />
                   </div>
                 </div>
                 <div class="col-sm-6">
@@ -68,7 +72,8 @@
                       id="email"
                       required=""
                       placeholder="Email"
-                      aria-label="Email" />
+                      aria-label="Email"
+                    />
                   </div>
                 </div>
                 <div class="col-12">
@@ -81,7 +86,8 @@
                       id="yourMessage"
                       required=""
                       placeholder="How can we help you?"
-                      style="height: 120px"></textarea>
+                      style="height: 120px"
+                    ></textarea>
                   </div>
                 </div>
               </div>
@@ -95,7 +101,8 @@
               <img
                 src="@/assets/img/contact-us-img-2.svg"
                 alt="contact us"
-                class="img-fluid" />
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
