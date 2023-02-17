@@ -9,6 +9,6 @@
 </template>
 <script>
 export default {
-  name: "AlgoPortfolio",
+  name: "ProductsAlgoPortfolio",
 };
 </script>
