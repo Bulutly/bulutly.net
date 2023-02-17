@@ -8,7 +8,9 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-12">
-          <div class="section-heading text-center z-5 position-relative">
+          <div
+            class="section-heading text-center z-5 position-relative"
+            data-aos="fade-up">
             <h4 class="h5 text-warning">Premium Account</h4>
             <h2>Check Our Valuable Price</h2>
             <p>
@@ -26,7 +28,8 @@
               class="price-feature-col pricing-feature-info left-radius bg-primary-soft p-5">
               <h5>Our Products</h5>
               <ul
-                class="list-unstyled pricing-feature-list pricing-included-list mb-0">
+                class="list-unstyled pricing-feature-list pricing-included-list mb-0"
+                data-aos="fade-left">
                 <li class="py-1">
                   <i class="fas fa-check-circle text-primary me-2"></i>
                   <a
@@ -69,7 +72,9 @@
                 </li>
               </ul>
             </div>
-            <div class="price-feature-col pricing-action-info p-5">
+            <div
+              class="price-feature-col pricing-action-info p-5"
+              data-aos="fade-right">
               <ul
                 class="nav nav-pills mb-4 pricing-tab-list"
                 id="pills-tab"

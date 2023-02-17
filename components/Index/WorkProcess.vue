@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-12">
-          <div class="section-heading text-center">
+          <div class="section-heading text-center" data-aos="fade-up">
             <h4 class="h5 text-primary">Instant Start</h4>
             <h2>Simple & Effortless Process</h2>
             <p>

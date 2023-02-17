@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-xl-5 col-lg-5 col-md-12">
-          <div class="section-heading">
+          <div class="section-heading" data-aos="fade-up">
             <h4 class="h5 text-primary">Quick Support</h4>
             <h2>Get in Touch Today!</h2>
             <p>
@@ -13,7 +13,10 @@
             </p>
           </div>
           <div class="row justify-content-between pb-5">
-            <div class="col-sm-6 mb-4 mb-md-0 mb-lg-0">
+            <div
+              class="col-sm-6 mb-4 mb-md-0 mb-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="50">
               <div
                 class="icon-box d-inline-block rounded-circle bg-primary-soft">
                 <i class="fas fa-phone fa-2x text-primary"></i>
@@ -28,7 +31,7 @@
                 >
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
               <div
                 class="icon-box d-inline-block rounded-circle bg-danger-soft">
                 <i class="fas fa-comment-alt-lines fa-2x text-danger"></i>
@@ -50,7 +53,9 @@
         </div>
         <div class="col-xl-5 col-lg-7 col-md-12">
           <div
-            class="register-wrap p-5 bg-white shadow rounded-custom position-relative">
+            class="register-wrap p-5 bg-white shadow rounded-custom position-relative"
+            data-aos="fade-up"
+            data-aos-delay="150">
             <form
               action="http://127.0.0.1:8001/contact"
               method="post"

@@ -11,7 +11,8 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-xl-5 col-lg-5">
             <div
-              class="hero-content-wrap text-center text-xl-start text-lg-start aos-init aos-animate">
+              class="hero-content-wrap text-center text-xl-start text-lg-start aos-init aos-animate"
+              data-aos="fade-right">
               <h1 class="fw-bold display-5">ONE Subscription, All Products</h1>
               <p class="lead">
                 For first time we introduce subscription plan to level up your
@@ -61,7 +62,9 @@
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 mt-4 mt-xl-0">
-            <div class="hero-img-wrap position-relative aos-init aos-animate">
+            <div
+              class="hero-img-wrap position-relative aos-init aos-animate"
+              data-aos="fade-left">
               <ul
                 class="position-absolute animate-element parallax-element shape-service hide-medium">
                 <li class="layer" data-depth="0.03">

@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-12">
-          <div class="section-heading text-center">
+          <div class="section-heading text-center" data-aos="fade-up">
             <h4 class="h5 text-primary">F.A.Q.</h4>
             <h2>Frequently Asked Questions</h2>
             <p>
@@ -16,7 +16,10 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-10">
-          <div class="faq-content-wrap d-flex mb-5">
+          <div
+            class="faq-content-wrap d-flex mb-5"
+            data-aos="fade-up"
+            data-aos-delay="50">
             <span class="faq-icon me-3"
               ><i class="fal fa-copyright text-primary"></i
             ></span>
@@ -32,7 +35,10 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-10">
-          <div class="faq-content-wrap d-flex mb-5">
+          <div
+            class="faq-content-wrap d-flex mb-5"
+            data-aos="fade-up"
+            data-aos-delay="100">
             <span class="faq-icon me-3"
               ><i class="fal fa-credit-card text-primary"></i
             ></span>
@@ -51,7 +57,10 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-10">
-          <div class="faq-content-wrap d-flex mb-5">
+          <div
+            class="faq-content-wrap d-flex mb-5"
+            data-aos="fade-up"
+            data-aos-delay="150">
             <span class="faq-icon me-3"
               ><i class="fal fa-clipboard-list-check text-primary"></i
             ></span>
@@ -65,7 +74,10 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-10">
-          <div class="faq-content-wrap d-flex mb-5">
+          <div
+            class="faq-content-wrap d-flex mb-5"
+            data-aos="fade-up"
+            data-aos-delay="200">
             <span class="faq-icon me-3"
               ><i class="fal fa-microphone text-primary"></i
             ></span>
@@ -92,7 +104,10 @@
       </div>
     </div>
     <div class="container">
-      <div class="bg-dark shadow-lg p-5 rounded-custom mt-lg-5">
+      <div
+        class="bg-dark shadow-lg p-5 rounded-custom mt-lg-5"
+        data-aos="fade-up"
+        data-aos-delay="250">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-7">
             <div class="cta-content">
