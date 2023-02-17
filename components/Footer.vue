@@ -303,7 +303,7 @@
             <div class="copyright-text">
               <p class="mb-lg-0 mb-md-0">
                 &copy; 2017-2022 Trader4, All Rights Reserved. Build
-                <code>0.0.01</code>
+                <code>0.0.02</code>
               </p>
             </div>
           </div>
