@@ -25,13 +25,11 @@
               :to="{ name: 'index' }"
               class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none"
               ><img
-                src="~/assets/img/trader4-H.svg"
+                src="~/assets/img/logo-white.png"
                 alt="Trader4"
                 class="img-fluid logo-white" />
               <img
-                src="~/assets/img/trader4-H.svg"
-                width="150px"
-                height="20px"
+                src="~/assets/img/logo-color.png"
                 alt="Trader4"
                 class="img-fluid logo-color"
             /></nuxt-link>
@@ -50,13 +48,14 @@
               <ul
                 class="nav col-12 col-md-auto justify-content-center main-menu">
                 <li>
+                  <!-- <a href="http://127.0.0.1:8001" class="nav-link">Home</a> -->
                   <nuxt-link :to="{ name: 'index' }" class="nav-link"
                     >Home</nuxt-link
                   >
                 </li>
                 <li class="nav-item dropdown">
                   <nuxt-link
-                    :to="{ name: 'products' }"
+                    :to="{ name: 'services' }"
                     class="nav-link dropdown-toggle"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -82,9 +81,7 @@
                           </div>
                         </nuxt-link>
 
-                        <nuxt-link
-                          :to="{ name: 'products-algo-portfolio' }"
-                          class="dropdown-link"
+                        <nuxt-link :to="{ name: 'index' }" class="dropdown-link"
                           ><span
                             class="demo-list bg-dark rounded text-white fw-bold"
                             >AP</span
@@ -96,7 +93,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-trend-friend' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-success rounded text-white fw-bold"
@@ -109,7 +106,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-dashboard-x' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-danger rounded text-white fw-bold"
@@ -122,7 +119,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-bazaar' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-info rounded text-white fw-bold"
@@ -135,7 +132,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-trend-line' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-warning rounded text-white fw-bold"
@@ -148,7 +145,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-bulut' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-primary rounded text-white fw-bold"
@@ -165,7 +162,7 @@
                         <h6 class="drop-heading">Let`s Work Together</h6>
 
                         <nuxt-link
-                          :to="{ name: 'services-trading-coaching' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-primary rounded text-white fw-bold"
@@ -178,7 +175,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'services-algo-trading-coach' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-dark rounded text-white fw-bold"
@@ -191,7 +188,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'services-trading-mastermind' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-warning rounded text-white fw-bold"
@@ -204,7 +201,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'services-recovery' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-secondary rounded text-white fw-bold"
@@ -217,7 +214,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'services-trade-road' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-info rounded text-white fw-bold"
@@ -228,9 +225,20 @@
                             <p>We are hiring a trader</p>
                           </div>
                         </nuxt-link>
-
+                        <!-- <a
+                          href="http://127.0.0.1:8001/services/warren-program"
+                          class="dropdown-link">
+                          <span
+                            class="demo-list bg-danger rounded text-white fw-bold"
+                            >WP</span
+                          >
+                          <div class="dropdown-info">
+                            <div class="drop-title">Warren Program</div>
+                            <p>Be Wealthy Every Year</p>
+                          </div>
+                        </a> -->
                         <nuxt-link
-                          :to="{ name: 'services-warren-program' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-danger rounded text-white fw-bold"
@@ -241,9 +249,22 @@
                             <p>Be Wealthy Every Year</p>
                           </div></nuxt-link
                         >
-
+                        <!-- <a
+                          href="http://127.0.0.1:8001/services/millionaire-month"
+                          class="dropdown-link">
+                          <span
+                            class="demo-list bg-success rounded text-white fw-bold"
+                            >MM</span
+                          >
+                          <div class="dropdown-info">
+                            <div class="drop-title">
+                              Millionaire of the Month
+                            </div>
+                            <p>Be A Millionaire in One Month</p>
+                          </div>
+                        </a> -->
                         <nuxt-link
-                          :to="{ name: 'services-millionaire' }"
+                          :to="{ name: 'index' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-success rounded text-white fw-bold"
@@ -261,202 +282,172 @@
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                  <!-- <a
+                  <a
                     class="nav-link dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >Education</a
-                  > -->
-                  <nuxt-link
-                    :to="{ name: 'index' }"
-                    class="nav-link dropdown-toggle"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Education
-                  </nuxt-link>
+                  >
                   <div
                     class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                     <div class="dropdown-grid rounded-custom width-full">
                       <div class="dropdown-grid-item">
                         <h6 class="drop-heading">Useful Links</h6>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/trading-strategy"
+                        <a
+                          href="https://docs.trader4.net/blog/tags/trading-strategy"
                           target="_blank"
                           class="dropdown-link px-0">
                           <span class="me-2"><i class="far fa-lamp"></i></span>
                           <div class="drop-title">Trading Strategies</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/trading-system"
+                        </a>
+                        <a
+                          href="https://docs.trader4.net/blog/tags/trading-system"
                           target="_blank"
                           class="dropdown-link px-0">
                           <span class="me-2"
                             ><i class="far fa-microchip"></i
                           ></span>
                           <div class="drop-title">Trading Systems</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/risk-management"
+                        </a>
+                        <a
+                          href="https://docs.trader4.net/blog/tags/risk-management"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-money-check-dollar"></i
                           ></span>
                           <div class="drop-title">Risk Management</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/money-management"
+                        </a>
+                        <a
+                          href="https://docs.trader4.net/blog/tags/money-management"
                           target="_blank"
                           class="dropdown-link px-0">
                           <span class="me-2"
                             ><i class="far fa-dollar-sign"></i
                           ></span>
                           <div class="drop-title">Money Management</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/trading-plan"
+                        </a>
+                        <a
+                          href="https://docs.trader4.net/blog/tags/trading-plan"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-rocket-launch"></i
                           ></span>
                           <div class="drop-title">Trading Plans</div>
-                        </nuxt-link>
+                        </a>
                       </div>
                       <div
                         class="dropdown-grid-item radius-right-side bg-light">
                         <h6 class="drop-heading">More</h6>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/wiki"
+                        <a
+                          href="https://docs.trader4.net/blog/tags/wiki"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"><i class="far fa-w"></i></span>
                           <div class="drop-title">WIKI</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/algo-trading"
+                        </a>
+                        <a
+                          href="https://docs.trader4.net/blog/tags/algo-trading"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-microchip-ai"></i
                           ></span>
                           <div class="drop-title">Algo Trading</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/psychology"
+                        </a>
+                        <a
+                          href="https://docs.trader4.net/blog/tags/psychology"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"><i class="far fa-brain"></i></span>
                           <div class="drop-title">Psychology</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/think-and-grow-rich"
+                        </a>
+                        <a
+                          href="https://docs.trader4.net/blog/tags/think-and-grow-rich"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-question"></i
                           ></span>
                           <div class="drop-title">Think and Grow Rich</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/rich-dad-poor-dad"
+                        </a>
+                        <a
+                          href="https://docs.trader4.net/blog/tags/rich-dad-poor-dad"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"><i class="far fa-book"></i></span>
                           <div class="drop-title">Rich Dad Poor Dad</div>
-                        </nuxt-link>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <nuxt-link :to="{ name: 'pricing' }" class="nav-link">
-                    Pricing
-                  </nuxt-link>
+                  <a href="http://127.0.0.1:8001/pricing" class="nav-link"
+                    >Pricing</a
+                  >
                 </li>
                 <li class="nav-item dropdown">
-                  <nuxt-link
-                    :to="{ name: 'about-us' }"
+                  <a
                     class="nav-link dropdown-toggle"
+                    href="#"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    About
-                  </nuxt-link>
+                    aria-expanded="false"
+                    >About</a
+                  >
                   <div
                     class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                     <div class="dropdown-grid rounded-custom width-full">
                       <div class="dropdown-grid-item">
                         <h6 class="drop-heading">Useful Links</h6>
-
-                        <nuxt-link
-                          :to="{ name: 'about-us' }"
+                        <a
+                          href="http://127.0.0.1:8001/about"
                           class="dropdown-link px-0">
                           <span class="me-2"
                             ><i class="far fa-building"></i
                           ></span>
                           <div class="drop-title">About Us</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          :to="{ name: 'contact-us' }"
+                        </a>
+                        <a
+                          href="http://127.0.0.1:8001/contact"
                           class="dropdown-link px-0">
                           <span class="me-2"><i class="far fa-phone"></i></span>
                           <div class="drop-title">Contact Us</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/news"
+                        </a>
+                        <a
+                          href="https://docs.trader4.net/blog/tags/news"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-newspaper"></i
                           ></span>
                           <div class="drop-title">Our News</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          :to="{ name: 'career' }"
+                        </a>
+                        <a
+                          href="http://127.0.0.1:8001/career"
                           class="dropdown-link px-0">
                           <span class="me-2"
                             ><i class="far fa-graduation-cap"></i
                           ></span>
                           <div class="drop-title">Career</div>
-                        </nuxt-link>
-                        <!-- <a
+                        </a>
+                        <a
                           href="http://127.0.0.1:8001/under-construction"
                           class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-rocket-launch"></i
                           ></span>
                           <div class="drop-title">Integrations</div>
-                        </a> -->
-                        <nuxt-link
-                          :to="{ name: 'under-construction' }"
-                          class="dropdown-link">
-                          <span class="me-2"
-                            ><i class="far fa-rocket-launch"></i
-                          ></span>
-                          <div class="drop-title">Integrations</div>
-                        </nuxt-link>
+                        </a>
                       </div>
                       <div
                         class="dropdown-grid-item radius-right-side bg-light">
                         <h6 class="drop-heading">Utility Pages</h6>
-                        <!-- <a
+                        <a
                           href="https://docs.trader4.net"
                           target="_blank"
                           class="dropdown-link">
@@ -464,49 +455,32 @@
                             ><i class="far fa-life-ring"></i
                           ></span>
                           <div class="drop-title">Help Center</div>
-                        </a> -->
-                        <nuxt-link
-                          to="https://docs.trader4.net"
-                          target="_blank"
-                          class="dropdown-link">
-                          <span class="me-2"
-                            ><i class="far fa-life-ring"></i
-                          ></span>
-                          <div class="drop-title">Help Center</div>
-                        </nuxt-link>
-                        <!-- <a
+                        </a>
+                        <a
                           href="http://127.0.0.1:8001/panel/tickets/create"
                           class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-headset"></i
                           ></span>
                           <div class="drop-title">Support Center</div>
-                        </a> -->
-                        <nuxt-link
-                          :to="{ name: 'index' }"
+                        </a>
+                        <a
+                          href="http://127.0.0.1:8001/faq"
                           class="dropdown-link">
-                          <span class="me-2"
-                            ><i class="far fa-headset"></i
-                          ></span>
-                          <div class="drop-title">Support Center</div>
-                        </nuxt-link>
-
-                        <nuxt-link :to="{ name: 'faq' }" class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-question"></i
                           ></span>
                           <div class="drop-title">F.A.Q</div>
-                        </nuxt-link>
-
-                        <nuxt-link
-                          to="https://status.trader4.net"
+                        </a>
+                        <a
+                          href="https://status.trader4.net/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-heartbeat"></i
                           ></span>
                           <div class="drop-title">Status</div>
-                        </nuxt-link>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -515,26 +489,16 @@
             </div>
             <div
               class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-              <!-- <a
+              <a
                 href="http://127.0.0.1:8001/auth/login"
                 class="btn btn-link text-decoration-none me-2"
                 >Login</a
-              > -->
-              <nuxt-link
-                :to="{ name: 'auth-login' }"
-                class="btn btn-link text-decoration-none me-2">
-                Logins
-              </nuxt-link>
-              <!-- <a
+              >
+              <a
                 href="http://127.0.0.1:8001/auth/register"
                 class="btn btn-primary"
                 >Start</a
-              > -->
-              <nuxt-link
-                :to="{ name: 'auth-register' }"
-                class="btn btn-primary">
-                Start
-              </nuxt-link>
+              >
             </div>
           </div>
         </nav>
@@ -543,16 +507,14 @@
           tabindex="-1"
           id="offcanvasWithBackdrop">
           <div class="offcanvas-header d-flex align-items-center mt-4">
-            <nuxt-link
-              :to="{ name: 'index' }"
+            <a
+              href="http://127.0.0.1:8001"
               class="d-flex align-items-center mb-md-0 text-decoration-none">
               <img
-                src="~/assets/img/trader4-H.svg"
-                width="150px"
-                height="19px"
+                src="http://127.0.0.1:8001/assets/img/logo-color.png"
                 alt="Trader4"
                 class="img-fluid ps-2" />
-            </nuxt-link>
+            </a>
             <button
               type="button"
               class="close-btn text-danger"
@@ -563,28 +525,23 @@
           </div>
           <div class="offcanvas-body">
             <ul class="nav col-12 col-md-auto justify-content-center main-menu">
-              <li>
-                <nuxt-link :to="{ name: 'index' }" class="nav-link">
-                  Home
-                </nuxt-link>
-              </li>
+              <li><a href="http://127.0.0.1:8001" class="nav-link">Home</a></li>
               <li class="nav-item dropdown">
-                <nuxt-link
-                  :to="{ name: 'products' }"
+                <a
                   class="nav-link dropdown-toggle"
+                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Products & Services
-                </nuxt-link>
+                  aria-expanded="false"
+                  >Products & Services</a
+                >
                 <div
                   class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                   <div class="dropdown-grid rounded-custom width-full">
                     <div class="dropdown-grid-item">
                       <h6 class="drop-heading">Hack The Market</h6>
-
-                      <nuxt-link
-                        :to="{ name: 'products-supply-demand' }"
+                      <a
+                        href="http://127.0.0.1:8001/products/supply-demand"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-primary rounded text-white fw-bold"
@@ -594,10 +551,9 @@
                           <div class="drop-title">Supply Demand</div>
                           <p>Every Move on Market</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'products-algo-portfolio' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/products/algo-portfolio"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-dark rounded text-white fw-bold"
@@ -607,10 +563,9 @@
                           <div class="drop-title">Algo Portfolio</div>
                           <p>Forex Portfolio via SQX</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'products-trend-friend' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/products/trend-friend"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-success rounded text-white fw-bold"
@@ -620,10 +575,9 @@
                           <div class="drop-title">Trend Friend</div>
                           <p>Follow the Market</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'products-dashboard-x' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/products/dashboard-x"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-danger rounded text-white fw-bold"
@@ -633,10 +587,9 @@
                           <div class="drop-title">Dashboard X</div>
                           <p>Professional way for Professionals</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'products-bazaar' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/products/bazaar"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-info rounded text-white fw-bold"
@@ -646,10 +599,9 @@
                           <div class="drop-title">Bazaar</div>
                           <p>Follow Professionals</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'products-trend-line' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/products/trend-line"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-warning rounded text-white fw-bold"
@@ -659,10 +611,9 @@
                           <div class="drop-title">Trend Line</div>
                           <p>Simplest Way to Trading</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'products-bulut' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/products/bulut"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-primary rounded text-white fw-bold"
@@ -672,13 +623,12 @@
                           <div class="drop-title">Bulut</div>
                           <p>Cloud Infrastructure</p>
                         </div>
-                      </nuxt-link>
+                      </a>
                     </div>
                     <div class="dropdown-grid-item radius-right-side bg-light">
                       <h6 class="drop-heading">Let`s Work Together</h6>
-
-                      <nuxt-link
-                        :to="{ name: 'services-trading-coaching' }"
+                      <a
+                        href="http://127.0.0.1:8001/services/trading-coaching"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-primary rounded text-white fw-bold"
@@ -688,10 +638,9 @@
                           <div class="drop-title">Trading Coaching</div>
                           <p>A Coach, Master in Trading</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'services-algo-trading-coach' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/services/algo-trading-coaching"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-dark rounded text-white fw-bold"
@@ -701,10 +650,9 @@
                           <div class="drop-title">Algo Trading Coach</div>
                           <p>A Master Coach in Algo Trading</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'services-trading-mastermind' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/services/trading-mastermind"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-warning rounded text-white fw-bold"
@@ -714,10 +662,9 @@
                           <div class="drop-title">Trading Mastermind</div>
                           <p>Boost your mental powers</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'services-recovery' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/services/account-recovery"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-secondary rounded text-white fw-bold"
@@ -727,10 +674,9 @@
                           <div class="drop-title">Account Recovery</div>
                           <p>Survive your trading accounts</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'services-trade-road' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/services/trade-road"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-info rounded text-white fw-bold"
@@ -740,10 +686,9 @@
                           <div class="drop-title">Trade Road</div>
                           <p>We are hiring a trader</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'services-warren-program' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/services/warren-program"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-danger rounded text-white fw-bold"
@@ -753,10 +698,9 @@
                           <div class="drop-title">Warren Program</div>
                           <p>Be Wealthy Every Year</p>
                         </div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'services-millionaire' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/services/millionaire-month"
                         class="dropdown-link">
                         <span
                           class="demo-list bg-success rounded text-white fw-bold"
@@ -766,245 +710,221 @@
                           <div class="drop-title">Millionaire of the Month</div>
                           <p>Be A Millionaire in One Month</p>
                         </div>
-                      </nuxt-link>
+                      </a>
                     </div>
                   </div>
                 </div>
               </li>
-
               <li class="nav-item dropdown">
-                <nuxt-link
-                  :to="{ name: 'index' }"
+                <a
                   class="nav-link dropdown-toggle"
+                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Education
-                </nuxt-link>
+                  aria-expanded="false"
+                  >Education</a
+                >
                 <div
                   class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                   <div class="dropdown-grid rounded-custom width-full">
                     <div class="dropdown-grid-item">
                       <h6 class="drop-heading">Useful Links</h6>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/trading-strategy"
+                      <a
+                        href="https://docs.trader4.net/blog/tags/trading-strategy"
                         target="_blank"
                         class="dropdown-link px-0">
                         <span class="me-2"><i class="far fa-lamp"></i></span>
                         <div class="drop-title">Trading Strategies</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/trading-system"
+                      </a>
+                      <a
+                        href="https://docs.trader4.net/blog/tags/trading-system"
                         target="_blank"
                         class="dropdown-link px-0">
                         <span class="me-2"
                           ><i class="far fa-microchip"></i
                         ></span>
                         <div class="drop-title">Trading Systems</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/risk-management"
+                      </a>
+                      <a
+                        href="https://docs.trader4.net/blog/tags/risk-management"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-money-check-dollar"></i
                         ></span>
                         <div class="drop-title">Risk Management</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/money-management"
+                      </a>
+                      <a
+                        href="https://docs.trader4.net/blog/tags/money-management"
                         target="_blank"
                         class="dropdown-link px-0">
                         <span class="me-2"
                           ><i class="far fa-dollar-sign"></i
                         ></span>
                         <div class="drop-title">Money Management</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/trading-plan"
+                      </a>
+                      <a
+                        href="https://docs.trader4.net/blog/tags/trading-plan"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-rocket-launch"></i
                         ></span>
                         <div class="drop-title">Trading Plans</div>
-                      </nuxt-link>
+                      </a>
                     </div>
                     <div class="dropdown-grid-item radius-right-side bg-light">
                       <h6 class="drop-heading">More</h6>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/wiki"
+                      <a
+                        href="https://docs.trader4.net/blog/tags/wiki"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"><i class="far fa-w"></i></span>
                         <div class="drop-title">WIKI</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/algo-trading"
+                      </a>
+                      <a
+                        href="https://docs.trader4.net/blog/tags/algo-trading"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-microchip-ai"></i
                         ></span>
                         <div class="drop-title">Algo Trading</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/psychology"
+                      </a>
+                      <a
+                        href="https://docs.trader4.net/blog/tags/psychology"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"><i class="far fa-brain"></i></span>
                         <div class="drop-title">Psychology</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/think-and-grow-rich"
+                      </a>
+                      <a
+                        href="https://docs.trader4.net/blog/tags/think-and-grow-rich"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-question"></i
                         ></span>
                         <div class="drop-title">Think and Grow Rich</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/rich-dad-poor-dad"
+                      </a>
+                      <a
+                        href="https://docs.trader4.net/blog/tags/rich-dad-poor-dad"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"><i class="far fa-book"></i></span>
                         <div class="drop-title">Rich Dad Poor Dad</div>
-                      </nuxt-link>
+                      </a>
                     </div>
                   </div>
                 </div>
               </li>
               <li>
-                <nuxt-link :to="{ name: 'pricing' }" class="nav-link">
-                  Pricing
-                </nuxt-link>
+                <a href="http://127.0.0.1:8001/pricing" class="nav-link"
+                  >Pricing</a
+                >
               </li>
               <li class="nav-item dropdown">
-                <nuxt-link
-                  :to="{ name: 'about-us' }"
+                <a
                   class="nav-link dropdown-toggle"
+                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  About
-                </nuxt-link>
+                  aria-expanded="false"
+                  >About</a
+                >
                 <div
                   class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                   <div class="dropdown-grid rounded-custom width-full">
                     <div class="dropdown-grid-item">
                       <h6 class="drop-heading">Useful Links</h6>
-
-                      <nuxt-link
-                        :to="{ name: 'about-us' }"
+                      <a
+                        href="http://127.0.0.1:8001/about"
                         class="dropdown-link px-0">
                         <span class="me-2"
                           ><i class="far fa-building"></i
                         ></span>
                         <div class="drop-title">About Us</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'contact-us' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/contact"
                         class="dropdown-link px-0">
                         <span class="me-2"><i class="far fa-phone"></i></span>
                         <div class="drop-title">Contact Us</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/news"
+                      </a>
+                      <a
+                        href="https://docs.trader4.net/blog/tags/news"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-newspaper"></i
                         ></span>
                         <div class="drop-title">Our News</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'career' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/career"
                         class="dropdown-link px-0">
                         <span class="me-2"
                           ><i class="far fa-graduation-cap"></i
                         ></span>
                         <div class="drop-title">Career</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        :to="{ name: 'contact-us' }"
+                      </a>
+                      <a
+                        href="http://127.0.0.1:8001/contact"
                         class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-rocket-launch"></i
                         ></span>
                         <div class="drop-title">Integrations</div>
-                      </nuxt-link>
+                      </a>
                     </div>
                     <div class="dropdown-grid-item radius-right-side bg-light">
                       <h6 class="drop-heading">Utility Pages</h6>
-
-                      <nuxt-link
-                        to="https://docs.trader4.net"
+                      <a
+                        href="https://docs.trader4.net"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-life-ring"></i
                         ></span>
                         <div class="drop-title">Documentation</div>
-                      </nuxt-link>
-                      <!-- <a
+                      </a>
+                      <a
                         href="http://127.0.0.1:8001/panel/tickets/create"
                         class="dropdown-link">
                         <span class="me-2"><i class="far fa-headset"></i></span>
                         <div class="drop-title">Support Center</div>
-                      </a> -->
-                      <nuxt-link :to="{ name: 'index' }" class="dropdown-link">
-                        <span class="me-2"><i class="far fa-headset"></i></span>
-                        <div class="drop-title">Support Center</div>
-                      </nuxt-link>
-
-                      <nuxt-link :to="{ name: 'faq' }" class="dropdown-link">
+                      </a>
+                      <a href="http://127.0.0.1:8001/faq" class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-question"></i
                         ></span>
                         <div class="drop-title">F.A.Q</div>
-                      </nuxt-link>
-
-                      <nuxt-link
-                        to="https://status.trader4.net"
+                      </a>
+                      <a
+                        href="https://status.trader4.net"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
                           ><i class="far fa-heartbeat"></i
                         ></span>
                         <div class="drop-title">Status</div>
-                      </nuxt-link>
+                      </a>
                     </div>
                   </div>
                 </div>
               </li>
             </ul>
             <div class="action-btns mt-4 ps-3">
-              <nuxt-link
-                :to="{ name: 'auth-login' }"
-                class="btn btn-link text-decoration-none me-2">
-                Login
-              </nuxt-link>
-
-              <nuxt-link
-                :to="{ name: 'auth-register' }"
-                class="btn btn-primary">
-                Start
-              </nuxt-link>
+              <a
+                href="http://127.0.0.1:8001/auth/login"
+                class="btn btn-link text-decoration-none me-2"
+                >Login</a
+              >
+              <a
+                href="http://127.0.0.1:8001/auth/register"
+                class="btn btn-primary"
+                >Start</a
+              >
             </div>
           </div>
         </div>

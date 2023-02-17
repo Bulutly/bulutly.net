@@ -21,11 +21,11 @@
               portfolio is ready.
             </p>
 
-            <NuxtLink
-              :to="{ name: 'products-algo-portfolio' }"
-              class="read-more-link text-decoration-none d-block mt-4">
-              Learn More <i class="far fa-arrow-right ms-2"></i>
-            </NuxtLink>
+            <a
+              href="http://127.0.0.1:8001/products/algo-portfolio"
+              class="read-more-link text-decoration-none d-block mt-4"
+              >Learn More <i class="far fa-arrow-right ms-2"></i
+            ></a>
           </div>
         </div>
         <div class="col-lg-6 col-12 order-lg-0">
@@ -49,11 +49,11 @@
               </p>
             </div>
             <div class="mt-auto">
-              <NuxtLink
-                :to="{ name: 'contact-us' }"
-                class="btn btn-outline-primary btn-sm">
-                Contact Us
-              </NuxtLink>
+              <a
+                href="http://127.0.0.1:8001/contact"
+                class="btn btn-outline-primary btn-sm"
+                >Contact Us</a
+              >
             </div>
             <div class="cta-img position-absolute right-0 bottom-0">
               <img
@@ -74,11 +74,11 @@
               </p>
             </div>
             <div class="mt-auto">
-              <NuxtLink
-                :to="{ name: 'contact-us' }"
-                class="btn btn-outline-primary btn-sm">
-                Contact Us
-              </NuxtLink>
+              <a
+                href="http://127.0.0.1:8001/contact"
+                class="btn btn-outline-primary btn-sm"
+                >Contact Us</a
+              >
             </div>
             <div class="cta-img position-absolute right-0 bottom-0">
               <img

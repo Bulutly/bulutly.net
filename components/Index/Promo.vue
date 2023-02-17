@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-12">
-          <div class="section-heading text-center">
+          <div class="section-heading text-center" data-aos="fade-up">
             <h4 class="text-primary h5">Build Better Financial Life</h4>
             <h2>Our Values, Our Features</h2>
             <p>
@@ -16,7 +16,7 @@
       </div>
       <div class="row align-items-center">
         <div class="col-lg-4 col-md-6">
-          <div class="position-relative">
+          <div class="position-relative" data-aos="fade-up" data-aos-delay="50">
             <div
               class="cta-card rounded-custom text-center custom-shadow p-5 bg-white mt-4 mt-lg-0 mt-md-0 z-2">
               <div
@@ -37,7 +37,10 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="position-relative">
+          <div
+            class="position-relative"
+            data-aos="fade-up"
+            data-aos-delay="100">
             <div
               class="cta-card rounded-custom text-center custom-shadow p-5 bg-white mt-4 mt-lg-0 mt-md-0">
               <div
@@ -53,7 +56,10 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="position-relative">
+          <div
+            class="position-relative"
+            data-aos="fade-up"
+            data-aos-delay="150">
             <div
               class="cta-card rounded-custom text-center custom-shadow p-5 bg-white mt-4 mt-lg-0">
               <div
