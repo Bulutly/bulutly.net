@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-12">
-          <div class="section-heading text-center" data-aos="fade-up">
+          <div class="section-heading text-center">
             <h4 class="h5 text-primary">F.A.Q.</h4>
             <h2>Frequently Asked Questions</h2>
             <p>
@@ -16,10 +16,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-10">
-          <div
-            class="faq-content-wrap d-flex mb-5"
-            data-aos="fade-up"
-            data-aos-delay="50">
+          <div class="faq-content-wrap d-flex mb-5">
             <span class="faq-icon me-3"
               ><i class="fal fa-copyright text-primary"></i
             ></span>
@@ -35,10 +32,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-10">
-          <div
-            class="faq-content-wrap d-flex mb-5"
-            data-aos="fade-up"
-            data-aos-delay="100">
+          <div class="faq-content-wrap d-flex mb-5">
             <span class="faq-icon me-3"
               ><i class="fal fa-credit-card text-primary"></i
             ></span>
@@ -57,10 +51,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-10">
-          <div
-            class="faq-content-wrap d-flex mb-5"
-            data-aos="fade-up"
-            data-aos-delay="150">
+          <div class="faq-content-wrap d-flex mb-5">
             <span class="faq-icon me-3"
               ><i class="fal fa-clipboard-list-check text-primary"></i
             ></span>
@@ -74,10 +65,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-10">
-          <div
-            class="faq-content-wrap d-flex mb-5"
-            data-aos="fade-up"
-            data-aos-delay="200">
+          <div class="faq-content-wrap d-flex mb-5">
             <span class="faq-icon me-3"
               ><i class="fal fa-microphone text-primary"></i
             ></span>
@@ -88,14 +76,13 @@
               </h5>
               <p class="mb-0">
                 <strong>Yes</strong>, You can visit our
-                <strong
-                  ><a
-                    href="https://www.youtube.com/channel/UCe8CyzFbWhYoH0OAQuh7shg"
-                    target="_blank"
-                    rel="noreferrer"
-                    >YouTube channel</a
-                  ></strong
-                >
+
+                <NuxtLink
+                  to="https://www.youtube.com/channel/UCe8CyzFbWhYoH0OAQuh7shg"
+                  target="_blank"
+                  rel="noreferrer">
+                  <strong>YouTube channel</strong>
+                </NuxtLink>
                 to see the live performance of the products.
               </p>
             </div>
@@ -104,10 +91,7 @@
       </div>
     </div>
     <div class="container">
-      <div
-        class="bg-dark shadow-lg p-5 rounded-custom mt-lg-5"
-        data-aos="fade-up"
-        data-aos-delay="250">
+      <div class="bg-dark shadow-lg p-5 rounded-custom mt-lg-5">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-7">
             <div class="cta-content">
@@ -119,9 +103,9 @@
           </div>
           <div class="col-lg-3">
             <div class="text-lg-end">
-              <a href="http://127.0.0.1:8001/contact" class="btn btn-light"
-                >Get in Touch</a
-              >
+              <NuxtLink :to="{ name: 'contact-us' }" class="btn btn-light">
+                Get in Touch
+              </NuxtLink>
             </div>
           </div>
         </div>
