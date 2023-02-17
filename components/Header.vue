@@ -920,15 +920,7 @@
                         <span class="me-2"><i class="far fa-phone"></i></span>
                         <div class="drop-title">Contact Us</div>
                       </nuxt-link>
-                      <!-- <a
-                        href="https://docs.trader4.net/blog/tags/news"
-                        target="_blank"
-                        class="dropdown-link">
-                        <span class="me-2"
-                          ><i class="far fa-newspaper"></i
-                        ></span>
-                        <div class="drop-title">Our News</div>
-                      </a> -->
+
                       <nuxt-link
                         to="https://docs.trader4.net/blog/tags/news"
                         target="_blank"
@@ -947,14 +939,7 @@
                         ></span>
                         <div class="drop-title">Career</div>
                       </nuxt-link>
-                      <!-- <a
-                        href="http://127.0.0.1:8001/contact"
-                        class="dropdown-link">
-                        <span class="me-2"
-                          ><i class="far fa-rocket-launch"></i
-                        ></span>
-                        <div class="drop-title">Integrations</div>
-                      </a> -->
+
                       <nuxt-link
                         :to="{ name: 'contact-us' }"
                         class="dropdown-link">
@@ -966,15 +951,7 @@
                     </div>
                     <div class="dropdown-grid-item radius-right-side bg-light">
                       <h6 class="drop-heading">Utility Pages</h6>
-                      <!-- <a
-                        href="https://docs.trader4.net"
-                        target="_blank"
-                        class="dropdown-link">
-                        <span class="me-2"
-                          ><i class="far fa-life-ring"></i
-                        ></span>
-                        <div class="drop-title">Documentation</div>
-                      </a> -->
+
                       <nuxt-link
                         to="https://docs.trader4.net"
                         target="_blank"

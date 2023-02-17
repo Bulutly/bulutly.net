@@ -10,39 +10,33 @@
               class="integration-1"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-              aria-label="Your Brand Name"
-            >
+              aria-label="Your Brand Name">
               <img
                 src="~/assets/img/integations/1.png"
                 alt="integration"
-                class="img-fluid rounded-circle"
-              />
+                class="img-fluid rounded-circle" />
             </a>
             <a
               href="integration-single.html"
               class="integration-2"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-              aria-label="Your Brand Name"
-            >
+              aria-label="Your Brand Name">
               <img
                 src="~/assets/img/integations/2.png"
                 alt="integration"
-                class="img-fluid rounded-circle"
-              />
+                class="img-fluid rounded-circle" />
             </a>
             <a
               href="integration-single.html"
               class="integration-3"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-              aria-label="Your Brand Name"
-            >
+              aria-label="Your Brand Name">
               <img
                 src="~/assets/img/integations/3.png"
                 alt="integration"
-                class="img-fluid rounded-circle"
-              />
+                class="img-fluid rounded-circle" />
             </a>
 
             <a
@@ -50,39 +44,33 @@
               class="integration-4"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-              aria-label="Your Brand Name"
-            >
+              aria-label="Your Brand Name">
               <img
                 src="~/assets/img/integations/4.png"
                 alt="integration"
-                class="img-fluid rounded-circle"
-              />
+                class="img-fluid rounded-circle" />
             </a>
             <a
               href="integration-single.html"
               class="integration-5"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-              aria-label="Your Brand Name"
-            >
+              aria-label="Your Brand Name">
               <img
                 src="~/assets/img/integations/5.png"
                 alt="integration"
-                class="img-fluid rounded-circle"
-              />
+                class="img-fluid rounded-circle" />
             </a>
             <a
               href="integration-single.html"
               class="integration-6"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
-              aria-label="Your Brand Name"
-            >
+              aria-label="Your Brand Name">
               <img
                 src="~/assets/img/integations/6.png"
                 alt="integration"
-                class="img-fluid rounded-circle"
-              />
+                class="img-fluid rounded-circle" />
             </a>
           </div>
         </div>
@@ -103,39 +91,33 @@
                 class="integration-7"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                aria-label="Your Brand Name"
-              >
+                aria-label="Your Brand Name">
                 <img
                   src="~/assets/img/integations/7.png"
                   alt="integration"
-                  class="img-fluid rounded-circle"
-                />
+                  class="img-fluid rounded-circle" />
               </a>
               <a
                 href="integration-single.html"
                 class="integration-8"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                aria-label="Your Brand Name"
-              >
+                aria-label="Your Brand Name">
                 <img
                   src="~/assets/img/integations/8.png"
                   alt="integration"
-                  class="img-fluid rounded-circle"
-                />
+                  class="img-fluid rounded-circle" />
               </a>
               <a
                 href="integration-single.html"
                 class="integration-9"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                aria-label="Your Brand Name"
-              >
+                aria-label="Your Brand Name">
                 <img
                   src="~/assets/img/integations/9.png"
                   alt="integration"
-                  class="img-fluid rounded-circle"
-                />
+                  class="img-fluid rounded-circle" />
               </a>
 
               <a
@@ -143,39 +125,33 @@
                 class="integration-10"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                aria-label="Your Brand Name"
-              >
+                aria-label="Your Brand Name">
                 <img
                   src="~/assets/img/integations/10.png"
                   alt="integration"
-                  class="img-fluid rounded-circle"
-                />
+                  class="img-fluid rounded-circle" />
               </a>
               <a
                 href="integration-single.html"
                 class="integration-11"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                aria-label="Your Brand Name"
-              >
+                aria-label="Your Brand Name">
                 <img
                   src="~/assets/img/integations/11.png"
                   alt="integration"
-                  class="img-fluid rounded-circle"
-                />
+                  class="img-fluid rounded-circle" />
               </a>
               <a
                 href="integration-single.html"
                 class="integration-12"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
-                aria-label="Your Brand Name"
-              >
+                aria-label="Your Brand Name">
                 <img
                   src="~/assets/img/integations/12.png"
                   alt="integration"
-                  class="img-fluid rounded-circle"
-                />
+                  class="img-fluid rounded-circle" />
               </a>
             </div>
           </div>
@@ -185,18 +161,15 @@
         <div class="col-lg-5 col-md-12">
           <a
             href="integration-single.html"
-            class="mb-4 mb-lg-0 mb-xl-0 position-relative text-decoration-none connected-app-single border border-light border-2 rounded-custom d-block overflow-hidden p-5"
-          >
+            class="mb-4 mb-lg-0 mb-xl-0 position-relative text-decoration-none connected-app-single border border-light border-2 rounded-custom d-block overflow-hidden p-5">
             <div class="position-relative connected-app-content">
               <div
-                class="integration-logo bg-custom-light rounded-circle p-2 d-inline-block"
-              >
+                class="integration-logo bg-custom-light rounded-circle p-2 d-inline-block">
                 <img
                   src="~/assets/img/integations/4.png"
                   width="40"
                   alt="integration"
-                  class="img-fluid"
-                />
+                  class="img-fluid" />
               </div>
               <h5>Google Drive</h5>
               <p class="mb-0 text-body">
@@ -214,18 +187,15 @@
         <div class="col-lg-5 col-md-12">
           <a
             href="integration-single.html"
-            class="position-relative text-decoration-none connected-app-single border border-light border-2 rounded-custom d-block overflow-hidden p-5"
-          >
+            class="position-relative text-decoration-none connected-app-single border border-light border-2 rounded-custom d-block overflow-hidden p-5">
             <div class="position-relative connected-app-content">
               <div
-                class="integration-logo bg-custom-light rounded-circle p-2 d-inline-block"
-              >
+                class="integration-logo bg-custom-light rounded-circle p-2 d-inline-block">
                 <img
                   src="~/assets/img/integations/9.png"
                   width="40"
                   alt="integration"
-                  class="img-fluid"
-                />
+                  class="img-fluid" />
               </div>
               <h5>Google Drive</h5>
               <p class="mb-0 text-body">

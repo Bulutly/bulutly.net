@@ -39,11 +39,16 @@
                   Our support will help you from
                   <strong>9am to 5pm EST.</strong>
                 </p>
-                <a
+                <!-- <a
                   href="http://127.0.0.1:8001/panel/tickets/create"
                   class="read-more-link text-decoration-none"
                   ><i class="far fa-comment-alt-dots me-2"></i> Live Chat Now</a
-                >
+                > -->
+                <NuxtLink
+                  :to="{ name: 'index' }"
+                  class="read-more-link text-decoration-none">
+                  <i class="far fa-comment-alt-dots me-2"></i> Live Chat Now
+                </NuxtLink>
               </div>
             </div>
           </div>

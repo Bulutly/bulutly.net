@@ -4,7 +4,7 @@
     <section
       class="hero-section ptb-120"
       style="
-        background: url('~/assets/img/shape/dot-dot-wave-shape.svg') no-repeat
+        background: url('~assets/img/shape/dot-dot-wave-shape.svg') no-repeat
           bottom center;
       ">
       <div class="container">

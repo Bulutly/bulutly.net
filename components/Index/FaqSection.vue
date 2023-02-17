@@ -76,14 +76,13 @@
               </h5>
               <p class="mb-0">
                 <strong>Yes</strong>, You can visit our
-                <strong
-                  ><a
-                    href="https://www.youtube.com/channel/UCe8CyzFbWhYoH0OAQuh7shg"
-                    target="_blank"
-                    rel="noreferrer"
-                    >YouTube channel</a
-                  ></strong
-                >
+
+                <NuxtLink
+                  to="https://www.youtube.com/channel/UCe8CyzFbWhYoH0OAQuh7shg"
+                  target="_blank"
+                  rel="noreferrer">
+                  <strong>YouTube channel</strong>
+                </NuxtLink>
                 to see the live performance of the products.
               </p>
             </div>
@@ -104,9 +103,9 @@
           </div>
           <div class="col-lg-3">
             <div class="text-lg-end">
-              <a href="http://127.0.0.1:8001/contact" class="btn btn-light"
-                >Get in Touch</a
-              >
+              <NuxtLink :to="{ name: 'contact-us' }" class="btn btn-light">
+                Get in Touch
+              </NuxtLink>
             </div>
           </div>
         </div>

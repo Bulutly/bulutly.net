@@ -21,7 +21,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10">
           <div
-            class="pricing-content-wrap mb--100 bg-white rounded-custom shadow-lg border d-fle z-10 position-relative">
+            class="pricing-content-wrap mb--100 bg-white rounded-custom shadow-lg border d-fle position-relative">
             <div
               class="price-feature-col pricing-feature-info left-radius bg-primary-soft p-5">
               <h5>Our Products</h5>
@@ -29,43 +29,48 @@
                 class="list-unstyled pricing-feature-list pricing-included-list mb-0">
                 <li class="py-1">
                   <i class="fas fa-check-circle text-primary me-2"></i>
-                  <a
-                    href="http://127.0.0.1:8001/products/supply-demand"
+
+                  <NuxtLink
+                    :to="{ name: 'products-supply-demand' }"
+                    class="text-decoration-none text-body">
+                    Supply Demand
+                  </NuxtLink>
+                </li>
+                <li class="py-1">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+
+                  <NuxtLink
+                    :to="{ name: 'products-algo-portfolio' }"
+                    class="text-decoration-none text-body">
+                    Algo Portfolio
+                  </NuxtLink>
+                </li>
+                <li class="py-1">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+
+                  <NuxtLink
+                    :to="{ name: 'products-trend-friend' }"
                     class="text-decoration-none text-body"
-                    >Supply Demand</a
+                    >Trend Friend</NuxtLink
                   >
                 </li>
                 <li class="py-1">
                   <i class="fas fa-check-circle text-primary me-2"></i>
-                  <a
-                    href="http://127.0.0.1:8001/products/algo-portfolio"
-                    class="text-decoration-none text-body"
-                    >Algo Portfolio</a
-                  >
+
+                  <NuxtLink
+                    :to="{ name: 'products-dashboard-x' }"
+                    class="text-decoration-none text-body">
+                    Dashboard X
+                  </NuxtLink>
                 </li>
                 <li class="py-1">
                   <i class="fas fa-check-circle text-primary me-2"></i>
-                  <a
-                    href="http://127.0.0.1:8001/products/trend-friend"
-                    class="text-decoration-none text-body"
-                    >Trend Friend</a
-                  >
-                </li>
-                <li class="py-1">
-                  <i class="fas fa-check-circle text-primary me-2"></i>
-                  <a
-                    href="http://127.0.0.1:8001/products/dashboard-x"
-                    class="text-decoration-none text-body"
-                    >Dashboard X</a
-                  >
-                </li>
-                <li class="py-1">
-                  <i class="fas fa-check-circle text-primary me-2"></i>
-                  <a
-                    href="http://127.0.0.1:8001/products/trend-line"
-                    class="text-decoration-none text-body"
-                    >Trend Line</a
-                  >
+
+                  <NuxtLink
+                    :to="{ name: 'products-trend-line' }"
+                    class="text-decoration-none text-body">
+                    Trend Line
+                  </NuxtLink>
                 </li>
               </ul>
             </div>
@@ -114,11 +119,16 @@
                       $99<small>.99</small> <span>/month</span>
                     </h4>
                   </div>
-                  <a
+                  <!-- <a
                     href="http://127.0.0.1:8001/panel/accounts/subscription"
                     class="btn btn-primary mt-3"
                     >Let`s Start</a
-                  >
+                  > -->
+                  <NuxtLink
+                    :to="{ name: 'index' }"
+                    class="btn btn-primary mt-3">
+                    Let`s Start
+                  </NuxtLink>
                 </div>
                 <div
                   class="tab-pane fade"
@@ -134,11 +144,16 @@
                       $999<small>.99</small> <span>/month</span>
                     </h4>
                   </div>
-                  <a
+                  <!-- <a
                     href="http://127.0.0.1:8001/panel/accounts/subscription"
                     class="btn btn-primary mt-3"
                     >Let`s Start</a
-                  >
+                  > -->
+                  <NuxtLink
+                    :to="{ name: 'index' }"
+                    class="btn btn-primary mt-3">
+                    Let`s Start
+                  </NuxtLink>
                 </div>
               </div>
             </div>
