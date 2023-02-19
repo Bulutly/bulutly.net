@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      class="page-header position-relative overflow-hidden ptb-120 bg-dark"
+      class="page-header position-relative overflow-hidden ptb-60 bg-dark"
       style="background: url('/img/page-header-bg.svg') no-repeat bottom left"
     >
       <div class="container">

@@ -235,7 +235,7 @@
                     </li>
                     <li>
                       <nuxt-link
-                        to="https://docs.trader4.net/apis/account/overview/"
+                        to="https://docs.trader4.net/en/api/"
                         target="_blank"
                         class="text-decoration-none">
                         API Docs
@@ -312,7 +312,7 @@
             <div class="copyright-text">
               <p class="mb-lg-0 mb-md-0">
                 &copy; 2017-2022 Trader4, All Rights Reserved. Build
-                <code>0.0.03</code>
+                <code>0.0.04</code>
               </p>
             </div>
           </div>

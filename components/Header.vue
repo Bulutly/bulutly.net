@@ -1,22 +1,6 @@
 <template>
   <div>
-    <!--preloader start-->
-    <!-- TODO:add custom preloader with vue -->
-    <!-- <div id="preloader">
-      <div class="preloader-wrap">
-        <img
-          src="~/assets/img/favicon.png"
-          alt="logo"
-          class="img-fluid preloader-icon"
-        />
-        <div class="loading-bar"></div>
-      </div>
-    </div> -->
-    <!--preloader end-->
-    <!--main content wrapper start-->
     <div class="main-wrapper">
-      <!--header section start-->
-      <!--header start-->
       <header class="main-header w-100">
         <nav class="navbar navbar-expand-xl navbar-light sticky-header">
           <div
@@ -275,13 +259,13 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    Education
+                    Resources
                   </nuxt-link>
                   <div
                     class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                     <div class="dropdown-grid rounded-custom width-full">
                       <div class="dropdown-grid-item">
-                        <h6 class="drop-heading">Useful Links</h6>
+                        <h6 class="drop-heading">T4 Academy</h6>
 
                         <nuxt-link
                           to="https://docs.trader4.net/blog/tags/trading-strategy"
@@ -400,7 +384,7 @@
                     class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                     <div class="dropdown-grid rounded-custom width-full">
                       <div class="dropdown-grid-item">
-                        <h6 class="drop-heading">Useful Links</h6>
+                        <h6 class="drop-heading">Company</h6>
 
                         <nuxt-link
                           :to="{ name: 'about-us' }"
@@ -455,7 +439,7 @@
                       </div>
                       <div
                         class="dropdown-grid-item radius-right-side bg-light">
-                        <h6 class="drop-heading">Utility Pages</h6>
+                        <h6 class="drop-heading">Support</h6>
                         <!-- <a
                           href="https://docs.trader4.net"
                           target="_blank"
@@ -521,9 +505,10 @@
                 >Login</a
               > -->
               <nuxt-link
-                :to="{ name: 'auth-login' }"
-                class="btn btn-link text-decoration-none me-2">
-                Logins
+                :to="{ name: 'contact-us' }"
+                class="btn text-decoration-none text-dark">
+                <i class="fas fa-phone"></i>
+                +447888872710
               </nuxt-link>
               <!-- <a
                 href="http://127.0.0.1:8001/auth/register"
@@ -532,8 +517,8 @@
               > -->
               <nuxt-link
                 :to="{ name: 'auth-register' }"
-                class="btn btn-primary">
-                Start
+                class="btn btn-primary btn-sm">
+                Get Started
               </nuxt-link>
             </div>
           </div>
