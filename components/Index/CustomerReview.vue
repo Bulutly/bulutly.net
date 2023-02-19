@@ -78,14 +78,14 @@
                         alt="testimonial author" />
                       <div
                         class="customer-info text-white d-flex align-items-center">
-                        <a
-                          href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
-                          class="video-icon popup-youtube text-decoration-none"
-                          ><i class="fas fa-play"></i>
+                        <NuxtLink
+                          to="http://www.youtube.com/watch?v=hAP2QF--2Dg"
+                          class="video-icon popup-youtube text-decoration-none">
+                          <i class="fas fa-play"></i>
                           <span class="text-white ms-2 small">
                             Watch Video</span
-                          ></a
-                        >
+                          >
+                        </NuxtLink>
                       </div>
                       <div
                         class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
@@ -149,14 +149,14 @@
                         alt="testimonial author" />
                       <div
                         class="customer-info text-white d-flex align-items-center">
-                        <a
-                          href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
-                          class="video-icon popup-youtube text-decoration-none"
-                          ><i class="fas fa-play"></i>
+                        <NuxtLink
+                          to="http://www.youtube.com/watch?v=hAP2QF--2Dg"
+                          class="video-icon popup-youtube text-decoration-none">
+                          <i class="fas fa-play"></i>
                           <span class="text-white ms-2 small">
                             Watch Video</span
-                          ></a
-                        >
+                          >
+                        </NuxtLink>
                       </div>
                       <div
                         class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
@@ -220,14 +220,14 @@
                         alt="testimonial author" />
                       <div
                         class="customer-info text-white d-flex align-items-center">
-                        <a
-                          href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
-                          class="video-icon popup-youtube text-decoration-none"
-                          ><i class="fas fa-play"></i>
+                        <NuxtLink
+                          to="http://www.youtube.com/watch?v=hAP2QF--2Dg"
+                          class="video-icon popup-youtube text-decoration-none">
+                          <i class="fas fa-play"></i>
                           <span class="text-white ms-2 small">
                             Watch Video</span
-                          ></a
-                        >
+                          >
+                        </NuxtLink>
                       </div>
                       <div
                         class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
@@ -291,14 +291,14 @@
                         alt="testimonial author" />
                       <div
                         class="customer-info text-white d-flex align-items-center">
-                        <a
-                          href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
-                          class="video-icon popup-youtube text-decoration-none"
-                          ><i class="fas fa-play"></i>
+                        <NuxtLink
+                          to="http://www.youtube.com/watch?v=hAP2QF--2Dg"
+                          class="video-icon popup-youtube text-decoration-none">
+                          <i class="fas fa-play"></i>
                           <span class="text-white ms-2 small">
                             Watch Video</span
-                          ></a
-                        >
+                          >
+                        </NuxtLink>
                       </div>
                       <div
                         class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
@@ -363,14 +363,14 @@
                         alt="testimonial author" />
                       <div
                         class="customer-info text-white d-flex align-items-center">
-                        <a
-                          href="http://www.youtube.com/watch?v=hAP2QF--2Dg"
-                          class="video-icon popup-youtube text-decoration-none"
-                          ><i class="fas fa-play"></i>
+                        <NuxtLink
+                          to="http://www.youtube.com/watch?v=hAP2QF--2Dg"
+                          class="video-icon popup-youtube text-decoration-none">
+                          <i class="fas fa-play"></i>
                           <span class="text-white ms-2 small">
                             Watch Video</span
-                          ></a
-                        >
+                          >
+                        </NuxtLink>
                       </div>
                       <div
                         class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
