@@ -1,12 +1,6 @@
 <template>
   <div>
     <div class="main-wrapper">
-      <SharedPageHeaderSection
-        title="Price Suit to Your Business"
-        desc=" Seamlessly actualize client-based users after out-of-the-box
-              value. Globally embrace strategic data through frictionless
-              expertise."
-      />
       <IndexPricingSection />
       <PricingFaq />
       <AboutUsTestimonial />
