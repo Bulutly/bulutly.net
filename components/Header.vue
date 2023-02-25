@@ -515,8 +515,10 @@
                 class="btn btn-primary"
                 >Start</a
               > -->
+
+              <!-- TODO:later navigate to Login Page -->
               <nuxt-link
-                :to="{ name: 'auth-register' }"
+                :to="{ name: 'index' }"
                 class="btn btn-primary btn-sm">
                 Get Started
               </nuxt-link>
@@ -979,14 +981,16 @@
               </li>
             </ul>
             <div class="action-btns mt-4 ps-3">
+              <!-- TODO:later navigate to Login Page -->
               <nuxt-link
-                :to="{ name: 'auth-login' }"
+                :to="{ name: 'index' }"
                 class="btn btn-link text-decoration-none me-2">
                 Login
               </nuxt-link>
 
+              <!-- TODO:later navigate to Register Page -->
               <nuxt-link
-                :to="{ name: 'auth-register' }"
+                :to="{ name: 'index' }"
                 class="btn btn-primary">
                 Start
               </nuxt-link>
