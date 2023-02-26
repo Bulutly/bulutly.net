@@ -9,9 +9,7 @@ export default defineNuxtConfig({
         {
           src: "/js/popper.min.js",
         },
-        {
-          src: "/js/template-scripts.js",
-        },
+
         {
           src: "/js/flickity.pkgd.min.js",
         },
@@ -39,6 +37,9 @@ export default defineNuxtConfig({
         {
           src: "/owlcarousel/owl.carousel.min.js",
         },
+        {
+          src: "/js/template-scripts.js",
+        },
       ],
     },
   },
@@ -47,6 +48,14 @@ export default defineNuxtConfig({
     "@/assets/icons-pack/fontawesome-5/css/all.css",
     "@/assets/css/main.min.css",
   ],
+  modules: ["@pinia/nuxt"],
+  pinia: {
+    autoImports: [
+      // automatically imports `defineStore`
+      "defineStore", // import { defineStore } from 'pinia'
+      ["defineStore", "definePiniaStore"], // import { defineStore as definePiniaStore } from 'pinia'
+    ],
+  },
   //   app: {
   //     head: {
   //       script: [

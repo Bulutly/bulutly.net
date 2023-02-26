@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Header />
+    <Header  />
     <slot />
     <Footer />
   </div>
 </template>
+<script lang="ts" setup>
 
-<script>
-export default {};
+
 </script>

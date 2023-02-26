@@ -1,12 +1,15 @@
 <template>
   <div
     id="coodiv-header"
-    class="d-flex mx-auto flex-column moon-edition services-page">
+    class="d-flex mx-auto flex-column moon-edition"
+    :class="$global.headerClass"
+  >
     <span class="services-page-bg-overflow"></span>
     <!-- Fixed navbar -->
     <nav
       id="coodiv-navbar-header"
-      class="navbar navbar-expand-md fixed-header-layout">
+      class="navbar navbar-expand-md fixed-header-layout"
+    >
       <div class="container main-header-coodiv-s">
         <a class="navbar-brand" href="index.html">
           <img class="w-logo" src="../assets/img/header/logo.png" alt="" />
@@ -15,14 +18,16 @@
         <button
           class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto"
           data-toggle="offcanvas"
-          data-target="#offcanvas-menu-home">
+          data-target="#offcanvas-menu-home"
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
         <div
           class="collapse navbar-collapse navbar-offcanvas"
-          id="offcanvas-menu-home">
+          id="offcanvas-menu-home"
+        >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mega-menu demos-dropdown dropdown active">
               <a
@@ -37,7 +42,8 @@
               >
               <div
                 class="dropdown-menu coodiv-menu-dropdown"
-                aria-labelledby="header-first-drop-down">
+                aria-labelledby="header-first-drop-down"
+              >
                 <div class="dropdown-menu-wrapper">
                   <div class="row justify-content-start">
                     <div class="demos-wrapper col-md-6 col-12 py-7 px-8">
@@ -53,10 +59,12 @@
                           <a href="index.html" class="demos-box">
                             <img
                               src="../assets/img/demo/demos/sefar.jpg"
-                              alt="" />
+                              alt=""
+                            />
                             <div class="text">
                               <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0"
+                              >
                                 Sefar <span class="new-tag">NEW</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -72,10 +80,12 @@
                           <a href="#" class="demos-box">
                             <img
                               src="../assets/img/demo/demos/hoggar.jpg"
-                              alt="" />
+                              alt=""
+                            />
                             <div class="text">
                               <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0"
+                              >
                                 Hoggar <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -90,10 +100,12 @@
                           <a href="#" class="demos-box">
                             <img
                               src="../assets/img/demo/demos/atlas.jpg"
-                              alt="" />
+                              alt=""
+                            />
                             <div class="text">
                               <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0"
+                              >
                                 Atlas <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -108,10 +120,12 @@
                           <a href="#" class="demos-box">
                             <img
                               src="../assets/img/demo/demos/chrea.jpg"
-                              alt="" />
+                              alt=""
+                            />
                             <div class="text">
                               <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0"
+                              >
                                 Chrea <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -126,7 +140,8 @@
                     </div>
 
                     <div
-                      class="demos-wrapper border-right-0 col-md-6 col-12 py-7 px-8">
+                      class="demos-wrapper border-right-0 col-md-6 col-12 py-7 px-8"
+                    >
                       <h5 class="title mb-2">
                         Features sub-pages<small
                           >Using bredh elements you can build any page you
@@ -227,15 +242,18 @@
               >
               <div
                 class="dropdown-menu coodiv-menu-dropdown"
-                aria-labelledby="services-megamenu">
+                aria-labelledby="services-megamenu"
+              >
                 <div class="dropdown-menu-wrapper">
                   <div
-                    class="row justify-content-center bd-highlight mb-3 megamenu-items-header">
+                    class="row justify-content-center bd-highlight mb-3 megamenu-items-header"
+                  >
                     <div class="col-md col-12 bd-highlight">
                       <a class="megamenu-services-box" href="cloud-vps.html">
                         <i
                           style="background-color: #ff2934"
-                          class="fad fa-server"></i>
+                          class="fad fa-server"
+                        ></i>
                         <h5 class="coodiv-text-9 mb-0">Managed VPS</h5>
                         <p class="coodiv-text-12">
                           Get 100% worry-free, Fully Managed VPS Hosting with
@@ -248,7 +266,8 @@
                       <a class="megamenu-services-box" href="dedicated.html">
                         <i
                           style="background-color: #fede48"
-                          class="fad fa-hdd"></i>
+                          class="fad fa-hdd"
+                        ></i>
                         <h5 class="coodiv-text-9 mb-0">Dedicated Webhosting</h5>
                         <p class="coodiv-text-12">
                           Trust your site to the world’s #1 web host with 2 TB
@@ -272,7 +291,8 @@
                       <a class="megamenu-services-box" href="servers.html">
                         <i
                           style="background-color: #a2fbf3"
-                          class="fad fa-microchip"></i>
+                          class="fad fa-microchip"
+                        ></i>
                         <h5 class="coodiv-text-9 mb-0">Managed Servers</h5>
                         <p class="coodiv-text-12">
                           Get powerful fully Managed single tentant, bare metal
@@ -302,7 +322,8 @@
               >
               <div
                 class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
-                aria-labelledby="webhosting-megamenu">
+                aria-labelledby="webhosting-megamenu"
+              >
                 <div class="dropdown-menu-wrapper min-padding">
                   <ul class="web-hosting-menu-header">
                     <li>
@@ -373,7 +394,8 @@
               >
               <ul
                 class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header"
-                aria-labelledby="header-help-drop-down">
+                aria-labelledby="header-help-drop-down"
+              >
                 <div class="dropdown-menu-wrapper min-padding">
                   <li>
                     <a class="dropdown-item" href="help-center.html"
@@ -405,9 +427,11 @@
               >
               <div
                 class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
-                aria-labelledby="header-pages-drop-down">
+                aria-labelledby="header-pages-drop-down"
+              >
                 <div
-                  class="dropdown-menu-wrapper min-padding row justify-content-center pages-links">
+                  class="dropdown-menu-wrapper min-padding row justify-content-center pages-links"
+                >
                   <h5 class="title coodiv-text-9 col-12 mt-2 mb-5">
                     Bredh 2.0 features sub-pages
                     <small class="d-block coodiv-text-12 color-opacity-5 mt-n2"
@@ -539,17 +563,20 @@
             <!-- user header dropdown -->
             <div
               class="dropdown-menu coodiv-dropdown-header user-login-dropdown"
-              aria-labelledby="header-login-dropdown">
+              aria-labelledby="header-login-dropdown"
+            >
               <form
                 class="user-login-dropdown-form"
                 action="signin.html"
-                data-form="validate">
+                data-form="validate"
+              >
                 <div class="form-group username">
                   <input
                     type="email"
                     name="username"
                     placeholder="Your Email"
-                    class="form-control" />
+                    class="form-control"
+                  />
                   <i class="fal fa-at"></i>
                 </div>
 
@@ -558,7 +585,8 @@
                     type="password"
                     name="password"
                     placeholder="Password"
-                    class="form-control" />
+                    class="form-control"
+                  />
                   <i class="fal fa-lock"></i>
                 </div>
 
@@ -567,7 +595,8 @@
                   data-placement="left"
                   title="login"
                   class="user-login-dropdown-form-button"
-                  type="submit">
+                  type="submit"
+                >
                   <i class="fas fa-angle-right"></i>
                 </button>
               </form>
@@ -608,7 +637,8 @@
             alt="Bootstrap Themes"
             width="640"
             height="584"
-            loading="lazy" />
+            loading="lazy"
+          />
         </div>
       </div>
     </main>
@@ -642,10 +672,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Header",
-};
+<script lang="ts" setup>
+const {
+  $global
+} = useAppConfig();
 </script>
 
 <style></style>
