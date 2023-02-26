@@ -47,6 +47,14 @@ export default defineNuxtConfig({
     "@/assets/icons-pack/fontawesome-5/css/all.css",
     "@/assets/css/main.min.css",
   ],
+  modules: ["@pinia/nuxt"],
+  pinia: {
+    autoImports: [
+      // automatically imports `defineStore`
+      'defineStore', // import { defineStore } from 'pinia'
+      ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
+    ],
+  },
   //   app: {
   //     head: {
   //       script: [

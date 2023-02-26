@@ -11,6 +11,8 @@
     "nuxt": "^3.2.2"
   },
   "dependencies": {
-    "jquery": "^3.6.3"
+    "@pinia/nuxt": "^0.4.7",
+    "jquery": "^3.6.3",
+    "pinia": "^2.0.32"
   }
 }
