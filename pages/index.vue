@@ -113,7 +113,8 @@
       </div>
 
       <div
-        class="row justify-content-start second-pricing-table-container mr-tp-30">
+        class="row justify-content-start second-pricing-table-container mr-tp-30"
+      >
         <div class="col-md-4 px-0">
           <div class="second-pricing-table">
             <h5 class="second-pricing-table-title">
@@ -285,7 +286,8 @@
           <div class="coodiv-feutres-black-version text-center">
             <i
               style="background: #fede48"
-              class="fad fa-binoculars mx-auto"></i>
+              class="fad fa-binoculars mx-auto"
+            ></i>
             <div class="text">
               <h5 class="coodiv-text-7 font-weight-bold mb-0">
                 Global data centers.
@@ -306,7 +308,8 @@
           alt="statistics"
           title="statistics"
           class="section-product-introduction-image"
-          loading="lazy" />
+          loading="lazy"
+        />
       </div>
     </div>
   </section>
@@ -318,7 +321,8 @@
           <div class="content-text-author mb-md-0 mb-14">
             <p
               style="color: #ee9823"
-              class="eyebrow content-text-author_eyebrow">
+              class="eyebrow content-text-author_eyebrow"
+            >
               Super fast development
             </p>
             <h3 class="coodiv-text-4 font-weight-bold">
@@ -343,12 +347,14 @@
         <div class="col-md-6 col-12">
           <div
             style="background-color: #fede48"
-            class="section_text_graphic_image">
+            class="section_text_graphic_image"
+          >
             <img
               src="../assets/img/demo/features/yellow-feature.png"
               alt=""
               title=""
-              loading="lazy" />
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -357,19 +363,22 @@
         <div class="col-md-6 col-12">
           <div
             style="background-color: #ff5059"
-            class="section_text_graphic_image">
+            class="section_text_graphic_image"
+          >
             <img
               src="../assets/img/demo/features/red-feature.png"
               alt=""
               title=""
-              loading="lazy" />
+              loading="lazy"
+            />
           </div>
         </div>
         <div class="col-md-6 col-12 d-flex align-items-center">
           <div class="content-text-author mt-md-0 mt-14">
             <p
               style="color: #ff2934"
-              class="eyebrow content-text-author_eyebrow">
+              class="eyebrow content-text-author_eyebrow"
+            >
               MANAGED WORDPRESS ECOMMERCE
             </p>
             <h3 class="coodiv-text-4 font-weight-bold">
@@ -526,6 +535,9 @@
     </div>
   </section>
 </template>
-<script></script>
+<script lang="ts" setup>
+const { $global } = useAppConfig();
+$global.headerClass = "services-page";
+</script>
 
 <style></style>
