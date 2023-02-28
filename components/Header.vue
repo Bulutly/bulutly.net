@@ -42,9 +42,6 @@
                   <nuxt-link
                     :to="{ name: 'products' }"
                     class="nav-link dropdown-toggle"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
                     >Products & Services</nuxt-link
                   >
                   <div
@@ -80,7 +77,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-trend-friend' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-success rounded text-white fw-bold"
@@ -93,7 +90,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-dashboard-x' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-danger rounded text-white fw-bold"
@@ -106,7 +103,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-bazaar' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-info rounded text-white fw-bold"
@@ -119,7 +116,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-trend-line' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-warning rounded text-white fw-bold"
@@ -132,7 +129,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'products-bulut' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-primary rounded text-white fw-bold"
@@ -149,7 +146,7 @@
                         <h6 class="drop-heading">Let`s Work Together</h6>
 
                         <nuxt-link
-                          :to="{ name: 'services-trading-coaching' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-primary rounded text-white fw-bold"
@@ -162,7 +159,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'services-algo-trading-coach' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-dark rounded text-white fw-bold"
@@ -175,7 +172,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'services-trading-mastermind' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-warning rounded text-white fw-bold"
@@ -188,7 +185,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'services-recovery' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-secondary rounded text-white fw-bold"
@@ -201,7 +198,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'services-trade-road' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-info rounded text-white fw-bold"
@@ -214,7 +211,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'services-warren-program' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-danger rounded text-white fw-bold"
@@ -227,7 +224,7 @@
                         >
 
                         <nuxt-link
-                          :to="{ name: 'services-millionaire' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span
                             class="demo-list bg-success rounded text-white fw-bold"
@@ -245,16 +242,8 @@
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                  <!-- <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >Education</a
-                  > -->
                   <nuxt-link
-                    :to="{ name: 'index' }"
+                    :to="{ name: 'under-construction' }"
                     class="nav-link dropdown-toggle"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -367,13 +356,13 @@
                   </div>
                 </li>
                 <li>
-                  <nuxt-link :to="{ name: 'pricing' }" class="nav-link">
+                  <nuxt-link :to="{ name: 'under-construction' }" class="nav-link">
                     Pricing
                   </nuxt-link>
                 </li>
                 <li class="nav-item dropdown">
                   <nuxt-link
-                    :to="{ name: 'about-us' }"
+                    :to="{ name: 'under-construction' }"
                     class="nav-link dropdown-toggle"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -385,9 +374,8 @@
                     <div class="dropdown-grid rounded-custom width-full">
                       <div class="dropdown-grid-item">
                         <h6 class="drop-heading">Company</h6>
-
                         <nuxt-link
-                          :to="{ name: 'about-us' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link px-0">
                           <span class="me-2"
                             ><i class="far fa-building"></i
@@ -396,7 +384,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'contact-us' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link px-0">
                           <span class="me-2"><i class="far fa-phone"></i></span>
                           <div class="drop-title">Contact Us</div>
@@ -413,21 +401,13 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          :to="{ name: 'career' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link px-0">
                           <span class="me-2"
                             ><i class="far fa-graduation-cap"></i
                           ></span>
                           <div class="drop-title">Career</div>
                         </nuxt-link>
-                        <!-- <a
-                          href="http://127.0.0.1:8001/under-construction"
-                          class="dropdown-link">
-                          <span class="me-2"
-                            ><i class="far fa-rocket-launch"></i
-                          ></span>
-                          <div class="drop-title">Integrations</div>
-                        </a> -->
                         <nuxt-link
                           :to="{ name: 'under-construction' }"
                           class="dropdown-link">
@@ -440,17 +420,8 @@
                       <div
                         class="dropdown-grid-item radius-right-side bg-light">
                         <h6 class="drop-heading">Support</h6>
-                        <!-- <a
-                          href="https://docs.trader4.net"
-                          target="_blank"
-                          class="dropdown-link">
-                          <span class="me-2"
-                            ><i class="far fa-life-ring"></i
-                          ></span>
-                          <div class="drop-title">Help Center</div>
-                        </a> -->
                         <nuxt-link
-                          to="https://docs.trader4.net"
+                          to="https://docs.trader4.net/guide/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
@@ -458,16 +429,8 @@
                           ></span>
                           <div class="drop-title">Help Center</div>
                         </nuxt-link>
-                        <!-- <a
-                          href="http://127.0.0.1:8001/panel/tickets/create"
-                          class="dropdown-link">
-                          <span class="me-2"
-                            ><i class="far fa-headset"></i
-                          ></span>
-                          <div class="drop-title">Support Center</div>
-                        </a> -->
                         <nuxt-link
-                          :to="{ name: 'index' }"
+                          :to="{ name: 'under-construction' }"
                           class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-headset"></i
@@ -475,7 +438,7 @@
                           <div class="drop-title">Support Center</div>
                         </nuxt-link>
 
-                        <nuxt-link :to="{ name: 'faq' }" class="dropdown-link">
+                        <nuxt-link :to="{ name: 'under-construction' }" class="dropdown-link">
                           <span class="me-2"
                             ><i class="far fa-question"></i
                           ></span>
@@ -499,14 +462,9 @@
             </div>
             <div
               class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-              <!-- <a
-                href="http://127.0.0.1:8001/auth/login"
-                class="btn btn-link text-decoration-none me-2"
-                >Login</a
-              > -->
               <nuxt-link
                 :to="{ name: 'contact-us' }"
-                class="btn text-decoration-none text-dark">
+                class="me-3 fw-bolder text-decoration-none text-dark">
                 <i class="fas fa-phone"></i>
                 +447888872710
               </nuxt-link>
@@ -518,7 +476,8 @@
 
               <!-- TODO:later navigate to Login Page -->
               <nuxt-link
-                :to="{ name: 'index' }"
+                to="https://app.trader4.net"
+                target="_blank"
                 class="btn btn-primary btn-sm">
                 Get Started
               </nuxt-link>
@@ -981,25 +940,17 @@
               </li>
             </ul>
             <div class="action-btns mt-4 ps-3">
-              <!-- TODO:later navigate to Login Page -->
               <nuxt-link
-                :to="{ name: 'index' }"
-                class="btn btn-link text-decoration-none me-2">
-                Login
-              </nuxt-link>
-
-              <!-- TODO:later navigate to Register Page -->
-              <nuxt-link
+                to="https://app.trader4.net"
+                target="_blank"
                 :to="{ name: 'index' }"
                 class="btn btn-primary">
-                Start
+                Get Started
               </nuxt-link>
             </div>
           </div>
         </div>
       </header>
-      <!--header end-->
-      <!--header section end-->
     </div>
   </div>
 </template>
