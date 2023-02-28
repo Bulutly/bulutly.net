@@ -473,9 +473,15 @@
                 class="btn btn-primary"
                 >Start</a
               > -->
+
+              <!-- TODO:later navigate to Login Page -->
               <nuxt-link
+<<<<<<< HEAD
                 to="https://app.trader4.net"
                 target="_blank"
+=======
+                :to="{ name: 'index' }"
+>>>>>>> f40d818fdf84d0f6978574f26dec83561672029a
                 class="btn btn-primary btn-sm">
                 Get Started
               </nuxt-link>
@@ -938,15 +944,25 @@
               </li>
             </ul>
             <div class="action-btns mt-4 ps-3">
+              <!-- TODO:later navigate to Login Page -->
               <nuxt-link
+<<<<<<< HEAD
                 :to="{ name: 'contact-us' }"
+=======
+                :to="{ name: 'index' }"
+>>>>>>> f40d818fdf84d0f6978574f26dec83561672029a
                 class="btn btn-link text-decoration-none me-2">
                 Login
               </nuxt-link>
 
+              <!-- TODO:later navigate to Register Page -->
               <nuxt-link
+<<<<<<< HEAD
                 to="https://app.trader4.net"
                 target="_blank"
+=======
+                :to="{ name: 'index' }"
+>>>>>>> f40d818fdf84d0f6978574f26dec83561672029a
                 class="btn btn-primary">
                 Get Started
               </nuxt-link>
