@@ -11,35 +11,35 @@
                   <ul class="list-unstyled footer-nav-list mb-lg-0">
                     <li>
                       <nuxt-link
-                        :to="{ name: 'pricing' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Pricing
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'about-us' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         About Us
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'terms' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Terms
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'privacy' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Privacy
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'career' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Career
                       </nuxt-link>
@@ -65,7 +65,13 @@
               </div>
               <div class="col-md-3 col-lg-3 mt-4 mt-md-0 mt-lg-0">
                 <div class="footer-single-col">
-                  <h3>Products</h3>
+                  <h3>
+                    <nuxt-link
+                      :to="{ name: 'products' }"
+                      class="text-decoration-none text-black">
+                      Products
+                    </nuxt-link>
+                  </h3>
                   <ul class="list-unstyled footer-nav-list mb-lg-0">
                     <li>
                       <nuxt-link
@@ -83,21 +89,25 @@
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'products-trend-friend' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
-                        Trend Friend
+                        Algo Pishro
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'products-dashboard-x' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
-                        Dashboard X
+                        Algo Mirzakhani
+                        <span
+                            class="badge bg-primary-soft px-2 py-1 text-primary"
+                        >BETA</span
+                        >
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'products-bazaar' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Bazaar
                         <span
@@ -108,16 +118,16 @@
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'products-trend-line' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Trend Line
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'products-bulut' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
-                        Bulut
+                        Cloud Trading Server
                         <span
                           class="badge bg-primary-soft px-2 py-1 text-primary"
                           >BETA</span
@@ -137,35 +147,35 @@
                   <ul class="list-unstyled footer-nav-list mb-lg-0">
                     <li>
                       <nuxt-link
-                        :to="{ name: 'services-trading-coaching' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Trading Coaching
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'services-algo-trading-coach' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Algo Trading Coaching
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'services-trading-mastermind' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Trading Mastermind
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'services-recovery' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Account Recovery
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'services-trade-road' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Trade Road
                         <span
@@ -176,19 +186,19 @@
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'services-warren-program' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Warren Program
                       </nuxt-link>
                     </li>
                     <li>
                       <nuxt-link
-                        :to="{ name: 'services-millionaire' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
-                        Millionaire of the month
+                        Capital Road <small>(Funded Account)</small>
                         <span
                           class="badge bg-warning-soft px-2 py-1 text-warning"
-                          >VIP</span
+                          >PRO</span
                         >
                       </nuxt-link>
                     </li>
@@ -214,15 +224,17 @@
                       </nuxt-link>
                     </li>
                     <li>
-                      <!-- <a
-                        href="http://127.0.0.1:8001/panel/tickets"
-                        class="text-decoration-none"
-                        >Support</a
-                      > -->
                       <nuxt-link
-                        :to="{ name: 'index' }"
+                        :to="{ name: 'under-construction' }"
                         class="text-decoration-none">
                         Support
+                      </nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link
+                          :to="{ name: 'under-construction' }"
+                          class="text-decoration-none">
+                        Brand
                       </nuxt-link>
                     </li>
                     <li>
@@ -239,13 +251,6 @@
                         target="_blank"
                         class="text-decoration-none">
                         API Docs
-                      </nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link
-                        to="http://127.0.0.1:8001/brand-kit"
-                        class="text-decoration-none">
-                        Brand Kit
                       </nuxt-link>
                     </li>
                     <li>
@@ -312,13 +317,20 @@
             <div class="copyright-text">
               <p class="mb-lg-0 mb-md-0">
                 &copy; 2017-2022 Trader4, All Rights Reserved. Build
-                <code>0.0.04</code>
+                <code>0.0.05</code>
               </p>
             </div>
           </div>
           <div class="col-md-4 col-lg-4">
             <div class="footer-single-col text-start text-lg-end text-md-end">
               <ul class="list-unstyled list-inline footer-social-list mb-0">
+                <li class="list-inline-item">
+                  <nuxt-link
+                      to="https://github.com/traderfour"
+                      target="_blank">
+                    <i class="fab fa-github"></i>
+                  </nuxt-link>
+                </li>
                 <li class="list-inline-item">
                   <nuxt-link
                     to="https://www.youtube.com/channel/UCe8CyzFbWhYoH0OAQuh7shg"
