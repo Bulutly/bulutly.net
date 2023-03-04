@@ -18,9 +18,6 @@ RUN npm cache clean --force
 # Add src project
 ADD . .
 
-# Build project
-RUN npm run build
-
 # Generate public assets
 RUN npm run generate
 
@@ -30,7 +27,7 @@ FROM nginx:stable-alpine AS deploy
 WORKDIR /usr/src/app
 
 # Copy build directory
-COPY --from=build /usr/src/app/.output/public /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist /usr/share/nginx/html
 
 # copy nginx confiuration file
 COPY .ci/nginx.conf /etc/nginx/conf.d/default.conf
