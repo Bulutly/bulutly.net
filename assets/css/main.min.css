@@ -9023,7 +9023,7 @@ table#prices thead tr.price-dsc th.features.banner .banner-servers-box {
   }
 }
 .bg-img-header-new-moon {
-  background-image: url(../img/header/h_bg_02.svg);
+  background-image: url(~/assets/img/header/h_bg_02.svg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;

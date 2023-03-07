@@ -2,32 +2,28 @@
   <div
     id="coodiv-header"
     class="d-flex mx-auto flex-column moon-edition"
-    :class="$global.headerClass"
-  >
-    <span class="services-page-bg-overflow"></span>
+    :class="$global.headerClass">
+    <slot name="span" />
     <!-- Fixed navbar -->
     <nav
       id="coodiv-navbar-header"
-      class="navbar navbar-expand-md fixed-header-layout"
-    >
+      class="navbar navbar-expand-md fixed-header-layout">
       <div class="container main-header-coodiv-s">
-        <a class="navbar-brand" href="index.html">
-          <img class="w-logo" src="../assets/img/header/logo.png" alt="" />
-          <img class="b-logo" src="../assets/img/header/logo.png" alt="" />
-        </a>
+        <NuxtLink class="navbar-brand" :to="{ name: 'index' }">
+          <img class="w-logo" src="~/assets/img/header/logo.png" alt="" />
+          <img class="b-logo" src="~/assets/img/header/logo.png" alt="" />
+        </NuxtLink>
         <button
           class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto"
           data-toggle="offcanvas"
-          data-target="#offcanvas-menu-home"
-        >
+          data-target="#offcanvas-menu-home">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <div
           class="collapse navbar-collapse navbar-offcanvas"
-          id="offcanvas-menu-home"
-        >
+          id="offcanvas-menu-home">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mega-menu demos-dropdown dropdown active">
               <a
@@ -42,8 +38,7 @@
               >
               <div
                 class="dropdown-menu coodiv-menu-dropdown"
-                aria-labelledby="header-first-drop-down"
-              >
+                aria-labelledby="header-first-drop-down">
                 <div class="dropdown-menu-wrapper">
                   <div class="row justify-content-start">
                     <div class="demos-wrapper col-md-6 col-12 py-7 px-8">
@@ -56,15 +51,13 @@
                       </h5>
                       <div class="row justify-content-start">
                         <div class="col-md-6 col-12">
-                          <a href="index.html" class="demos-box">
+                          <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img
-                              src="../assets/img/demo/demos/sefar.jpg"
-                              alt=""
-                            />
+                              src="~/assets/img/demo/demos/sefar.jpg"
+                              alt="" />
                             <div class="text">
                               <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0"
-                              >
+                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Sefar <span class="new-tag">NEW</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -73,19 +66,17 @@
                                 provider.
                               </p>
                             </div>
-                          </a>
+                          </NuxtLink>
                         </div>
 
                         <div class="col-md-6 col-12">
-                          <a href="#" class="demos-box">
+                          <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img
-                              src="../assets/img/demo/demos/hoggar.jpg"
-                              alt=""
-                            />
+                              src="~/assets/img/demo/demos/hoggar.jpg"
+                              alt="" />
                             <div class="text">
                               <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0"
-                              >
+                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Hoggar <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -93,19 +84,17 @@
                                 purpose, domain sale websites.
                               </p>
                             </div>
-                          </a>
+                          </NuxtLink>
                         </div>
 
                         <div class="col-md-6 col-12">
-                          <a href="#" class="demos-box">
+                          <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img
-                              src="../assets/img/demo/demos/atlas.jpg"
-                              alt=""
-                            />
+                              src="~/assets/img/demo/demos/atlas.jpg"
+                              alt="" />
                             <div class="text">
                               <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0"
-                              >
+                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Atlas <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -113,19 +102,17 @@
                                 providers, personal blogs and similar sites.
                               </p>
                             </div>
-                          </a>
+                          </NuxtLink>
                         </div>
 
                         <div class="col-md-6 col-12">
-                          <a href="#" class="demos-box">
+                          <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img
-                              src="../assets/img/demo/demos/chrea.jpg"
-                              alt=""
-                            />
+                              src="~/assets/img/demo/demos/chrea.jpg"
+                              alt="" />
                             <div class="text">
                               <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0"
-                              >
+                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Chrea <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -134,14 +121,13 @@
                                 stunning
                               </p>
                             </div>
-                          </a>
+                          </NuxtLink>
                         </div>
                       </div>
                     </div>
 
                     <div
-                      class="demos-wrapper border-right-0 col-md-6 col-12 py-7 px-8"
-                    >
+                      class="demos-wrapper border-right-0 col-md-6 col-12 py-7 px-8">
                       <h5 class="title mb-2">
                         Features sub-pages<small
                           >Using bredh elements you can build any page you
@@ -152,48 +138,70 @@
                         <div class="col-md-6 col-12">
                           <ul class="domo-pages-wrapper">
                             <li>
-                              <a href="cloud-vps.html">Managed VPS hosting</a>
-                              <span class="badge badge-pill badge-warning"
-                                >HOT!</span
-                              >
-                            </li>
-                            <li><a href="cpanel.html">Cpanel hosting</a></li>
-                            <li>
-                              <a href="dedicated.html">Dedicated Webhosting</a>
-                            </li>
-                            <li>
-                              <a href="domains.html">Domain Name Search</a>
-                            </li>
-                            <li>
-                              <a href="games.html">Game Server Hosting</a>
-                            </li>
-                            <li>
-                              <a href="hosting.html">Webhosting Servers</a>
-                            </li>
-                            <li>
-                              <a href="icecast.html">Internet Radio Station</a>
-                            </li>
-                            <li>
-                              <a href="servers.html">Fully Managed Dedicated</a>
+                              <NuxtLink :to="{ name: 'cloud-vps' }">
+                                Managed VPS hosting
+                              </NuxtLink>
                               <span class="badge badge-pill badge-warning"
                                 >HOT!</span
                               >
                             </li>
                             <li>
-                              <a href="shoutcast.html"
-                                >manageed prodcast server</a
-                              >
-                            </li>
-                            <li><a href="ssl.html">SSL Certificates</a></li>
-                            <li>
-                              <a href="vps-reseller.html"
-                                >Start your own server</a
-                              >
+                              <NuxtLink :to="{ name: 'cpanel' }">
+                                Cpanel hosting
+                              </NuxtLink>
                             </li>
                             <li>
-                              <a href="wordpress.html"
-                                >WordPress Hosting Solution</a
+                              <NuxtLink :to="{ name: 'dedicated' }">
+                                Dedicated Webhosting
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'domains' }">
+                                Domain Name Search
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'games' }">
+                                Game Server Hosting
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'hosting' }">
+                                Webhosting Servers
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'icecast' }">
+                                Internet Radio Station
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'servers' }">
+                                Fully Managed Dedicated
+                              </NuxtLink>
+                              <span class="badge badge-pill badge-warning"
+                                >HOT!</span
                               >
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'shoutcast' }">
+                                managed prodcast server
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'ssl' }">
+                                SSL Certificates
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'vps-reseller' }">
+                                Start your own server
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'wordpress' }">
+                                WordPress Hosting Solution
+                              </NuxtLink>
                               <span class="badge badge-pill badge-warning"
                                 >HOT!</span
                               >
@@ -202,24 +210,56 @@
                         </div>
                         <div class="col-md-6 col-12">
                           <ul class="domo-pages-wrapper">
-                            <li><a href="404.html">404</a></li>
                             <li>
-                              <a href="help-center.html"
-                                >bredh customers help center</a
-                              >
-                            </li>
-                            <li><a href="about.html">about us</a></li>
-                            <li><a href="contact.html">contact us</a></li>
-                            <li>
-                              <a href="help-center.html">help center</a>
+                              <NuxtLink :to="{ name: '404' }"> 404 </NuxtLink>
                             </li>
                             <li>
-                              <a href="knowledgebase.html">knowledgebase</a>
+                              <NuxtLink :to="{ name: 'help-center' }">
+                                bredh customers help center
+                              </NuxtLink>
                             </li>
-                            <li><a href="privacy.html">Privacy</a></li>
-                            <li><a href="status.html">services status</a></li>
-                            <li><a href="signin.html">signin</a></li>
-                            <li><a href="signup.html">signup</a></li>
+                            <li>
+                              <NuxtLink :to="{ name: 'about-us' }">
+                                about us
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'contact-us' }">
+                                contact us
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'help-center' }">
+                                help center
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'knowledgebase' }">
+                                knowledgebase
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'privacy' }">
+                                Privacy
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink :to="{ name: 'status' }">
+                                services status
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink
+                                :to="{ name: 'authentication-sign-in' }">
+                                signin
+                              </NuxtLink>
+                            </li>
+                            <li>
+                              <NuxtLink
+                                :to="{ name: 'authentication-sign-up' }">
+                                signup
+                              </NuxtLink>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -242,63 +282,66 @@
               >
               <div
                 class="dropdown-menu coodiv-menu-dropdown"
-                aria-labelledby="services-megamenu"
-              >
+                aria-labelledby="services-megamenu">
                 <div class="dropdown-menu-wrapper">
                   <div
-                    class="row justify-content-center bd-highlight mb-3 megamenu-items-header"
-                  >
+                    class="row justify-content-center bd-highlight mb-3 megamenu-items-header">
                     <div class="col-md col-12 bd-highlight">
-                      <a class="megamenu-services-box" href="cloud-vps.html">
+                      <NuxtLink
+                        class="megamenu-services-box"
+                        :to="{ name: 'cloud-vps' }">
                         <i
                           style="background-color: #ff2934"
-                          class="fad fa-server"
-                        ></i>
+                          class="fad fa-server"></i>
                         <h5 class="coodiv-text-9 mb-0">Managed VPS</h5>
                         <p class="coodiv-text-12">
                           Get 100% worry-free, Fully Managed VPS Hosting with
                           NVMe SSD-powered KVM VPS – high performance hosting.
                         </p>
-                      </a>
+                      </NuxtLink>
                     </div>
 
                     <div class="col-md col-12 bd-highlight">
-                      <a class="megamenu-services-box" href="dedicated.html">
+                      <NuxtLink
+                        class="megamenu-services-box"
+                        :to="{ name: 'dedicated' }">
                         <i
                           style="background-color: #fede48"
-                          class="fad fa-hdd"
-                        ></i>
+                          class="fad fa-hdd"></i>
                         <h5 class="coodiv-text-9 mb-0">Dedicated Webhosting</h5>
                         <p class="coodiv-text-12">
                           Trust your site to the world’s #1 web host with 2 TB
                           of space, unlimited bandwidth and free domain.
                         </p>
-                      </a>
+                      </NuxtLink>
                     </div>
 
                     <div class="col-md col-12 bd-highlight">
-                      <a class="megamenu-services-box" href="games.html">
+                      <NuxtLink
+                        class="megamenu-services-box"
+                        :to="{ name: 'games' }">
                         <i class="fad fa-gamepad"></i>
                         <h5 class="coodiv-text-9 mb-0">Games Servers</h5>
                         <p class="coodiv-text-12">
                           No contract - no minimum terms and Immediate access
                           thanks to our system. Instantly online.
                         </p>
-                      </a>
+                      </NuxtLink>
                     </div>
 
                     <div class="col-md col-12 bd-highlight">
-                      <a class="megamenu-services-box" href="servers.html">
+                      <NuxtLink
+                        class="megamenu-services-box"
+                        :to="{ name: 'servers' }">
                         <i
                           style="background-color: #a2fbf3"
-                          class="fad fa-microchip"
-                        ></i>
+                          class="fad fa-microchip"></i>
                         <h5 class="coodiv-text-9 mb-0">Managed Servers</h5>
                         <p class="coodiv-text-12">
                           Get powerful fully Managed single tentant, bare metal
                           servers to run mission-critical apps.
                         </p>
-                      </a>
+                      </NuxtLink>
                     </div>
                   </div>
                 </div>
@@ -306,7 +349,9 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="status.html">Server Status</a>
+              <NuxtLink class="nav-link" :to="{ name: 'status' }">
+                Server Status
+              </NuxtLink>
             </li>
 
             <li class="nav-item dropdown">
@@ -322,59 +367,63 @@
               >
               <div
                 class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
-                aria-labelledby="webhosting-megamenu"
-              >
+                aria-labelledby="webhosting-megamenu">
                 <div class="dropdown-menu-wrapper min-padding">
                   <ul class="web-hosting-menu-header">
                     <li>
                       <i class="fad fa-hdd"></i>
-                      <a href="cloud-vps.html"
-                        >Managed VPS Hosting
+
+                      <NuxtLink :to="{ name: 'cloud-vps' }">
+                        Managed VPS Hosting
                         <span
                           >cPanel/WHM, Plesk Obsidian for easy WordPress
                           admin.</span
-                        ></a
-                      >
+                        >
+                      </NuxtLink>
                     </li>
                     <li>
                       <i class="fad fa-download"></i>
-                      <a href="dedicated.html"
-                        >Dedicated Hosting
+
+                      <NuxtLink :to="{ name: 'dedicated' }">
+                        Dedicated Hosting
                         <span
                           >Trust your site to the world’s #1 web host, starting
                           at $0.99.</span
-                        ></a
-                      >
+                        >
+                      </NuxtLink>
                     </li>
                     <li>
                       <i class="fad fa-microphone"></i>
-                      <a href="icecast.html"
-                        >Icecast & SHOUTcast
+
+                      <NuxtLink :to="{ name: 'icecast' }">
+                        Icecast & SHOUTcast
                         <span
                           >Broadcast worry-free with unlimited internet radio
                           hosting.</span
-                        ></a
-                      >
+                        >
+                      </NuxtLink>
                     </li>
                     <li>
                       <i class="fad fa-microchip"></i>
-                      <a href="servers.html"
-                        >Managed Servers
+
+                      <NuxtLink :to="{ name: 'servers' }">
+                        Managed Servers
                         <span
                           >Get powerful, bare metal servers to run
                           mission-critical apps.</span
-                        ></a
-                      >
+                        >
+                      </NuxtLink>
                     </li>
                     <li>
                       <i class="fad fa-lock"></i>
-                      <a href="ssl.html"
-                        >SSL Certificates
+
+                      <NuxtLink :to="{ name: 'ssl' }">
+                        SSL Certificates
                         <span
                           >domain SSL certificates only secure a single unique
                           domain or subdomain.</span
-                        ></a
-                      >
+                        >
+                      </NuxtLink>
                     </li>
                   </ul>
                 </div>
@@ -394,21 +443,26 @@
               >
               <ul
                 class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header"
-                aria-labelledby="header-help-drop-down"
-              >
+                aria-labelledby="header-help-drop-down">
                 <div class="dropdown-menu-wrapper min-padding">
                   <li>
-                    <a class="dropdown-item" href="help-center.html"
-                      >help center</a
-                    >
+                    <NuxtLink
+                      class="dropdown-item"
+                      :to="{ name: 'help-center' }">
+                      help center
+                    </NuxtLink>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="knowledgebase.html"
-                      >knowledgebase</a
-                    >
+                    <NuxtLink
+                      class="dropdown-item"
+                      :to="{ name: 'knowledgebase' }">
+                      knowledgebase
+                    </NuxtLink>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="Privacy.html">privacy</a>
+                    <NuxtLink class="dropdown-item" :to="{ name: 'privacy' }">
+                      privacy
+                    </NuxtLink>
                   </li>
                 </div>
               </ul>
@@ -427,11 +481,9 @@
               >
               <div
                 class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
-                aria-labelledby="header-pages-drop-down"
-              >
+                aria-labelledby="header-pages-drop-down">
                 <div
-                  class="dropdown-menu-wrapper min-padding row justify-content-center pages-links"
-                >
+                  class="dropdown-menu-wrapper min-padding row justify-content-center pages-links">
                   <h5 class="title coodiv-text-9 col-12 mt-2 mb-5">
                     Bredh 2.0 features sub-pages
                     <small class="d-block coodiv-text-12 color-opacity-5 mt-n2"
@@ -441,103 +493,135 @@
                   </h5>
                   <ul class="col-md-4 col-12">
                     <li>
-                      <a class="dropdown-item" href="about.html">about us</a>
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'about-us' }">
+                        about us
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="cloud-vps.html"
-                        >Managed VPS hosting</a
-                      >
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'cloud-vps' }">
+                        Managed VPS hosting
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="cpanel.html"
-                        >Cpanel hosting</a
-                      >
+                      <NuxtLink class="dropdown-item" :to="{ name: 'cpanel' }">
+                        Cpanel hosting
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="dedicated.html"
-                        >Dedicated Servers</a
-                      >
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'dedicated' }">
+                        Dedicated Servers
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="domains.html"
-                        >Domain name search</a
-                      >
+                      <NuxtLink class="dropdown-item" :to="{ name: 'domains' }">
+                        Domain name search
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="games.html"
-                        >Game Server Hosting</a
-                      >
-                    </li>
-                  </ul>
-                  <ul class="col-md-4 col-12">
-                    <li>
-                      <a class="dropdown-item" href="hosting.html"
-                        >Shared Hosting</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="icecast.html"
-                        >Icecast Hosting</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="servers.html"
-                        >Managed Dedicated Server</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="shoutcast.html"
-                        >Shotcast Hosting</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="ssl.html"
-                        >SSL Certificates</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="vps-reseller.html"
-                        >Self-Managed VPS</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="wordpress.html"
-                        >WordPress Hosting</a
-                      >
+                      <NuxtLink class="dropdown-item" :to="{ name: 'games' }">
+                        Game Server Hosting
+                      </NuxtLink>
                     </li>
                   </ul>
                   <ul class="col-md-4 col-12">
                     <li>
-                      <a class="dropdown-item" href="help-center.html"
-                        >help center</a
-                      >
+                      <NuxtLink class="dropdown-item" :to="{ name: 'hosting' }">
+                        Shared Hosting
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="knowledgebase.html"
-                        >knowledgebase</a
-                      >
+                      <NuxtLink class="dropdown-item" :to="{ name: 'icecast' }">
+                        Icecast Hosting
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="privacy.html">Privacy</a>
+                      <NuxtLink class="dropdown-item" :to="{ name: 'servers' }">
+                        Managed Dedicated Server
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="status.html"
-                        >Server Status</a
-                      >
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'shoutcast' }">
+                        Shotcast Hosting
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="contact.html"
-                        >Contact us</a
-                      >
+                      <NuxtLink class="dropdown-item" :to="{ name: 'ssl' }">
+                        SSL Certificates
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="signin.html">Signin</a>
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'vps-reseller' }">
+                        Self-Managed VPS
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="signup.html">Signup</a>
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'wordpress' }">
+                        WordPress Hosting
+                      </NuxtLink>
+                    </li>
+                  </ul>
+                  <ul class="col-md-4 col-12">
+                    <li>
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'help-center' }">
+                        help center
+                      </NuxtLink>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="404.html">404 Page</a>
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'knowledgebase' }">
+                        knowledgebase
+                      </NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink class="dropdown-item" :to="{ name: 'privacy' }">
+                        Privacy
+                      </NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink class="dropdown-item" :to="{ name: 'status' }">
+                        Server Status
+                      </NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'contact-us' }">
+                        Contact us
+                      </NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'authentication-sign-in' }">
+                        Signin
+                      </NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink
+                        class="dropdown-item"
+                        :to="{ name: 'authentication-sign-up' }">
+                        Signup
+                      </NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink class="dropdown-item" :to="{ name: '404' }">
+                        404 Page
+                      </NuxtLink>
                     </li>
                   </ul>
                 </div>
@@ -545,7 +629,9 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact us</a>
+              <NuxtLink class="nav-link" :to="{ name: 'contact-us' }">
+                Contact us
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -563,20 +649,17 @@
             <!-- user header dropdown -->
             <div
               class="dropdown-menu coodiv-dropdown-header user-login-dropdown"
-              aria-labelledby="header-login-dropdown"
-            >
+              aria-labelledby="header-login-dropdown">
               <form
                 class="user-login-dropdown-form"
                 action="signin.html"
-                data-form="validate"
-              >
+                data-form="validate">
                 <div class="form-group username">
                   <input
                     type="email"
                     name="username"
                     placeholder="Your Email"
-                    class="form-control"
-                  />
+                    class="form-control" />
                   <i class="fal fa-at"></i>
                 </div>
 
@@ -585,8 +668,7 @@
                     type="password"
                     name="password"
                     placeholder="Password"
-                    class="form-control"
-                  />
+                    class="form-control" />
                   <i class="fal fa-lock"></i>
                 </div>
 
@@ -595,8 +677,7 @@
                   data-placement="left"
                   title="login"
                   class="user-login-dropdown-form-button"
-                  type="submit"
-                >
+                  type="submit">
                   <i class="fas fa-angle-right"></i>
                 </button>
               </form>
@@ -607,75 +688,14 @@
       </div>
     </nav>
 
-    <main class="container pt-30">
-      <div class="row justify-content-start">
-        <div class="col-md-7 col-12 white-text">
-          <span class="main-header-top-title">Managed VPS Hosting</span>
-          <h3 class="main-header-title coodiv-text-3 font-weight-bold">
-            Get 100% worry-free, Fully Managed VPS Hosting.
-          </h3>
-          <ul class="main-header-features">
-            <li><i class="fal fa-check"></i> 24/7 fully managed support.</li>
-            <li>
-              <i class="fal fa-check"></i> NVMe SSD-powered KVM VPS – high
-              performance hosting.
-            </li>
-            <li>
-              <i class="fal fa-check"></i> cPanel/WHM, Plesk Obsidian for easy
-              WordPress admin.
-            </li>
-            <li>
-              <i class="fal fa-check"></i> Unlimited accounts and easy admin.
-            </li>
-          </ul>
-        </div>
+    <slot name="main" />
 
-        <div class="col-10 col-md-5">
-          <img
-            src="../assets/img/demo/features/services.png"
-            class="d-block mx-lg-auto img-fluid mt-n10 mb-15"
-            alt="Bootstrap Themes"
-            width="640"
-            height="584"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </main>
-
-    <div class="more-services-sub-page">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-9 col-12">
-            <div class="owl-carousel more-services-carousel owl-theme">
-              <div class="item"><a href="hosting.html">Web Hosting</a></div>
-              <div class="item">
-                <a href="icecast.html">Internet Radio Station</a>
-              </div>
-              <div class="item">
-                <a href="servers.html">Managed Servers</a>
-              </div>
-              <div class="item">
-                <a href="dedicated.html">Dedicated Server</a>
-              </div>
-              <div class="item">
-                <a class="active" href="cloud-vps.html">VPS Hosting</a>
-              </div>
-              <div class="item">
-                <a href="vps-reseller.html">Reseller Hosting</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <slot name="more-services" />
   </div>
 </template>
 
 <script lang="ts" setup>
-const {
-  $global
-} = useAppConfig();
+const { $global } = useAppConfig();
 </script>
 
 <style></style>

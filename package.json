@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.7",
-    "jquery": "^3.6.3",
-    "pinia": "^2.0.32"
+    "pinia": "^2.0.32",
+    "swiper": "^9.1.0"
   }
 }
