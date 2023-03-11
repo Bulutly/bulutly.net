@@ -16,8 +16,13 @@
         <div
           class="col-md-4 free-trial-footer-links d-flex align-items-center justify-content-end">
           <div class="d-flex align-items-center">
-            <a class="sign-btn" href="signup.html">sign up</a>
-            <a class="log-btn" href="signin.html">log in</a>
+            <NuxtLink class="sign-btn" :to="{ name: 'authentication-sign-up' }"
+              >sign up</NuxtLink
+            >
+
+            <NuxtLink class="log-btn" :to="{ name: 'authentication-sign-in' }"
+              >log in</NuxtLink
+            >
           </div>
         </div>
       </div>
@@ -32,39 +37,98 @@
             <div class="col-md-4 col-6">
               <h5 class="quiq-links-footer-title">Quick Links</h5>
               <ul class="quiq-links-footer-ul">
-                <li><a href="help-center.html">Support center</a></li>
-                <li><a href="knowledgebase.html">Knowledgebase</a></li>
-                <li><a href="Privacy.html">Coodiv Privacy</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="contact.html">My Support Tickets</a></li>
+                <li>
+                  <NuxtLink :to="{ name: 'help-center' }"
+                    >Support center</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'knowledgebase' }"
+                    >Knowledgebase</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'privacy' }">Coodiv Privacy</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'about-us' }">About us</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'contact-us' }"
+                    >My Support Tickets</NuxtLink
+                  >
+                </li>
               </ul>
             </div>
             <div class="col-md-4 col-6">
               <h5 class="quiq-links-footer-title">Shopping</h5>
               <ul class="quiq-links-footer-ul">
-                <li><a href="domains.html">Domain Search</a></li>
-                <li><a href="hosting.html">Websites & hosting</a></li>
-                <li><a href="wordpress.html">WordPress solution</a></li>
-                <li><a href="server.html">Reseller Programs</a></li>
-                <li><a href="deals.html">Hot Deals</a></li>
-                <li><a href="ssl.html">SSL Certificates</a></li>
+                <li>
+                  <NuxtLink :to="{ name: 'domains' }">Domain Search</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'hosting' }"
+                    >Websites & hosting</NuxtLink
+                  >
+                </li>
+                <li>
+                  <!-- <a href="wordpress.html">WordPress solution</a> -->
+                  <NuxtLink :to="{ name: 'wordpress' }"
+                    >WordPress solution</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'servers' }"
+                    >Reseller Programs</NuxtLink
+                  >
+                </li>
+
+                <li>
+                  <NuxtLink :to="{ name: 'ssl' }">SSL Certificates</NuxtLink>
+                </li>
               </ul>
             </div>
             <div class="col-md-4">
               <h5 class="quiq-links-footer-title">Quick Links</h5>
               <ul class="quiq-links-footer-ul">
                 <li>
-                  <a href="cloud-vps.html">Managed VPS hosting</a>
+                  <NuxtLink :to="{ name: 'cloud-vps' }"
+                    >Managed VPS hosting</NuxtLink
+                  >
                   <span class="badge badge-pill badge-warning">HOT!</span>
                 </li>
-                <li><a href="cpanel.html">Cpanel hosting</a></li>
-                <li><a href="dedicated.html">Dedicated Webhosting</a></li>
-                <li><a href="domains.html">Domain Name Search</a></li>
-                <li><a href="games.html">Game Server Hosting</a></li>
-                <li><a href="hosting.html">Webhosting Servers</a></li>
-                <li><a href="icecast.html">Internet Radio Station</a></li>
                 <li>
-                  <a href="servers.html">Fully Managed Dedicated</a>
+                  <NuxtLink :to="{ name: 'cpanel' }">Cpanel hosting</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'dedicated' }"
+                    >Dedicated Webhosting</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'domains' }"
+                    >Domain Name Search</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'games' }"
+                    >Game Server Hosting</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'hosting' }"
+                    >Webhosting Servers</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'icecast' }"
+                    >Internet Radio Station</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink :to="{ name: 'servers' }"
+                    >Fully Managed Dedicated</NuxtLink
+                  >
                   <span class="badge badge-pill badge-warning">HOT!</span>
                 </li>
               </ul>
@@ -108,9 +172,15 @@
         <div
           class="col-md col-12 d-flex justify-content-md-end justify-content-start">
           <ul class="under-footer-ullist">
-            <li><a href="help-center.html">Support center</a></li>
-            <li><a href="knowledgebase.html">Knowledgebase</a></li>
-            <li><a href="Privacy.html">Coodiv Privacy</a></li>
+            <li>
+              <NuxtLink :to="{ name: 'help-center' }">Support center</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :to="{ name: 'knowledgebase' }">Knowledgebase</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink :to="{ name: 'privacy' }">Coodiv Privacy</NuxtLink>
+            </li>
           </ul>
         </div>
       </div>

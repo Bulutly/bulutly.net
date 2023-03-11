@@ -55,86 +55,85 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-/* 	// header slider carousel //
-	$(function () {
-	$('.carousel-main').flickity({
+// header slider carousel //
+$(function () {
+  $(".carousel-main").flickity({
     prevNextButtons: false,
-	pageDots: true,
-	autoPlay: true
-	});
-	// 2nd carousel, navigation
-	$('.carousel-nav').flickity({
-    asNavFor: '.carousel-main',
+    pageDots: true,
+    autoPlay: true,
+  });
+  // 2nd carousel, navigation
+  $(".carousel-nav").flickity({
+    asNavFor: ".carousel-main",
     contain: true,
     pageDots: false,
     prevNextButtons: false,
-	responsive: {
-                  0: {
-                    items: 1,
-                  },
-				  340: {
-                    items: 1,
-					margin: 20
-                  },
-				  350: {
-                    items: 1,
-					margin: 20
-                  },
-				  490: {
-                    items: 1,
-					margin: 20
-                  },
-                  780: {
-                    items: 2,
-					margin: 20
-                  },
-                  1000: {
-                    items: 3,
-                    loop: true,
-                    margin: 20
-                  }
-                }
-  	});
-	});
-	
-	
-	$(function () {
-	// 2nd carousel, navigation
-	$('.coodiv-features-box-black-color-carousel').flickity({
+    responsive: {
+      0: {
+        items: 1,
+      },
+      340: {
+        items: 1,
+        margin: 20,
+      },
+      350: {
+        items: 1,
+        margin: 20,
+      },
+      490: {
+        items: 1,
+        margin: 20,
+      },
+      780: {
+        items: 2,
+        margin: 20,
+      },
+      1000: {
+        items: 3,
+        loop: true,
+        margin: 20,
+      },
+    },
+  });
+});
+
+$(function () {
+  // 2nd carousel, navigation
+  $(".coodiv-features-box-black-color-carousel").flickity({
     contain: true,
     pageDots: true,
-	cellAlign: 'left',
-	wrapAround: true,
+    cellAlign: "left",
+    wrapAround: true,
     prevNextButtons: false,
-	responsive: {
-                  0: {
-                    items: 1,
-                  },
-				  340: {
-                    items: 1,
-					margin: 20
-                  },
-				  350: {
-                    items: 1,
-					margin: 20
-                  },
-				  490: {
-                    items: 1,
-					margin: 20
-                  },
-                  780: {
-                    items: 2,
-					margin: 20
-                  },
-                  1000: {
-                    items: 3,
-                    loop: true,
-                    margin: 20
-                  }
-                }
-  	});
-	});
-	 */
+    responsive: {
+      0: {
+        items: 1,
+      },
+      340: {
+        items: 1,
+        margin: 20,
+      },
+      350: {
+        items: 1,
+        margin: 20,
+      },
+      490: {
+        items: 1,
+        margin: 20,
+      },
+      780: {
+        items: 2,
+        margin: 20,
+      },
+      1000: {
+        items: 3,
+        loop: true,
+        margin: 20,
+      },
+    },
+  });
+});
+
 // header slider domains carousel //
 $(document).ready(function () {
   $(".owl-domain-prices-previw").owlCarousel({
@@ -462,16 +461,16 @@ $(document).ready(function () {
 });
 
 //-- about us services carousel -- //
-/* $(document).ready(function () {
+$(document).ready(function () {
   $(".our-services-carousel").flickity({
     cellAlign: "left",
     contain: true,
     pageDots: false,
   });
-}); */
+});
 
 //-- about us customers carousel -- //
-/* $(document).ready(function () {
+$(document).ready(function () {
   $(".carousel-main-customers-text").flickity({
     pageDots: false,
     prevNextButtons: false,
@@ -485,7 +484,7 @@ $(document).ready(function () {
     draggable: false,
   });
 });
- */
+
 //-- contact form height for mobile devices -- //
 $(document).ready(function () {
   var ifcontactformexist = document.getElementById("ajax-contact");

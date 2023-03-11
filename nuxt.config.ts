@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   app: {
     head: {
       script: [
@@ -10,9 +11,6 @@ export default defineNuxtConfig({
           src: "/js/popper.min.js",
         },
 
-        {
-          src: "/js/flickity.pkgd.min.js",
-        },
         {
           src: "/js/parallax.min.js",
         },
@@ -40,13 +38,16 @@ export default defineNuxtConfig({
         {
           src: "/js/template-scripts.js",
         },
+        {
+          src: "/js/flickity.pkgd.min.js",
+        },
       ],
     },
   },
   css: [
-    "@/assets/css/bootstrap.min.css",
-    "@/assets/icons-pack/fontawesome-5/css/all.css",
-    "@/assets/css/main.min.css",
+    "assets/css/bootstrap.min.css",
+    "assets/icons-pack/fontawesome-5/css/all.css",
+    "assets/css/main.min.css",
   ],
   modules: ["@pinia/nuxt"],
   pinia: {
