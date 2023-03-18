@@ -19,114 +19,298 @@
 
       <div class="row justify-content-center">
         <div id="monthly-yearly-chenge" class="mr-tp-20 custom-change">
-          <a class="active monthly-price f-size12">
+          <a
+            @click="activeItems = dataMonthly"
+            :class="activeItems == dataMonthly ? 'active' : ''"
+            class="monthly-price f-size12">
             <span class="change-box-text">monthly</span>
             <span class="change-box"></span
           ></a>
-          <a class="yearli-price f-size12">
+          <a
+            @click="activeItems = dataAnnually"
+            :class="activeItems == dataAnnually ? 'active' : ''"
+            class="yearli-price f-size12">
             <span class="change-box-text">annually</span></a
           >
         </div>
       </div>
-
-      <div
-        class="row justify-content-center first-pricing-table-container mr-tp-30">
-        <div class="col-md-4">
-          <div class="first-pricing-table version-two">
-            <i class="fad fa-podcast first-pricing-table-icon"></i>
-            <h5 class="first-pricing-table-title">
-              64 Kbps <span>Stream high quality audio at 64 Kbps</span>
-            </h5>
-            <span class="plan-price second-pricing-table-price monthly">
-              <i class="monthly">$0.99 <span>/mo</span></i>
-              <i class="yearly">$9.99 <span>/year</span></i>
-            </span>
-            <span class="main-features-box"
-              ><i class="fad fa-podcast"></i> 64 KBPS Plan</span
-            >
-            <span class="main-features-box mb-6"
-              ><i class="fad fa-microphone"></i> Low Audio Quality</span
-            >
-            <ul class="first-pricing-table-body">
-              <li>
-                <i class="fal fa-broadcast-tower"></i> Unlimited listeners
-              </li>
-              <li><i class="fal fa-play"></i> Unlimited bandwidth</li>
-              <li><i class="fal fa-headphones"></i> Free Auto DJ</li>
-              <li><i class="fal fa-lock"></i> SSL Streaming</li>
-            </ul>
-            <a href="#" class="btn btn-dark coodiv-text-11 mt-10 d-block"
-              >Start your free trial</a
-            >
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="first-pricing-table version-two best-plan">
-            <i class="fad fa-podcast first-pricing-table-icon"></i>
-            <h5 class="first-pricing-table-title">
-              192 Kbps <span>Stream high quality audio at 64 Kbps</span>
-            </h5>
-            <span class="plan-price second-pricing-table-price monthly">
-              <i class="monthly">$2.99 <span>/mo</span></i>
-              <i class="yearly">$12.99 <span>/year</span></i>
-            </span>
-            <span class="main-features-box"
-              ><i class="fad fa-podcast"></i> 192 KBPS Plan</span
-            >
-            <span class="main-features-box mb-6"
-              ><i class="fad fa-microphone"></i> Avrage Audio Quality</span
-            >
-            <ul class="first-pricing-table-body">
-              <li>
-                <i class="fal fa-broadcast-tower"></i> Unlimited listeners
-              </li>
-              <li><i class="fal fa-play"></i> Unlimited bandwidth</li>
-              <li><i class="fal fa-headphones"></i> Free Auto DJ</li>
-              <li><i class="fal fa-lock"></i> SSL Streaming</li>
-            </ul>
-            <a href="#" class="btn btn-dark coodiv-text-11 mt-10 d-block"
-              >Start your free trial</a
-            >
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="first-pricing-table version-two">
-            <i class="fad fa-podcast first-pricing-table-icon"></i>
-            <h5 class="first-pricing-table-title">
-              256 Kbps <span>Stream high quality audio at 64 Kbps</span>
-            </h5>
-            <span class="plan-price second-pricing-table-price monthly">
-              <i class="monthly">$4.99 <span>/mo</span></i>
-              <i class="yearly">$15.99 <span>/year</span></i>
-            </span>
-            <span class="main-features-box"
-              ><i class="fad fa-podcast"></i> 256 KBPS Plan</span
-            >
-            <span class="main-features-box mb-6"
-              ><i class="fad fa-microphone"></i> Best Audio Quality</span
-            >
-            <ul class="first-pricing-table-body">
-              <li>
-                <i class="fal fa-broadcast-tower"></i> Unlimited listeners
-              </li>
-              <li><i class="fal fa-play"></i> Unlimited bandwidth</li>
-              <li><i class="fal fa-headphones"></i> Free Auto DJ</li>
-              <li><i class="fal fa-lock"></i> SSL Streaming</li>
-            </ul>
-            <a href="#" class="btn btn-dark coodiv-text-11 mt-10 d-block"
-              >Start your free trial</a
-            >
-          </div>
-        </div>
-      </div>
+      <IcecastPriceCard :items="activeItems" />
     </div>
   </section>
 </template>
 
-<script>
-export default {};
+<script lang="ts" setup>
+const dataMonthly = ref<IPriceCard[]>([
+  {
+    title: "64 KBPS",
+    subtitle: "Stream high quality audio at 64 Kbps",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$0.99",
+      type: "/mo",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "",
+        value: "64 KBPS Plan",
+      },
+      {
+        isUnavailable: false,
+        text: "",
+        value: " Low Audio Quality",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "192 KBPS",
+    subtitle: "Stream high quality audio at 64 Kbps",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$2.99",
+      type: "/mo",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "",
+        value: "192 KBPS Plan",
+      },
+      {
+        isUnavailable: false,
+        text: "",
+        value: " Avrage Audio Quality",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "256 KBPS",
+    subtitle: "Stream high quality audio at 64 Kbps",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$4.99",
+      type: "/mo",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "",
+        value: " 256 KBPS Plan",
+      },
+      {
+        isUnavailable: false,
+        text: "",
+        value: "Best Audio Quality",
+      },
+    ],
+
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+]);
+const dataAnnually = ref<IPriceCard[]>([
+  {
+    title: "64 KBPS",
+    subtitle: "Stream high quality audio at 64 Kbps",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$9.99",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "",
+        value: "64 KBPS Plan",
+      },
+      {
+        isUnavailable: false,
+        text: "",
+        value: " Low Audio Quality",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "192 KBPS",
+    subtitle: "Stream high quality audio at 64 Kbps",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$12.99",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "",
+        value: "192 KBPS Plan",
+      },
+      {
+        isUnavailable: false,
+        text: "",
+        value: " Avrage Audio Quality",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "256 KBPS",
+    subtitle: "Stream high quality audio at 64 Kbps",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$15.99",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "",
+        value: " 256 KBPS Plan",
+      },
+      {
+        isUnavailable: false,
+        text: "",
+        value: "Best Audio Quality",
+      },
+    ],
+
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+]);
+const activeItems = ref<IPriceCard[]>(dataMonthly.value);
 </script>
 
 <style></style>

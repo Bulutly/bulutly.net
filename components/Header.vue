@@ -137,72 +137,13 @@
                       <div class="row justify-content-start mt-10">
                         <div class="col-md-6 col-12">
                           <ul class="domo-pages-wrapper">
-                            <li>
-                              <NuxtLink :to="{ name: 'cloud-vps' }">
-                                Managed VPS hosting
+                            <li v-for="link in homePageLinks">
+                              <NuxtLink :to="link.link">
+                                {{ link.title }}
                               </NuxtLink>
-                              <span class="badge badge-pill badge-warning"
-                                >HOT!</span
-                              >
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'cpanel' }">
-                                Cpanel hosting
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'dedicated' }">
-                                Dedicated Webhosting
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'domains' }">
-                                Domain Name Search
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'games' }">
-                                Game Server Hosting
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'hosting' }">
-                                Webhosting Servers
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'icecast' }">
-                                Internet Radio Station
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'servers' }">
-                                Fully Managed Dedicated
-                              </NuxtLink>
-                              <span class="badge badge-pill badge-warning"
-                                >HOT!</span
-                              >
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'shoutcast' }">
-                                managed prodcast server
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'ssl' }">
-                                SSL Certificates
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'vps-reseller' }">
-                                Start your own server
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'wordpress' }">
-                                WordPress Hosting Solution
-                              </NuxtLink>
-                              <span class="badge badge-pill badge-warning"
+                              <span
+                                v-if="link.isHot"
+                                class="badge badge-pill badge-warning"
                                 >HOT!</span
                               >
                             </li>
@@ -210,54 +151,9 @@
                         </div>
                         <div class="col-md-6 col-12">
                           <ul class="domo-pages-wrapper">
-                            <li>
-                              <NuxtLink :to="{ name: '404' }"> 404 </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'help-center' }">
-                                bredh customers help center
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'about-us' }">
-                                about us
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'contact-us' }">
-                                contact us
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'help-center' }">
-                                help center
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'knowledgebase' }">
-                                knowledgebase
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'privacy' }">
-                                Privacy
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink :to="{ name: 'status' }">
-                                services status
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink
-                                :to="{ name: 'authentication-sign-in' }">
-                                signin
-                              </NuxtLink>
-                            </li>
-                            <li>
-                              <NuxtLink
-                                :to="{ name: 'authentication-sign-up' }">
-                                signup
+                            <li v-for="link in secondHomePageLinks">
+                              <NuxtLink :to="link.link">
+                                {{ link.title }}
                               </NuxtLink>
                             </li>
                           </ul>
@@ -445,23 +341,9 @@
                 class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header"
                 aria-labelledby="header-help-drop-down">
                 <div class="dropdown-menu-wrapper min-padding">
-                  <li>
-                    <NuxtLink
-                      class="dropdown-item"
-                      :to="{ name: 'help-center' }">
-                      help center
-                    </NuxtLink>
-                  </li>
-                  <li>
-                    <NuxtLink
-                      class="dropdown-item"
-                      :to="{ name: 'knowledgebase' }">
-                      knowledgebase
-                    </NuxtLink>
-                  </li>
-                  <li>
-                    <NuxtLink class="dropdown-item" :to="{ name: 'privacy' }">
-                      privacy
+                  <li v-for="link in helpLinks">
+                    <NuxtLink class="dropdown-item" :to="link.link">
+                      {{ link.title }}
                     </NuxtLink>
                   </li>
                 </div>
@@ -492,83 +374,16 @@
                     >
                   </h5>
                   <ul class="col-md-4 col-12">
-                    <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'about-us' }">
-                        about us
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'cloud-vps' }">
-                        Managed VPS hosting
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink class="dropdown-item" :to="{ name: 'cpanel' }">
-                        Cpanel hosting
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'dedicated' }">
-                        Dedicated Servers
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink class="dropdown-item" :to="{ name: 'domains' }">
-                        Domain name search
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink class="dropdown-item" :to="{ name: 'games' }">
-                        Game Server Hosting
+                    <li v-for="link in pagesLinks">
+                      <NuxtLink class="dropdown-item" :to="link.link">
+                        {{ link.title }}
                       </NuxtLink>
                     </li>
                   </ul>
                   <ul class="col-md-4 col-12">
-                    <li>
-                      <NuxtLink class="dropdown-item" :to="{ name: 'hosting' }">
-                        Shared Hosting
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink class="dropdown-item" :to="{ name: 'icecast' }">
-                        Icecast Hosting
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink class="dropdown-item" :to="{ name: 'servers' }">
-                        Managed Dedicated Server
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'shoutcast' }">
-                        Shotcast Hosting
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink class="dropdown-item" :to="{ name: 'ssl' }">
-                        SSL Certificates
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'vps-reseller' }">
-                        Self-Managed VPS
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'wordpress' }">
-                        WordPress Hosting
+                    <li v-for="link in secondPagesLinks">
+                      <NuxtLink class="dropdown-item" :to="link.link">
+                        {{ link.title }}
                       </NuxtLink>
                     </li>
                   </ul>
@@ -695,7 +510,59 @@
 </template>
 
 <script lang="ts" setup>
+import { ref } from "vue";
 const { $global } = useAppConfig();
+const homePageLinks = ref([
+  { title: "Managed VPS hosting", link: "/cloud-vps", isHot: true },
+  { title: "Cpanel hosting", link: "/cpanel", isHot: false },
+  { title: "Dedicated Webhosting", link: "/dedicated", isHot: false },
+  { title: "Domain Name Search", link: "/domains", isHot: false },
+  { title: "Game Server Hosting", link: "/games", isHot: false },
+  { title: "Webhosting Servers", link: "/hosting", isHot: false },
+  { title: "Internet Radio Station", link: "/icecast", isHot: false },
+  { title: "Fully Managed Dedicated", link: "/servers", isHot: true },
+  { title: " managed prodcast server", link: "/shoutcast", isHot: false },
+  { title: "SSL Certificates", link: "/ssl", isHot: false },
+  { title: "Start your own server", link: "/vps-reseller", isHot: false },
+  { title: "WordPress Hosting Solution", link: "/wordpress", isHot: true },
+]);
+const secondHomePageLinks = ref([
+  { title: "404", link: "/404" },
+  { title: "bredh customers help center", link: "/help-center" },
+  { title: "about us", link: "/about-us" },
+  { title: "contact us", link: "/contact-us" },
+  { title: "help center", link: "/help-center" },
+  { title: "knowledgebase", link: "/knowledgebase" },
+  { title: "Privacy", link: "/privacy" },
+  { title: "services status", link: "/status" },
+  { title: "signin", link: "/authentication/sign-in" },
+  { title: "signup", link: "/authentication/sign-up" },
+]);
+const helpLinks = ref([
+  { title: "help center", link: "/help-center" },
+  { title: "knowledgebase", link: "/knowledgebase" },
+  { title: "privacy", link: "/privacy" },
+]);
+const pagesLinks = ref([
+  { title: "about us", link: "/about-us" },
+  { title: "Managed VPS hosting", link: "/cloud-vps" },
+  { title: "Cpanel hosting", link: "/cpanel" },
+  { title: "Dedicated Servers", link: "/dedicated" },
+  { title: "Domain name search", link: "/domains" },
+  { title: "Game Server Hosting", link: "/games" },
+]);
+const secondPagesLinks = ref([
+  { title: "Shared Hosting", link: "/hosting" },
+  { title: "Icecast Hosting", link: "/icecast" },
+  { title: "Managed Dedicated Server", link: "/servers" },
+  { title: "Shotcast Hosting", link: "/shoutcast" },
+  { title: "SSL Certificates", link: "/ssl" },
+  { title: "Self-Managed VPS", link: "/vps-reseller" },
+  { title: "WordPress Hosting", link: "/wordpress" },
+  { title: "SSL Certificates", link: "/ssl" },
+  { title: "Self-Managed VPS", link: "/vps-reseller" },
+  { title: "WordPress Hosting", link: "/wordpress" },
+]);
 </script>
 
 <style></style>

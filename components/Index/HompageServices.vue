@@ -57,137 +57,24 @@
 
           <div class="row justify-content-center">
             <div id="monthly-yearly-chenge" class="mr-tp-40 style-two">
-              <a class="active monthly-price">
+              <a
+                @click="activeItems = dataMonthly"
+                class="monthly-price"
+                :class="activeItems == dataMonthly ? 'active' : ''">
                 <span class="change-box-text">billed monthly</span>
                 <span class="change-box"></span
               ></a>
-              <a class="yearli-price">
-                <span class="change-box-text">billed annually</span></a
-              >
+              <a
+                class="yearli-price"
+                @click="activeItems = dataannually"
+                :class="activeItems == dataannually ? 'active' : ''">
+                <span class="change-box-text">billed annually</span>
+              </a>
             </div>
           </div>
-
-          <div
-            class="row justify-content-start second-pricing-table-container mr-tp-30">
-            <div class="col-md-4 px-0">
-              <div class="second-pricing-table">
-                <h5 class="second-pricing-table-title">
-                  Basic plan <span>mostly for personal using</span>
-                </h5>
-                <span class="second-pricing-table-price monthly">
-                  <i class="monthly">$1.99<small>/mo</small></i>
-                  <i class="yearly">$9.99<small>/year</small></i>
-                </span>
-
-                <ul class="second-pricing-table-body">
-                  <li><strong>2 TB</strong> of space</li>
-                  <li><strong>unlimited</strong> bandwidth</li>
-                  <li><strong>full backup</strong> systems</li>
-                  <li><strong>free</strong> domain</li>
-                  <li><strong>Unlimited</strong> Database</li>
-                  <li class="not-chacked">Fast SSD Storage</li>
-                  <li class="not-chacked">unlimited database</li>
-                </ul>
-
-                <ul class="second-pricing-table-body-features">
-                  <li>
-                    <span
-                      ><strong>Dedicated project</strong>big companis,we chose
-                      to works with it</span
-                    >
-                  </li>
-                  <li>
-                    <span
-                      ><strong>Easy feedback sharing</strong>Choose your
-                      edition, Try it free for 14 days</span
-                    >
-                  </li>
-                </ul>
-
-                <a class="second-pricing-table-button" href="#">next setup</a>
-              </div>
-            </div>
-
-            <div class="col-md-4 px-0">
-              <div class="second-pricing-table">
-                <h5 class="second-pricing-table-title">
-                  Expert plan <span>mostly for personal using</span>
-                </h5>
-                <span class="second-pricing-table-price monthly">
-                  <i class="monthly">$3.99<small>/mo</small></i>
-                  <i class="yearly">$42.99<small>/year</small></i>
-                </span>
-
-                <ul class="second-pricing-table-body">
-                  <li><strong>2 TB</strong> of space</li>
-                  <li><strong>unlimited</strong> bandwidth</li>
-                  <li><strong>full backup</strong> systems</li>
-                  <li><strong>free</strong> domain</li>
-                  <li><strong>Unlimited</strong> Database</li>
-                  <li><strong>Fast</strong> SSD Storage</li>
-                  <li class="not-chacked">unlimited database</li>
-                </ul>
-
-                <ul class="second-pricing-table-body-features">
-                  <li>
-                    <span
-                      ><strong>Dedicated project</strong>big companis,we chose
-                      to works with it</span
-                    >
-                  </li>
-                  <li>
-                    <span
-                      ><strong>Easy feedback sharing</strong>Choose your
-                      edition, Try it free for 14 days</span
-                    >
-                  </li>
-                </ul>
-
-                <a class="second-pricing-table-button" href="#">next setup</a>
-              </div>
-            </div>
-
-            <div class="col-md-4 px-0">
-              <div class="second-pricing-table style-2 active">
-                <h5 class="second-pricing-table-title">
-                  Relluxe plan <span>mostly for personal using</span>
-                </h5>
-                <span class="second-pricing-table-price monthly">
-                  <i class="monthly">$6.99<small>/mo</small></i>
-                  <i class="yearly">$85.99<small>/year</small></i>
-                </span>
-
-                <ul class="second-pricing-table-body">
-                  <li><strong>2 TB</strong> of space</li>
-                  <li><strong>unlimited</strong> bandwidth</li>
-                  <li><strong>full backup</strong> systems</li>
-                  <li><strong>free</strong> domain</li>
-                  <li><strong>Unlimited</strong> Database</li>
-                  <li><strong>Fast SSD</strong> Storage</li>
-                  <li><strong>unlimited</strong> database</li>
-                </ul>
-
-                <ul class="second-pricing-table-body-features">
-                  <li>
-                    <span
-                      ><strong>Dedicated project</strong>big companis,we chose
-                      to works with it</span
-                    >
-                  </li>
-                  <li>
-                    <span
-                      ><strong>Easy feedback sharing</strong>Choose your
-                      edition, Try it free for 14 days</span
-                    >
-                  </li>
-                </ul>
-
-                <a class="second-pricing-table-button" href="#">next setup</a>
-              </div>
-            </div>
-          </div>
-          <!-- end row -->
         </div>
+
+        <CloudVpsPriceCards :items="activeItems" />
 
         <div
           class="tab-pane fade"
@@ -530,8 +417,380 @@
   </section>
 </template>
 
-<script>
-export default {};
+<script setup lang="ts">
+const dataMonthly = ref<IPriceCard[]>([
+  {
+    title: "Basic plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$1.99",
+      type: "/mo",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB ",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "Fast SSD Storage",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "unlimited database",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+  {
+    title: "Expert plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$3.99",
+      type: "/mo",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB ",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: false,
+        text: "Fast",
+        value: "SSD Storage",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "unlimited database",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+  {
+    title: "Relluxe plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$6.99",
+      type: "/mo",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB ",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: false,
+        text: "Fast SSD",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "database",
+      },
+    ],
+
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+]);
+const dataannually = ref<IPriceCard[]>([
+  {
+    title: "Basic plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$9.99",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB ",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "Fast SSD Storage",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "unlimited database",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+  {
+    title: "Expert plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$42.99",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB ",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: false,
+        text: "Fast",
+        value: "SSD Storage",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "unlimited database",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+  {
+    title: "Relluxe plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$85.99",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB ",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: false,
+        text: "Fast SSD",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "database",
+      },
+    ],
+
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+]);
+const activeItems = ref<IPriceCard[]>(dataMonthly.value);
 </script>
 
 <style></style>
