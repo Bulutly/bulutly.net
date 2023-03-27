@@ -3,6 +3,23 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     head: {
+      title: "Bulutly",
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "description", content: "" },
+        { name: "author", content: "" },
+        { name: "og:site_name", content: "" },
+        { name: "og:url", content: "" },
+        { name: "og:title", content: "" },
+        { name: "og:description", content: "" },
+        { name: "og:image", content: "" },
+        { name: "twitter:url", content: "" },
+        { name: "twitter:title", content: "" },
+        { name: "twitter:description", content: "" },
+        { name: "twitter:image", content: "" },
+      ],
+      link: [{ rel: "icon", type: "image/PNG", href: "/logo.png" }],
       script: [
         {
           src: "/js/jquery.min.js",
