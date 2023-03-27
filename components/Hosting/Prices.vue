@@ -310,7 +310,7 @@ const dataMonthly = ref<IPriceCard[]>([
       {
         isUnavailable: false,
         text: "Unlimited",
-        value: "Databaseiiiiiiiiiiiiiiiiii",
+        value: "Database",
       },
     ],
     extraInfo: [

@@ -61,7 +61,6 @@
         <div class="carousel carousel-main w-100">
           <swiper
             :cssMode="true"
-            :navigation="true"
             :pagination="true"
             :mousewheel="true"
             :keyboard="true"
@@ -112,8 +111,9 @@
                       </NuxtLink>
                     </div>
                   </div>
-                </div></div
-            ></SwiperSlide>
+                </div>
+              </div>
+            </SwiperSlide>
             <SwiperSlide>
               <div class="carousel-cell">
                 <div class="row justify-content-start">
@@ -139,7 +139,7 @@
         </div>
       </main>
     </template>
-    <template #more-services>
+    <!-- <template #more-services>
       <div class="main-header-carousel-container container mt-4">
         <div class="row justify-content-start">
           <div class="carousel carousel-nav" style="display: flex">
@@ -232,7 +232,7 @@
           </div>
         </div>
       </div>
-    </template>
+    </template> -->
   </Header>
 
   <!-- end header -->
@@ -317,5 +317,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 1px);
 }
 </style>

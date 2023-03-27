@@ -23,7 +23,11 @@
         </div>
 
         <div class="col-md-7 our-services-carousel-container">
-          <swiper :navigation="true" :modules="modules" class="mySwiper">
+          <swiper
+            :navigation="false"
+            :modules="modules"
+            :pagination="true"
+            class="mySwiper">
             <SwiperSlide>
               <div class="item">
                 <NuxtLink
