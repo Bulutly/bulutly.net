@@ -55,88 +55,73 @@
       </div>
     </template>
     <template #main>
-      <main
-        class="container d-flex align-items-center h-100"
-        style="margin-top: 200px">
-        <div class="carousel carousel-main w-100">
-          <swiper
-            :cssMode="true"
-            :pagination="true"
-            :mousewheel="true"
-            :keyboard="true"
-            :modules="modules"
-            class="mySwiper">
-            <swiper-slide>
-              <div class="carousel-cell">
-                <div class="row justify-content-start">
-                  <div class="col-lg-8 col-12 white-text">
-                    <span class="main-header-top-title"
-                      >Managed WordPress Hosting</span
-                    >
-                    <h3 class="main-header-title coodiv-text-3">
-                      Get WordPress with free SSL and backups for $5.99/mo
-                    </h3>
-                    <p
-                      class="main-header-sub-title coodiv-text-10 font-weight-light mb-10">
-                      Comes with free domain and email. Money-back guarantee
-                    </p>
-                    <div class="d-flex">
-                      <NuxtLink
-                        :to="{ name: 'wordpress' }"
-                        class="main-header-btn coodiv-text-9 font-weight-bold">
-                        Get it now <i class="fal fa-arrow-right"></i>
-                      </NuxtLink>
-                    </div>
-                  </div>
-                </div></div
-            ></swiper-slide>
-            <SwiperSlide>
-              <div class="carousel-cell">
-                <div class="row justify-content-start">
-                  <div class="col-lg-8 col-12 white-text">
-                    <span class="main-header-top-title">Web Hosting</span>
-                    <h3 class="main-header-title coodiv-text-3">
-                      Trust your client sites to the world’s #1 web host.
-                    </h3>
-                    <p
-                      class="main-header-sub-title coodiv-text-10 font-weight-light">
-                      Get faster sites — up to nearly 40% average improvement in
-                      overall server response times.
-                    </p>
-                    <div class="d-flex">
-                      <NuxtLink
-                        :to="{ name: 'dedicated' }"
-                        class="main-header-btn coodiv-text-9 font-weight-bold">
-                        See Plans & Pricing <i class="fal fa-arrow-right"></i>
-                      </NuxtLink>
+      <main class="container d-flex align-items-center h-100" style="margin-top: 200px">
+        <ClientOnly>
+          <div class="carousel carousel-main w-100">
+            <swiper :cssMode="true" :pagination="true" :mousewheel="true" :keyboard="true" :modules="modules"
+              class="mySwiper">
+              <swiper-slide>
+                <div class="carousel-cell">
+                  <div class="row justify-content-start">
+                    <div class="col-lg-8 col-12 white-text">
+                      <span class="main-header-top-title">Managed WordPress Hosting</span>
+                      <h3 class="main-header-title coodiv-text-3">
+                        Get WordPress with free SSL and backups for $5.99/mo
+                      </h3>
+                      <p class="main-header-sub-title coodiv-text-10 font-weight-light mb-10">
+                        Comes with free domain and email. Money-back guarantee
+                      </p>
+                      <div class="d-flex">
+                        <NuxtLink :to="{ name: 'wordpress' }" class="main-header-btn coodiv-text-9 font-weight-bold">
+                          Get it now <i class="fal fa-arrow-right"></i>
+                        </NuxtLink>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div class="carousel-cell">
-                <div class="row justify-content-start">
-                  <div class="col-lg-8 col-12 white-text">
-                    <span class="main-header-top-title"
-                      >Self Managed VPS Hosting</span
-                    >
-                    <h3 class="main-header-title coodiv-text-3">
-                      Get Fully Managed Dedicated Server Hosting.
-                    </h3>
-                    <p
-                      class="main-header-sub-title coodiv-text-9 font-weight-light">
-                      Experience high-performance NVMe SSDs powered by Virtuozzo
-                      for 3X the speed plus unlimited traffic. You also get KVM
-                      virtualization for full control of your hardware
-                      resources.
-                    </p>
+              </swiper-slide>
+              <SwiperSlide>
+                <div class="carousel-cell">
+                  <div class="row justify-content-start">
+                    <div class="col-lg-8 col-12 white-text">
+                      <span class="main-header-top-title">Web Hosting</span>
+                      <h3 class="main-header-title coodiv-text-3">
+                        Trust your client sites to the world’s #1 web host.
+                      </h3>
+                      <p class="main-header-sub-title coodiv-text-10 font-weight-light">
+                        Get faster sites — up to nearly 40% average improvement in
+                        overall server response times.
+                      </p>
+                      <div class="d-flex">
+                        <NuxtLink :to="{ name: 'dedicated' }" class="main-header-btn coodiv-text-9 font-weight-bold">
+                          See Plans & Pricing <i class="fal fa-arrow-right"></i>
+                        </NuxtLink>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div></SwiperSlide
-            >
-          </swiper>
-        </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div class="carousel-cell">
+                  <div class="row justify-content-start">
+                    <div class="col-lg-8 col-12 white-text">
+                      <span class="main-header-top-title">Self Managed VPS Hosting</span>
+                      <h3 class="main-header-title coodiv-text-3">
+                        Get Fully Managed Dedicated Server Hosting.
+                      </h3>
+                      <p class="main-header-sub-title coodiv-text-9 font-weight-light">
+                        Experience high-performance NVMe SSDs powered by Virtuozzo
+                        for 3X the speed plus unlimited traffic. You also get KVM
+                        virtualization for full control of your hardware
+                        resources.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </swiper>
+          </div>
+        </ClientOnly>
       </main>
     </template>
     <!-- <template #more-services>
@@ -281,6 +266,7 @@ export default {
 #app {
   height: 100%;
 }
+
 html,
 body {
   position: relative;
@@ -318,7 +304,8 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.swiper-horizontal > .swiper-pagination-bullets,
+
+.swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
