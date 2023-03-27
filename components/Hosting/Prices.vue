@@ -14,16 +14,23 @@
 
       <div class="row justify-content-center align-items-center mb-15">
         <div id="monthly-yearly-chenge" class="style-two mb-0">
-          <a class="active monthly-price">
+          <a
+            @click="activeItems = dataMonthly"
+            :class="activeItems == dataMonthly ? 'active' : ''"
+            class="monthly-price">
             <span class="change-box-text">billed monthly</span>
             <span class="change-box"></span
           ></a>
-          <a class="yearli-price">
+          <a
+            :class="activeItems == dataAnnually ? 'active' : ''"
+            @click="activeItems = dataAnnually"
+            class="yearli-price">
             <span class="change-box-text">billed annually</span></a
           >
         </div>
       </div>
-
+      <HostingPriceCard :items="activeItems" />
+      <!-- 
       <div
         class="row justify-content-start second-pricing-table-container dedicated-version collage-plans mr-tp-30">
         <div class="col-md-4 col-12 pr-md-0">
@@ -144,8 +151,7 @@
             <a class="second-pricing-table-button" href="#">next setup</a>
           </div>
         </div>
-      </div>
-
+      </div> -->
       <div class="row justify-content-start mt-15">
         <div class="col-md-4 col-12 mb-md-0 mb-8 text-center">
           <i class="fal fa-life-ring coodiv-text-5"></i>
@@ -187,8 +193,396 @@
   </section>
 </template>
 
-<script>
-export default {};
+<script lang="ts" setup>
+const dataMonthly = ref<IPriceCard[]>([
+  {
+    title: "Basic plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$1.99",
+      type: "/mo",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "Fast SSD Storage",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "unlimited database",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+  {
+    title: "Relluxe plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$6.99",
+      type: "/mo",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: false,
+        text: "Fast SSD",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "database",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+  {
+    title: "Expert plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$3.99",
+      type: "/mo",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB ",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: false,
+        text: "Fast",
+        value: "SSD Storage",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "unlimited database",
+      },
+    ],
+
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+]);
+const dataAnnually = ref<IPriceCard[]>([
+  {
+    title: "Basic plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$9.99",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup ",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "Fast SSD Storage",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "unlimited database",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+  {
+    title: "Relluxe plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$85.99",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB ",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: false,
+        text: "Fast SSD",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "database",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+  {
+    title: "Expert plan",
+    subtitle: "Mostly For Personal Using",
+    alertMsg: {
+      text: "",
+      isSpan: false,
+    },
+    price: {
+      currency: "$42.99",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "2 TB ",
+        value: "of space",
+      },
+      {
+        isUnavailable: false,
+        text: "unlimited",
+        value: "bandwidth",
+      },
+      {
+        isUnavailable: false,
+        text: "full backup ",
+        value: "systems",
+      },
+      {
+        isUnavailable: false,
+        text: "free",
+        value: "domain",
+      },
+      {
+        isUnavailable: false,
+        text: "Unlimited",
+        value: "Database",
+      },
+      {
+        isUnavailable: false,
+        text: "Fast",
+        value: "SSD Storage",
+      },
+      {
+        isUnavailable: true,
+        text: "",
+        value: "unlimited database",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "Dedicated project",
+        text: "big companis,we chose to works with it",
+      },
+      {
+        title: "Easy feedback sharing",
+        text: "Choose your edition, Try it free for 14 days",
+      },
+    ],
+    ctaBtn: { text: "next setup", variant: "primary" },
+  },
+]);
+const activeItems = ref<IPriceCard[]>(dataMonthly.value);
 </script>
 
 <style></style>

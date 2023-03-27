@@ -89,26 +89,10 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-9 col-12">
-              <div
-                class="owl-carousel more-services-carousel owl-theme d-inline">
-                <div class="item d-inline">
-                  <a href="hosting.html">Web Hosting</a>
-                </div>
-                <div class="item d-inline">
-                  <a href="icecast.html">Internet Radio Station</a>
-                </div>
-                <div class="item d-inline">
-                  <a href="servers.html">Managed Servers</a>
-                </div>
-                <div class="item">
-                  <a href="dedicated.html">Dedicated Server</a>
-                </div>
-                <div class="item">
-                  <a class="active" href="cloud-vps.html">VPS Hosting</a>
-                </div>
-                <div class="item">
-                  <a href="vps-reseller.html">Reseller Hosting</a>
-                </div>
+              <div class="row justify-content-around">
+                <RouterLink v-for="link in links" :to="link.link">
+                  {{ link.title }}
+                </RouterLink>
               </div>
             </div>
           </div>
@@ -133,6 +117,14 @@
 <script lang="ts" setup>
 const { $global } = useAppConfig();
 $global.headerClass = "services-page";
+
+const links = ref([
+  { title: "Web Hosting", link: "/hosting" },
+  { title: "Internet Radio Station", link: "/icecast" },
+  { title: "Managed Servers", link: "/Dedicated" },
+  { title: "VPS Hosting", link: "/cloud-vps" },
+  { title: "Reseller Hosting", link: "/vps-reseller" },
+]);
 </script>
 
 <style></style>

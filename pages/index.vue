@@ -55,86 +55,100 @@
       </div>
     </template>
     <template #main>
-      <main class="container d-flex align-items-center h-100">
+      <main
+        class="container d-flex align-items-center h-100"
+        style="margin-top: 200px">
         <div class="carousel carousel-main w-100">
-          <div class="carousel-cell">
-            <div class="row justify-content-start">
-              <div class="col-lg-8 col-12 white-text">
-                <span class="main-header-top-title"
-                  >Managed WordPress Hosting</span
-                >
-                <h3 class="main-header-title coodiv-text-3">
-                  Get WordPress with free SSL and backups for $5.99/mo
-                </h3>
-                <p
-                  class="main-header-sub-title coodiv-text-10 font-weight-light mb-10">
-                  Comes with free domain and email. Money-back guarantee
-                </p>
-                <div class="d-flex">
-                  <a
-                    class="main-header-btn coodiv-text-9 font-weight-bold"
-                    href="wordpress.html"
-                    >Get it now <i class="fal fa-arrow-right"></i
-                  ></a>
+          <swiper
+            :cssMode="true"
+            :pagination="true"
+            :mousewheel="true"
+            :keyboard="true"
+            :modules="modules"
+            class="mySwiper">
+            <swiper-slide>
+              <div class="carousel-cell">
+                <div class="row justify-content-start">
+                  <div class="col-lg-8 col-12 white-text">
+                    <span class="main-header-top-title"
+                      >Managed WordPress Hosting</span
+                    >
+                    <h3 class="main-header-title coodiv-text-3">
+                      Get WordPress with free SSL and backups for $5.99/mo
+                    </h3>
+                    <p
+                      class="main-header-sub-title coodiv-text-10 font-weight-light mb-10">
+                      Comes with free domain and email. Money-back guarantee
+                    </p>
+                    <div class="d-flex">
+                      <NuxtLink
+                        :to="{ name: 'wordpress' }"
+                        class="main-header-btn coodiv-text-9 font-weight-bold">
+                        Get it now <i class="fal fa-arrow-right"></i>
+                      </NuxtLink>
+                    </div>
+                  </div>
+                </div></div
+            ></swiper-slide>
+            <SwiperSlide>
+              <div class="carousel-cell">
+                <div class="row justify-content-start">
+                  <div class="col-lg-8 col-12 white-text">
+                    <span class="main-header-top-title">Web Hosting</span>
+                    <h3 class="main-header-title coodiv-text-3">
+                      Trust your client sites to the world’s #1 web host.
+                    </h3>
+                    <p
+                      class="main-header-sub-title coodiv-text-10 font-weight-light">
+                      Get faster sites — up to nearly 40% average improvement in
+                      overall server response times.
+                    </p>
+                    <div class="d-flex">
+                      <NuxtLink
+                        :to="{ name: 'dedicated' }"
+                        class="main-header-btn coodiv-text-9 font-weight-bold">
+                        See Plans & Pricing <i class="fal fa-arrow-right"></i>
+                      </NuxtLink>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="carousel-cell">
-            <div class="row justify-content-start">
-              <div class="col-lg-8 col-12 white-text">
-                <span class="main-header-top-title">Web Hosting</span>
-                <h3 class="main-header-title coodiv-text-3">
-                  Trust your client sites to the world’s #1 web host.
-                </h3>
-                <p
-                  class="main-header-sub-title coodiv-text-10 font-weight-light">
-                  Get faster sites — up to nearly 40% average improvement in
-                  overall server response times.
-                </p>
-                <div class="d-flex">
-                  <a
-                    class="main-header-btn coodiv-text-9 font-weight-bold"
-                    href="dedicated.html"
-                    >See Plans & Pricing <i class="fal fa-arrow-right"></i
-                  ></a>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="carousel-cell">
+                <div class="row justify-content-start">
+                  <div class="col-lg-8 col-12 white-text">
+                    <span class="main-header-top-title"
+                      >Self Managed VPS Hosting</span
+                    >
+                    <h3 class="main-header-title coodiv-text-3">
+                      Get Fully Managed Dedicated Server Hosting.
+                    </h3>
+                    <p
+                      class="main-header-sub-title coodiv-text-9 font-weight-light">
+                      Experience high-performance NVMe SSDs powered by Virtuozzo
+                      for 3X the speed plus unlimited traffic. You also get KVM
+                      virtualization for full control of your hardware
+                      resources.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-cell">
-            <div class="row justify-content-start">
-              <div class="col-lg-8 col-12 white-text">
-                <span class="main-header-top-title"
-                  >Self Managed VPS Hosting</span
-                >
-                <h3 class="main-header-title coodiv-text-3">
-                  Get Fully Managed Dedicated Server Hosting.
-                </h3>
-                <p
-                  class="main-header-sub-title coodiv-text-9 font-weight-light">
-                  Experience high-performance NVMe SSDs powered by Virtuozzo for
-                  3X the speed plus unlimited traffic. You also get KVM
-                  virtualization for full control of your hardware resources.
-                </p>
-              </div>
-            </div>
-          </div>
+              </div></SwiperSlide
+            >
+          </swiper>
         </div>
       </main>
     </template>
-    <template #more-services>
-      <div class="main-header-carousel-container container">
+    <!-- <template #more-services>
+      <div class="main-header-carousel-container container mt-4">
         <div class="row justify-content-start">
-          <div class="carousel carousel-nav">
-            <div class="carousel-cell">
+          <div class="carousel carousel-nav" style="display: flex">
+            <div class="carousel-cell item-hover">
               <div class="main-header-carousel-nav">
                 <div class="main-header-carousel-nav-bg"></div>
                 <i class="fal fa-hdd"></i>
                 <h5 class="coodiv-text-9 font-weight-bold">
-                  Affordable WordPress Hosting Solution.
+                  Affordablbe WordPress Hosting Solution.
                 </h5>
                 <p class="coodiv-text-12 font-weight-light">
                   Get fully-loaded WordPress plans for fast site building and
@@ -197,6 +211,9 @@
                   Magento, OpenCart and PrestaShop — with a single click!
                 </p>
                 <ul>
+                  <li>2</li>
+                </ul>
+                <ul>
                   <li>
                     <i class="fal fa-check" aria-hidden="true"></i>
                     <b>8 CPU</b> Cores
@@ -215,7 +232,7 @@
           </div>
         </div>
       </div>
-    </template>
+    </template> -->
   </Header>
 
   <!-- end header -->
@@ -232,9 +249,79 @@
   <CpanelFaq></CpanelFaq>
 </template>
 
-<script lang="ts" setup>
-const { $global } = useAppConfig();
-$global.headerClass = "homepage";
+<script lang="ts">
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const { $global } = useAppConfig();
+    $global.headerClass = "homepage";
+    return {
+      modules: [Navigation, Pagination, Mousewheel, Keyboard],
+    };
+  },
+};
 </script>
 
-<style></style>
+<style scoped>
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 1px);
+}
+</style>

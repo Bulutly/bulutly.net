@@ -8,6 +8,16 @@ export default defineNuxtConfig({
           src: "/js/jquery.min.js",
         },
         {
+          src: "/js/jquery.touchSwipe.min.js",
+          async: true,
+        },
+        {
+          src: "/js/bootstrap.min.js",
+        },
+        {
+          src: "/js/template-scripts.js",
+        },
+        {
           src: "/js/popper.min.js",
         },
 
@@ -30,13 +40,7 @@ export default defineNuxtConfig({
           src: "/js/smoothscroll.js",
         },
         {
-          src: "/js/bootstrap.min.js",
-        },
-        {
           src: "/owlcarousel/owl.carousel.min.js",
-        },
-        {
-          src: "/js/template-scripts.js",
         },
         {
           src: "/js/flickity.pkgd.min.js",

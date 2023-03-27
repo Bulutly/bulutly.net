@@ -14,249 +14,664 @@
 
       <div class="row justify-content-center align-items-center mt-7 mb-25">
         <div id="monthly-yearly-chenge" class="style-two mb-0">
-          <a class="active monthly-price">
+          <a
+            @click="activeItems = dataMonthly"
+            :class="activeItems == dataMonthly ? 'active' : ''"
+            class="monthly-price">
             <span class="change-box-text">billed monthly</span>
             <span class="change-box"></span
           ></a>
-          <a class="yearli-price">
+          <a
+            @click="activeItems = dataAnnually"
+            :class="activeItems == dataAnnually ? 'active' : ''"
+            class="yearli-price">
             <span class="change-box-text">billed annually</span></a
           >
         </div>
       </div>
-
-      <div id="plans-section" class="row justify-content-center">
-        <div class="col-md-3 col-12">
-          <div class="wordpress-plans-box">
-            <h5 class="coodiv-text-8">WordPress Starter</h5>
-            <p class="coodiv-text-12">
-              Start with a free sub-domain name, simple payments, and extra
-              storage.
-            </p>
-
-            <div class="second-pricing-table-price monthly">
-              <div class="plan-price monthly">
-                <div class="main-price">$0</div>
-                <div class="price-extentions">
-                  <span>.99</span><span>/month</span>
-                </div>
-              </div>
-              <div class="plan-price yearly">
-                <div class="main-price">$5</div>
-                <div class="price-extentions">
-                  <span>.99</span><span>/month</span>
-                </div>
-              </div>
-            </div>
-            <span class="plan-discount">Save 15% when billed annualy</span>
-
-            <ul>
-              <li><i class="fas fa-check-circle"></i><b>Up to 999</b> User</li>
-              <li><i class="fas fa-check-circle"></i><b>2GB</b> Storage</li>
-              <li>
-                <i class="fas fa-check-circle"></i
-                ><b>Google Analytics</b> integration
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>Free <b>sub-domain</b> name
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>Collect <b>payments</b>
-              </li>
-              <li class="not-checked">
-                <i class="fas fa-times-circle"></i><b>WordPress</b> plugins
-              </li>
-              <li class="not-checked">
-                <i class="fas fa-times-circle"></i><b>Premium</b> Support
-              </li>
-              <li class="not-checked">
-                <i class="fas fa-times-circle"></i><b>Premium</b> themes
-              </li>
-              <li class="not-checked">
-                <i class="fas fa-times-circle"></i>Sell with <b>WooCommerce</b>
-              </li>
-            </ul>
-            <a
-              class="btn btn-outline-dark coodiv-text-12 d-block w-100 font-weight-light"
-              href="#"
-              >choose plan</a
-            >
-          </div>
-        </div>
-
-        <div class="col-md-3 col-12">
-          <div class="wordpress-plans-box">
-            <h5 class="coodiv-text-8">WordPress Regular</h5>
-            <p class="coodiv-text-12">
-              Start with a free sub-domain name, simple payments, and extra
-              storage.
-            </p>
-
-            <div class="second-pricing-table-price monthly">
-              <div class="plan-price monthly">
-                <div class="main-price">$3</div>
-                <div class="price-extentions">
-                  <span>.99</span><span>/month</span>
-                </div>
-              </div>
-              <div class="plan-price yearly">
-                <div class="main-price">$25</div>
-                <div class="price-extentions">
-                  <span>.99</span><span>/month</span>
-                </div>
-              </div>
-            </div>
-            <span class="plan-discount">Save 30% when billed annualy</span>
-
-            <ul>
-              <li><i class="fas fa-check-circle"></i><b>Up to 1999</b> User</li>
-              <li><i class="fas fa-check-circle"></i><b>5GB</b> Storage</li>
-              <li>
-                <i class="fas fa-check-circle"></i
-                ><b>Google Analytics</b> integration
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>Free
-                <b>custom domain</b> name
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>Collect <b>payments</b>
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i><b>WordPress</b> plugins
-              </li>
-              <li><i class="fas fa-check-circle"></i><b>Premium</b> Support</li>
-              <li class="not-checked">
-                <i class="fas fa-times-circle"></i><b>Premium</b> themes
-              </li>
-              <li class="not-checked">
-                <i class="fas fa-times-circle"></i>Sell with <b> WooCommerce</b>
-              </li>
-            </ul>
-            <a
-              class="btn btn-outline-dark coodiv-text-12 d-block w-100 font-weight-light"
-              href="#"
-              >choose plan</a
-            >
-          </div>
-        </div>
-
-        <div class="col-md-3 col-12">
-          <div class="wordpress-plans-box active">
-            <span class="recommended-plan">Recommended</span>
-            <h5 class="coodiv-text-8">WordPress Standard</h5>
-            <p class="coodiv-text-12">
-              Start with a free sub-domain name, simple payments, and extra
-              storage.
-            </p>
-
-            <div class="second-pricing-table-price monthly">
-              <div class="plan-price monthly">
-                <div class="main-price">$6</div>
-                <div class="price-extentions">
-                  <span>.99</span><span>/month</span>
-                </div>
-              </div>
-              <div class="plan-price yearly">
-                <div class="main-price">$47</div>
-                <div class="price-extentions">
-                  <span>.99</span><span>/month</span>
-                </div>
-              </div>
-            </div>
-            <span class="plan-discount">Save 60% when billed annualy</span>
-
-            <ul>
-              <li><i class="fas fa-check-circle"></i><b>Unlimited</b> User</li>
-              <li><i class="fas fa-check-circle"></i><b>15GB</b> Storage</li>
-              <li>
-                <i class="fas fa-check-circle"></i
-                ><b>Google Analytics</b> integration
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>Free
-                <b>custom domain</b> name
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>Collect <b>payments</b>
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i><b>WordPress</b> plugins
-              </li>
-              <li><i class="fas fa-check-circle"></i><b>Premium</b> Support</li>
-              <li><i class="fas fa-check-circle"></i><b>Premium</b> themes</li>
-              <li>
-                <i class="fas fa-check-circle"></i>Sell with <b>WooCommerce</b>
-              </li>
-            </ul>
-            <a
-              class="btn btn-outline-dark coodiv-text-12 d-block w-100 font-weight-light"
-              href="#"
-              >choose plan</a
-            >
-          </div>
-        </div>
-
-        <div class="col-md-3 col-12">
-          <div class="wordpress-plans-box">
-            <h5 class="coodiv-text-8">WordPress Pro</h5>
-            <p class="coodiv-text-12">
-              Start with a free sub-domain name, simple payments, and extra
-              storage.
-            </p>
-
-            <div class="second-pricing-table-price monthly">
-              <div class="plan-price monthly">
-                <div class="main-price">$9</div>
-                <div class="price-extentions">
-                  <span>.99</span><span>/month</span>
-                </div>
-              </div>
-              <div class="plan-price yearly">
-                <div class="main-price">$93</div>
-                <div class="price-extentions">
-                  <span>.99</span><span>/month</span>
-                </div>
-              </div>
-            </div>
-            <span class="plan-discount">Save 30% when billed annualy</span>
-
-            <ul>
-              <li><i class="fas fa-check-circle"></i><b>Unlimited</b> User</li>
-              <li><i class="fas fa-check-circle"></i><b>25GB</b> Storage</li>
-              <li>
-                <i class="fas fa-check-circle"></i
-                ><b>Google Analytics</b> integration
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>Free
-                <b>custom domain</b> name
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i>Collect <b>payments</b>
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i><b>WordPress</b> plugins
-              </li>
-              <li><i class="fas fa-check-circle"></i><b>Premium</b> Support</li>
-              <li><i class="fas fa-check-circle"></i><b>Premium</b> themes</li>
-              <li>
-                <i class="fas fa-check-circle"></i>Sell with <b>WooCommerce</b>
-              </li>
-            </ul>
-            <a
-              class="btn btn-outline-dark coodiv-text-12 d-block w-100 font-weight-light"
-              href="#"
-              >choose plan</a
-            >
-          </div>
-        </div>
-      </div>
+      <WordpressPriceCard :items="activeItems" />
     </div>
   </section>
 </template>
 
-<script>
-export default {};
+<script lang="ts" setup>
+const dataMonthly = ref<IPriceCard[]>([
+  {
+    title: "WordPress Starter",
+    subtitle:
+      "Start with a free sub-domain name, simple payments, and extra storage.",
+    alertMsg: {
+      text: "Save 15% when billed annualy",
+      isSpan: true,
+    },
+    price: {
+      currency: "$0",
+      type: "/month",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "Up to 999 ",
+        value: "User",
+      },
+      {
+        isUnavailable: false,
+        text: "2GB",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "Google Analytics",
+        value: "integration",
+      },
+      {
+        isUnavailable: false,
+        text: "Free sub-domain",
+        value: "name",
+      },
+      {
+        isUnavailable: false,
+        text: "Collect",
+        value: "payments",
+      },
+      {
+        isUnavailable: true,
+        text: "WordPress",
+        value: "plugins",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium",
+        value: "Support",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium ",
+        value: "themes",
+      },
+      {
+        isUnavailable: true,
+        text: "Sell with",
+        value: "WooCommerce ",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "WordPress Starter",
+    subtitle:
+      "Start with a free sub-domain name, simple payments, and extra storage.",
+    alertMsg: {
+      text: "Save 15% when billed annualy",
+      isSpan: true,
+    },
+    price: {
+      currency: "$3",
+      type: "/month",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "Up to 999 ",
+        value: "User",
+      },
+      {
+        isUnavailable: false,
+        text: "2GB",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "Google Analytics",
+        value: "integration",
+      },
+      {
+        isUnavailable: false,
+        text: "Free sub-domain",
+        value: "name",
+      },
+      {
+        isUnavailable: false,
+        text: "Collect",
+        value: "payments",
+      },
+      {
+        isUnavailable: true,
+        text: "WordPress",
+        value: "plugins",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium",
+        value: "Support",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium ",
+        value: "themes",
+      },
+      {
+        isUnavailable: true,
+        text: "Sell with",
+        value: "WooCommerce ",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "WordPress Starter",
+    subtitle:
+      "Start with a free sub-domain name, simple payments, and extra storage.",
+    alertMsg: {
+      text: "Save 15% when billed annualy",
+      isSpan: true,
+    },
+    price: {
+      currency: "$6",
+      type: "/month",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "Up to 999 ",
+        value: "User",
+      },
+      {
+        isUnavailable: false,
+        text: "2GB",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "Google Analytics",
+        value: "integration",
+      },
+      {
+        isUnavailable: false,
+        text: "Free sub-domain",
+        value: "name",
+      },
+      {
+        isUnavailable: false,
+        text: "Collect",
+        value: "payments",
+      },
+      {
+        isUnavailable: true,
+        text: "WordPress",
+        value: "plugins",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium",
+        value: "Support",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium ",
+        value: "themes",
+      },
+      {
+        isUnavailable: true,
+        text: "Sell with",
+        value: "WooCommerce ",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "WordPress Starter",
+    subtitle:
+      "Start with a free sub-domain name, simple payments, and extra storage.",
+    alertMsg: {
+      text: "Save 15% when billed annualy",
+      isSpan: true,
+    },
+    price: {
+      currency: "$9",
+      type: "/month",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "Up to 999 ",
+        value: "User",
+      },
+      {
+        isUnavailable: false,
+        text: "2GB",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "Google Analytics",
+        value: "integration",
+      },
+      {
+        isUnavailable: false,
+        text: "Free sub-domain",
+        value: "name",
+      },
+      {
+        isUnavailable: false,
+        text: "Collect",
+        value: "payments",
+      },
+      {
+        isUnavailable: true,
+        text: "WordPress",
+        value: "plugins",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium",
+        value: "Support",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium ",
+        value: "themes",
+      },
+      {
+        isUnavailable: true,
+        text: "Sell with",
+        value: "WooCommerce ",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+]);
+const dataAnnually = ref<IPriceCard[]>([
+  {
+    title: "WordPress Starter",
+    subtitle:
+      "Start with a free sub-domain name, simple payments, and extra storage.",
+    alertMsg: {
+      text: "Save 15% when billed annualy",
+      isSpan: true,
+    },
+    price: {
+      currency: "$5",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "Up to 999 ",
+        value: "User",
+      },
+      {
+        isUnavailable: false,
+        text: "2GB",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "Google Analytics",
+        value: "integration",
+      },
+      {
+        isUnavailable: false,
+        text: "Free sub-domain",
+        value: "name",
+      },
+      {
+        isUnavailable: false,
+        text: "Collect",
+        value: "payments",
+      },
+      {
+        isUnavailable: true,
+        text: "WordPress",
+        value: "plugins",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium",
+        value: "Support",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium ",
+        value: "themes",
+      },
+      {
+        isUnavailable: true,
+        text: "Sell with",
+        value: "WooCommerce ",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "WordPress Starter",
+    subtitle:
+      "Start with a free sub-domain name, simple payments, and extra storage.",
+    alertMsg: {
+      text: "Save 15% when billed annualy",
+      isSpan: true,
+    },
+    price: {
+      currency: "$25",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "Up to 999 ",
+        value: "User",
+      },
+      {
+        isUnavailable: false,
+        text: "2GB",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "Google Analytics",
+        value: "integration",
+      },
+      {
+        isUnavailable: false,
+        text: "Free sub-domain",
+        value: "name",
+      },
+      {
+        isUnavailable: false,
+        text: "Collect",
+        value: "payments",
+      },
+      {
+        isUnavailable: true,
+        text: "WordPress",
+        value: "plugins",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium",
+        value: "Support",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium ",
+        value: "themes",
+      },
+      {
+        isUnavailable: true,
+        text: "Sell with",
+        value: "WooCommerce ",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "WordPress Starter",
+    subtitle:
+      "Start with a free sub-domain name, simple payments, and extra storage.",
+    alertMsg: {
+      text: "Save 15% when billed annualy",
+      isSpan: true,
+    },
+    price: {
+      currency: "$47",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "Up to 999 ",
+        value: "User",
+      },
+      {
+        isUnavailable: false,
+        text: "2GB",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "Google Analytics",
+        value: "integration",
+      },
+      {
+        isUnavailable: false,
+        text: "Free sub-domain",
+        value: "name",
+      },
+      {
+        isUnavailable: false,
+        text: "Collect",
+        value: "payments",
+      },
+      {
+        isUnavailable: true,
+        text: "WordPress",
+        value: "plugins",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium",
+        value: "Support",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium ",
+        value: "themes",
+      },
+      {
+        isUnavailable: true,
+        text: "Sell with",
+        value: "WooCommerce ",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+  {
+    title: "WordPress Starter",
+    subtitle:
+      "Start with a free sub-domain name, simple payments, and extra storage.",
+    alertMsg: {
+      text: "Save 15% when billed annualy",
+      isSpan: true,
+    },
+    price: {
+      currency: "$93",
+      type: "/year",
+    },
+    serviceList: [
+      {
+        isUnavailable: false,
+        text: "Up to 999 ",
+        value: "User",
+      },
+      {
+        isUnavailable: false,
+        text: "2GB",
+        value: "Storage",
+      },
+      {
+        isUnavailable: false,
+        text: "Google Analytics",
+        value: "integration",
+      },
+      {
+        isUnavailable: false,
+        text: "Free sub-domain",
+        value: "name",
+      },
+      {
+        isUnavailable: false,
+        text: "Collect",
+        value: "payments",
+      },
+      {
+        isUnavailable: true,
+        text: "WordPress",
+        value: "plugins",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium",
+        value: "Support",
+      },
+      {
+        isUnavailable: true,
+        text: "Premium ",
+        value: "themes",
+      },
+      {
+        isUnavailable: true,
+        text: "Sell with",
+        value: "WooCommerce ",
+      },
+    ],
+    extraInfo: [
+      {
+        title: "",
+        text: "Unlimited listeners",
+      },
+      {
+        title: "",
+        text: "Unlimited bandwidth",
+      },
+      {
+        title: "",
+        text: "Free Auto DJ",
+      },
+      {
+        title: "",
+        text: "SSL Streaming",
+      },
+    ],
+    ctaBtn: { text: "Start your free trial", variant: "dark" },
+  },
+]);
+const activeItems = ref<IPriceCard[]>(dataMonthly.value);
 </script>
 
 <style></style>

@@ -20,7 +20,11 @@
           </div>
         </div>
       </div>
-      <swiper :navigation="true" :modules="modules" class="mySwiper">
+      <swiper
+        :navigation="false"
+        :pagination="true"
+        :modules="modules"
+        class="mySwiper">
         <SwiperSlide>
           <div class="item">
             <NuxtLink

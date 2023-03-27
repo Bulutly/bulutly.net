@@ -11561,3 +11561,18 @@ a.mas-demo-btn:hover {
   padding: 2rem 1rem !important;
   box-shadow: none !important;
 }
+.hideBtn {
+  background-color: transparent;
+  border-color: transparent;
+  float: right;
+  display: none;
+}
+.bi-x-lg {
+  color: white;
+}
+
+@media (max-width: 432px) {
+  .hideBtn {
+    display: flex;
+  }
+}

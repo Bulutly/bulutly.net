@@ -278,29 +278,28 @@ $(function () {
   });
 });
 
-//-- responsive menu swipe -- //
-if (document.documentElement.clientWidth < 768) {
-  $(function () {
-    $("body").swipe({
-      swipe: function (event, direction) {
-        if (direction == "right" && !$("#offcanvas-menu-home").hasClass("in")) {
-          $("#offcanvas-menu-home").addClass("in");
-          $(".offcanvas-toggle.menu-btn-span-bar").addClass("is-open");
-          $("body").addClass("offcanvas-stop-scrolling");
-        }
-
-        if (direction == "left") {
-          $("#offcanvas-menu-home").removeClass("in");
-          $("body").removeClass("offcanvas-stop-scrolling");
-          $(".offcanvas-toggle.menu-btn-span-bar").removeClass("is-open");
-        }
-      },
-      threshold: 100,
-      excludedElements:
-        "label,pre , button, input, select, textarea, table,.owl-carousel,.carousel-main,.flickity-enabled",
-    });
-  });
-}
+// -- responsive menu swipe -- //
+// if (document.documentElement.clientWidth < 768) {
+//   $(function () {
+//     $("body").swipe({
+//       swipe: function (event, direction) {
+//         if (direction == "right" && !$("#offcanvas-menu-home").hasClass("in")) {
+//           $("#offcanvas-menu-home").addClass("in");
+//           $(".offcanvas-toggle.menu-btn-span-bar").addClass("is-open");
+//           $("body").addClass("offcanvas-stop-scrolling");
+//         }
+//         if (direction == "left") {
+//           $("#offcanvas-menu-home").removeClass("in");
+//           $("body").removeClass("offcanvas-stop-scrolling");
+//           $(".offcanvas-toggle.menu-btn-span-bar").removeClass("is-open");
+//         }
+//       },
+//       threshold: 100,
+//       excludedElements:
+//         "label,pre , button, input, select, textarea, table,.owl-carousel,.carousel-main,.flickity-enabled",
+//     });
+//   });
+// }
 
 //-- go to top button -- //
 $(document).ready(function () {
