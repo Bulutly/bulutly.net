@@ -58,8 +58,7 @@
       <main class="container d-flex align-items-center h-100" style="margin-top: 200px">
         <ClientOnly>
           <div class="carousel carousel-main w-100">
-            <swiper :cssMode="true" :pagination="true" :mousewheel="true" :keyboard="true" :modules="modules"
-              class="mySwiper">
+            <swiper :pagination="{ clickable: true }" mousewheel keyboard :modules="modules" class="mySwiper">
               <swiper-slide>
                 <div class="carousel-cell">
                   <div class="row justify-content-start">
