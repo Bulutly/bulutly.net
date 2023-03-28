@@ -316,8 +316,8 @@
           <div class="col-md-7 col-lg-7">
             <div class="copyright-text">
               <p class="mb-lg-0 mb-md-0">
-                &copy; 2017-2022 Trader4, All Rights Reserved. Build
-                <code>0.0.05</code>
+                &copy; 2017-2023 Trader4, All Rights Reserved. Build
+                <code>0.0.06</code>
               </p>
             </div>
           </div>

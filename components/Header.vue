@@ -257,7 +257,7 @@
                         <h6 class="drop-heading">T4 Academy</h6>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/trading-strategy"
+                          to="https://blog.trader4.net/category/trading-strategies/"
                           target="_blank"
                           class="dropdown-link px-0">
                           <span class="me-2"><i class="far fa-lamp"></i></span>
@@ -265,7 +265,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/trading-system"
+                          to="https://blog.trader4.net/category/trading-systems/"
                           target="_blank"
                           class="dropdown-link px-0">
                           <span class="me-2"
@@ -275,7 +275,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/risk-management"
+                          to="https://blog.trader4.net/category/risk-management/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
@@ -285,7 +285,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/money-management"
+                          to="https://blog.trader4.net/category/money-management/"
                           target="_blank"
                           class="dropdown-link px-0">
                           <span class="me-2"
@@ -295,7 +295,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/trading-plan"
+                          to="https://blog.trader4.net/category/trading-plans/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
@@ -309,7 +309,7 @@
                         <h6 class="drop-heading">More</h6>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/wiki"
+                          to="https://blog.trader4.net/category/wiki/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"><i class="far fa-w"></i></span>
@@ -317,7 +317,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/algo-trading"
+                          to="https://blog.trader4.net/category/algo-trading/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
@@ -327,7 +327,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/psychology"
+                          to="https://blog.trader4.net/category/psychology/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"><i class="far fa-brain"></i></span>
@@ -335,7 +335,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/think-and-grow-rich"
+                          to="https://blog.trader4.net/tag/think-and-grow-rich/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
@@ -345,7 +345,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/rich-dad-poor-dad"
+                          to="https://blog.trader4.net/tag/rich-dad-poor-dad/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"><i class="far fa-book"></i></span>
@@ -391,7 +391,7 @@
                         </nuxt-link>
 
                         <nuxt-link
-                          to="https://docs.trader4.net/blog/tags/news"
+                          to="https://blog.trader4.net/category/news/"
                           target="_blank"
                           class="dropdown-link">
                           <span class="me-2"
@@ -468,13 +468,6 @@
                 <i class="fas fa-phone"></i>
                 +447888872710
               </nuxt-link>
-              <!-- <a
-                href="http://127.0.0.1:8001/auth/register"
-                class="btn btn-primary"
-                >Start</a
-              > -->
-
-              <!-- TODO:later navigate to Login Page -->
               <nuxt-link
                 to="https://app.trader4.net"
                 target="_blank"
@@ -734,7 +727,7 @@
                       <h6 class="drop-heading">Useful Links</h6>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/trading-strategy"
+                        to="https://blog.trader4.net/category/trading-strategies/"
                         target="_blank"
                         class="dropdown-link px-0">
                         <span class="me-2"><i class="far fa-lamp"></i></span>
@@ -742,7 +735,7 @@
                       </nuxt-link>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/trading-system"
+                        to="https://blog.trader4.net/category/trading-systems/"
                         target="_blank"
                         class="dropdown-link px-0">
                         <span class="me-2"
@@ -752,7 +745,7 @@
                       </nuxt-link>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/risk-management"
+                        to="https://blog.trader4.net/category/risk-management/"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
@@ -762,7 +755,7 @@
                       </nuxt-link>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/money-management"
+                        to="https://blog.trader4.net/category/money-management/"
                         target="_blank"
                         class="dropdown-link px-0">
                         <span class="me-2"
@@ -772,7 +765,7 @@
                       </nuxt-link>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/trading-plan"
+                        to="https://blog.trader4.net/category/trading-plans/"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
@@ -785,7 +778,7 @@
                       <h6 class="drop-heading">More</h6>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/wiki"
+                        to="https://blog.trader4.net/category/wiki/"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"><i class="far fa-w"></i></span>
@@ -793,7 +786,7 @@
                       </nuxt-link>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/algo-trading"
+                        to="https://blog.trader4.net/category/algo-trading/"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
@@ -803,7 +796,7 @@
                       </nuxt-link>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/psychology"
+                        to="https://blog.trader4.net/category/psychology/"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"><i class="far fa-brain"></i></span>
@@ -811,7 +804,7 @@
                       </nuxt-link>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/think-and-grow-rich"
+                        to="https://blog.trader4.net/tag/think-and-grow-rich/"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
@@ -821,7 +814,7 @@
                       </nuxt-link>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/rich-dad-poor-dad"
+                        to="https://blog.trader4.net/tag/rich-dad-poor-dad/"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"><i class="far fa-book"></i></span>
@@ -868,7 +861,7 @@
                       </nuxt-link>
 
                       <nuxt-link
-                        to="https://docs.trader4.net/blog/tags/news"
+                        to="https://blog.trader4.net/category/news/"
                         target="_blank"
                         class="dropdown-link">
                         <span class="me-2"
