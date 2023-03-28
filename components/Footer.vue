@@ -13,16 +13,11 @@
           </p>
         </div>
 
-        <div
-          class="col-md-4 free-trial-footer-links d-flex align-items-center justify-content-end">
+        <div class="col-md-4 free-trial-footer-links d-flex align-items-center justify-content-end">
           <div class="d-flex align-items-center">
-            <NuxtLink class="sign-btn" :to="{ name: 'authentication-sign-up' }"
-              >sign up</NuxtLink
-            >
+            <NuxtLink class="sign-btn" :to="{ name: 'authentication-sign-up' }">sign up</NuxtLink>
 
-            <NuxtLink class="log-btn" :to="{ name: 'authentication-sign-in' }"
-              >log in</NuxtLink
-            >
+            <NuxtLink class="log-btn" :to="{ name: 'authentication-sign-in' }">log in</NuxtLink>
           </div>
         </div>
       </div>
@@ -38,14 +33,10 @@
               <h5 class="quiq-links-footer-title">Quick Links</h5>
               <ul class="quiq-links-footer-ul">
                 <li>
-                  <NuxtLink :to="{ name: 'help-center' }"
-                    >Support center</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'help-center' }">Support center</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'knowledgebase' }"
-                    >Knowledgebase</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'knowledgebase' }">Knowledgebase</NuxtLink>
                 </li>
                 <li>
                   <NuxtLink :to="{ name: 'privacy' }">Coodiv Privacy</NuxtLink>
@@ -54,9 +45,7 @@
                   <NuxtLink :to="{ name: 'about-us' }">About us</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'contact-us' }"
-                    >My Support Tickets</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'contact-us' }">My Support Tickets</NuxtLink>
                 </li>
               </ul>
             </div>
@@ -67,20 +56,14 @@
                   <NuxtLink :to="{ name: 'domains' }">Domain Search</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'hosting' }"
-                    >Websites & hosting</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'hosting' }">Websites & hosting</NuxtLink>
                 </li>
                 <li>
                   <!-- <a href="wordpress.html">WordPress solution</a> -->
-                  <NuxtLink :to="{ name: 'wordpress' }"
-                    >WordPress solution</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'wordpress' }">WordPress solution</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'servers' }"
-                    >Reseller Programs</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'servers' }">Reseller Programs</NuxtLink>
                 </li>
 
                 <li>
@@ -92,43 +75,29 @@
               <h5 class="quiq-links-footer-title">Quick Links</h5>
               <ul class="quiq-links-footer-ul">
                 <li>
-                  <NuxtLink :to="{ name: 'cloud-vps' }"
-                    >Managed VPS hosting</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'cloud-vps' }">Managed VPS hosting</NuxtLink>
                   <span class="badge badge-pill badge-warning">HOT!</span>
                 </li>
                 <li>
                   <NuxtLink :to="{ name: 'cpanel' }">Cpanel hosting</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'dedicated' }"
-                    >Dedicated Webhosting</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'dedicated' }">Dedicated Webhosting</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'domains' }"
-                    >Domain Name Search</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'domains' }">Domain Name Search</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'games' }"
-                    >Game Server Hosting</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'games' }">Game Server Hosting</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'hosting' }"
-                    >Webhosting Servers</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'hosting' }">Webhosting Servers</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'icecast' }"
-                    >Internet Radio Station</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'icecast' }">Internet Radio Station</NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="{ name: 'servers' }"
-                    >Fully Managed Dedicated</NuxtLink
-                  >
+                  <NuxtLink :to="{ name: 'servers' }">Fully Managed Dedicated</NuxtLink>
                   <span class="badge badge-pill badge-warning">HOT!</span>
                 </li>
               </ul>
@@ -142,8 +111,7 @@
             <img src="~/assets/img/footer/secure.png" alt="" />
             <span>this is for demo reason only</span>
           </div>
-          <div
-            class="footercontact-information d-flex flex-column col-6 col-12 mt-md-0 mt-8">
+          <div class="footercontact-information d-flex flex-column col-6 col-12 mt-md-0 mt-8">
             <a href="#">support@coodiv.net</a>
             <a href="#">marketing@coodiv.net</a>
             <a href="#">00123 456 789001</a>
@@ -153,12 +121,7 @@
 
       <div class="mr-tp-40 row justify-content-between footer-area-under">
         <div class="col-md col-12 d-flex align-items-center">
-          <a href="#"
-            ><img
-              class="footer-logo-blue"
-              src="~/assets/img/header/logo-w.png"
-              alt=""
-          /></a>
+          <a href="#"><img class="footer-logo-blue" src="~/assets/img/header/logo-w.png" alt="" /></a>
           <div class="footer-social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -169,8 +132,7 @@
           </div>
         </div>
 
-        <div
-          class="col-md col-12 d-flex justify-content-md-end justify-content-start">
+        <div class="col-md col-12 d-flex justify-content-md-end justify-content-start">
           <ul class="under-footer-ullist">
             <li>
               <NuxtLink :to="{ name: 'help-center' }">Support center</NuxtLink>
@@ -188,26 +150,15 @@
       <div class="row justify-content-between final-footer-area mr-tp-40">
         <div class="col-md col-12">
           <div class="final-footer-area-text">
-            bredh template 2.0 © Copyright 2022. made by
-            <a target="_blank" href="https://coodiv.net/">coodiv.net</a> team.
+              {{ version }} © Copyright {{ new Date().getFullYear() }}
           </div>
         </div>
         <div class="col-md col-12 d-flex justify-content-end">
           <div class="footer-lang-changer">
             <div class="lang-changer-drop-up">
-              <a
-                class="menu-btn-changer"
-                role="button"
-                id="dropupmenulagchanger"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                href="#"
-                ><i class="fas fa-globe-asia"></i> english</a
-              >
-              <div
-                class="dropdown-menu dropupmenulagchanger"
-                aria-labelledby="dropupmenulagchanger">
+              <a class="menu-btn-changer" role="button" id="dropupmenulagchanger" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" href="#"><i class="fas fa-globe-asia"></i> english</a>
+              <div class="dropdown-menu dropupmenulagchanger" aria-labelledby="dropupmenulagchanger">
                 <a class="dropdown-item" href="#">english</a>
                 <a class="dropdown-item" href="#">العربية</a>
                 <a class="dropdown-item" href="#">Español</a>
@@ -220,10 +171,8 @@
             </div>
 
             <div class="lang-changer-drop-up">
-              <a class="menu-btn-changer" href="#"
-                ><img src="~/assets/img/flags/usa.svg" alt="" /> united
-                states</a
-              >
+              <a class="menu-btn-changer" href="#"><img src="~/assets/img/flags/usa.svg" alt="" /> united
+                states</a>
             </div>
           </div>
         </div>
@@ -232,10 +181,10 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "Footer",
-};
+<script setup lang="ts">
+import { onMounted } from 'vue';
+import {version} from '../package.json'
+
 </script>
 
 <style></style>
