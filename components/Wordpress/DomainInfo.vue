@@ -35,19 +35,19 @@
 
           <div class="row justify-content-center ltd-prices-wordpress mt-9">
             <a href="#"
-              ><img src="~/assets/img/domain/black/com.png" alt="" />
+              ><img src="img/domain/black/com.png" alt="" />
               <span>$15.99</span></a
             >
             <a href="#"
-              ><img src="~/assets/img/domain/black/net.png" alt="" />
+              ><img src="img/domain/black/net.png" alt="" />
               <span>$1.99</span></a
             >
             <a href="#"
-              ><img src="~/assets/img/domain/black/org.png" alt="" />
+              ><img src="img/domain/black/org.png" alt="" />
               <span>$4.99</span></a
             >
             <a href="#"
-              ><img src="~/assets/img/domain/black/shop.png" alt="" />
+              ><img src="img/domain/black/shop.png" alt="" />
               <span>$28.99</span></a
             >
           </div>

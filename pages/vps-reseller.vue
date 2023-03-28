@@ -19,17 +19,18 @@
   <!-- end preloader -->
   <Header></Header>
 
-  <VpsResellerBanner></VpsResellerBanner>
+  <VpsResellerBanner />
 
-  <VpsResellerMapServer></VpsResellerMapServer>
+  <VpsResellerMapServer />
 
-  <VpsResellerFeature></VpsResellerFeature>
+  <!-- <VpsResellerLive /> -->
+  <VpsResellerLive />
 
-  <VpsResellerTools></VpsResellerTools>
+  <VpsResellerTools />
 
-  <VpsResellerManagement></VpsResellerManagement>
+  <VpsResellerManagement />
 
-  <VpsResellerFastTrack></VpsResellerFastTrack>
+  <VpsResellerFeatures />
 </template>
 
 <script lang="ts" setup>

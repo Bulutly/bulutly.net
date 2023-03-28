@@ -47,19 +47,19 @@
 
   <Header></Header>
 
-  <SSLBanner></SSLBanner>
+  <SSLBanner />
 
-  <SSLEncryption></SSLEncryption>
+  <SSLEncryption />
 
-  <SSLPartners></SSLPartners>
+  <SSLPartners />
 
-  <SSLCertificate></SSLCertificate>
+  <SSLCertificate />
 
-  <SSLServices></SSLServices>
+  <SSLFeatures />
 
-  <IndexGuideLine></IndexGuideLine>
+  <IndexGuideLine />
 
-  <CpanelFaq></CpanelFaq>
+  <CpanelFaq />
 </template>
 
 <script lang="ts" setup>

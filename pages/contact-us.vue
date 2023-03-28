@@ -19,11 +19,13 @@
   <!-- end preloader -->
 
   <Header>
-    <div class="bg_overlay_header">
-      <div id="particles-bg"></div>
-      <div class="cloud-bg"></div>
-      <div class="bg-img-header-new-moon">&nbsp;</div>
-    </div>
+    <template #span>
+      <div class="bg_overlay_header">
+        <div id="particles-bg"></div>
+        <div class="cloud-bg"></div>
+        <div class="bg-img-header-new-moon">&nbsp;</div>
+      </div>
+    </template>
     <template #main>
       <main class="container mt-25">
         <div class="row">
@@ -110,7 +112,7 @@
       </main>
     </template>
   </Header>
-
+  <div id="mobile-form-contact-height" style="height: 513px"></div>
   <ContactMobileForm></ContactMobileForm>
   <ContactHelpCenter></ContactHelpCenter>
 </template>

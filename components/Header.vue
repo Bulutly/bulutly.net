@@ -10,8 +10,8 @@
       class="navbar navbar-expand-md fixed-header-layout">
       <div class="container main-header-coodiv-s">
         <NuxtLink class="navbar-brand" :to="{ name: 'index' }">
-          <img class="w-logo" src="~/assets/img/header/logo.png" alt="" />
-          <img class="b-logo" src="~/assets/img/header/logo.png" alt="" />
+          <img class="w-logo" src="img/header/logo.png" alt="bulutly logo" />
+          <img class="b-logo" src="img/header/logo.png" alt="bulutly logo" />
         </NuxtLink>
         <button
           class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto"
@@ -54,9 +54,7 @@
                       <div class="row justify-content-start">
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img
-                              src="~/assets/img/demo/demos/sefar.jpg"
-                              alt="" />
+                            <img src="img/demo/demos/sefar.jpg" alt="" />
                             <div class="text">
                               <h5
                                 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
@@ -73,9 +71,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img
-                              src="~/assets/img/demo/demos/hoggar.jpg"
-                              alt="" />
+                            <img src="img/demo/demos/hoggar.jpg" alt="" />
                             <div class="text">
                               <h5
                                 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
@@ -91,9 +87,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img
-                              src="~/assets/img/demo/demos/atlas.jpg"
-                              alt="" />
+                            <img src="img/demo/demos/atlas.jpg" alt="" />
                             <div class="text">
                               <h5
                                 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
@@ -109,9 +103,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img
-                              src="~/assets/img/demo/demos/chrea.jpg"
-                              alt="" />
+                            <img src="img/demo/demos/chrea.jpg" alt="" />
                             <div class="text">
                               <h5
                                 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
@@ -473,18 +465,7 @@
                 </svg>
               </button>
             </li>
-            <li>
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                id="header-first-drop-down"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Homepage</a
-              >
-            </li>
+
             <li class="nav-item mega-menu demos-dropdown dropdown active">
               <a
                 class="nav-link"
@@ -512,9 +493,7 @@
                       <div class="row justify-content-start">
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img
-                              src="~/assets/img/demo/demos/sefar.jpg"
-                              alt="" />
+                            <img src="img/demo/demos/sefar.jpg" alt="" />
                             <div class="text">
                               <h5
                                 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
@@ -531,9 +510,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img
-                              src="~/assets/img/demo/demos/hoggar.jpg"
-                              alt="" />
+                            <img src="img/demo/demos/hoggar.jpg" alt="" />
                             <div class="text">
                               <h5
                                 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
@@ -549,9 +526,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img
-                              src="~/assets/img/demo/demos/atlas.jpg"
-                              alt="" />
+                            <img src="img/demo/demos/atlas.jpg" alt="" />
                             <div class="text">
                               <h5
                                 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
@@ -567,9 +542,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img
-                              src="~/assets/img/demo/demos/chrea.jpg"
-                              alt="" />
+                            <img src="img/demo/demos/chrea.jpg" alt="" />
                             <div class="text">
                               <h5
                                 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">

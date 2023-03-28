@@ -56,7 +56,7 @@
       <div class="section-product-introduction-image-wrapper">
         <div class="section-product-introduction-background"></div>
         <img
-          src="~/assets/img/demo/admin-panel.png"
+          src="img/demo/admin-panel.png"
           alt="statistics"
           title="statistics"
           class="section-product-introduction-image"

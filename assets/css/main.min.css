@@ -1242,7 +1242,7 @@ a:hover {
   top: -120px;
 }
 #coodiv-header .navbar-brand img {
-  max-height: 25px;
+  max-height: 45px;
 }
 #coodiv-navbar-header {
   padding: 2rem 1rem;
@@ -9023,7 +9023,7 @@ table#prices thead tr.price-dsc th.features.banner .banner-servers-box {
   }
 }
 .bg-img-header-new-moon {
-  background-image: url(~/assets/img/header/h_bg_02.svg);
+  background-image: url(img/header/h_bg_02.svg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;

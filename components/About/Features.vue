@@ -1,97 +1,54 @@
 <template>
   <section class="features pt-20 pb-25 border-top">
     <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-md-6 col-12">
-          <div
-            style="background-color: #ff5059"
-            class="section_text_graphic_image">
-            <img
-              src="~/assets/img/demo/features/red-feature.png"
-              alt=""
-              title=""
-              loading="lazy" />
-          </div>
-        </div>
-        <div class="col-md-6 col-12 d-flex align-items-center">
-          <div class="content-text-author mt-md-0 mt-14">
-            <p
-              style="color: #ff2934"
-              class="eyebrow content-text-author_eyebrow">
-              MANAGED WORDPRESS ECOMMERCE
-            </p>
-            <h3 class="coodiv-text-4 font-weight-bold">
-              WooCommerce offers powerful online stores.
-            </h3>
-            <p class="content_text_author_description_p">
-              Managed WordPress Ecommerce offers hassle-free online store setup,
-              built-in speed and performance, plus free access to over 40
-              WooCommerce extensions.
-            </p>
-            <p class="content_text_author_description_p">
-              Build client sites quickly with the latest version of WordPress
-              installed. From there you can start from scratch or save time
-              picking from dozens of flexible, editable themes.
-            </p>
-
-            <NuxtLink
-              :to="{ name: 'wordpress' }"
-              class="btn btn-dark coodiv-text-11 mt-10">
-              Get started now
-            </NuxtLink>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-start mt-22">
-        <div class="col-md-6 col-12 d-flex align-items-center">
-          <div class="content-text-author mb-md-0 mb-14">
-            <p
-              style="color: #ee9823"
-              class="eyebrow content-text-author_eyebrow">
-              Super fast development
-            </p>
-            <h3 class="coodiv-text-4 font-weight-bold">
-              Dedicated Server Hosting for system admins and developers.
-            </h3>
-            <p class="content_text_author_description_p">
-              Calling all experienced developers, system admins or agencies
-              seeking powerful server capabilities: our Dedicated Server Hosting
-              provides high-performance server options with isolated resources
-              to run mission-critical applications where latency and uptime
-              matters.
-            </p>
-            <p class="content_text_author_description_p">
-              All plans come with free standard hosting support. Optional paid
-              server management services include fully managed support and
-              task-based services.
-            </p>
-
-            <NuxtLink
-              :to="{ name: 'servers' }"
-              class="btn btn-dark coodiv-text-11 mt-10">
-              Configure your Server now
-            </NuxtLink>
-          </div>
-        </div>
-        <div class="col-md-6 col-12">
-          <div
-            style="background-color: #fede48"
-            class="section_text_graphic_image">
-            <img
-              src="~/assets/img/demo/features/yellow-feature.png"
-              alt=""
-              title=""
-              loading="lazy" />
-          </div>
-        </div>
-      </div>
+      <IndexFeaturesCards :data="cardData" />
     </div>
   </section>
 </template>
 
-<script>
-export default {};
+<script lang="ts" setup>
+const cardData = ref<IFeatureCard[]>([
+  {
+    title: "WooCommerce offers powerful online stores.",
+    subtitle: {
+      text: "MANAGED WORDPRESS ECOMMERCE",
+      color: "#ff2934",
+    },
+
+    description:
+      "Managed WordPress Ecommerce offers hassle-free online store setup, built-in speed and performance, plus free access to over 40 WooCommerce extensions. Build client sites quickly with the latest version of WordPress installed. From there you can start from scratch or save time picking from dozens of flexible, editable themes.",
+    button: {
+      path: "/wordpress",
+      text: "Get started now",
+      color: "dark",
+      exist: true,
+    },
+    image: {
+      path: "img/demo/features/red-feature.png",
+      backgroundColor: "#ff5059",
+    },
+  },
+  {
+    title: "Dedicated Server Hosting for system admins and developers.",
+    subtitle: {
+      text: "SUPER FAST DEVELOPMENT",
+      color: "#ee9823",
+    },
+
+    description:
+      "Calling all experienced developers, system admins or agencies seeking powerful server capabilities: our Dedicated Server Hosting provides high-performance server options with isolated resources to run mission-critical applications where latency and uptime matters.All plans come with free standard hosting support. Optional paid server management services include fully managed support and task-based services.",
+    button: {
+      path: "/servers",
+      text: "configure your server now",
+      color: "dark",
+      exist: true,
+    },
+    image: {
+      path: "img/demo/features/yellow-feature.png",
+      backgroundColor: "#fede48",
+    },
+  },
+]);
 </script>
 
 <style></style>

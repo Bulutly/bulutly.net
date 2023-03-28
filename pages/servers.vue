@@ -76,13 +76,13 @@
 
   <Header></Header>
 
-  <ServersPricing></ServersPricing>
-  <ServersTools></ServersTools>
-  <ServersManagement></ServersManagement>
+  <ServersPricing />
+  <ServersTools />
+  <ServersManagement />
 
-  <ServersServerManagement></ServersServerManagement>
+  <ServersServerManagement />
 
-  <ServersWordpress></ServersWordpress>
+  <ServersFeatures />
 </template>
 
 <script lang="ts" setup>

@@ -33,3 +33,29 @@ interface IBtn {
   text: string;
   variant?: string;
 }
+
+interface IFeatureCard {
+  title: string;
+  subtitle: ISubTitle;
+  description: string;
+  moreInfo?: string;
+  button?: ICardBtn;
+  image: IImg;
+}
+
+interface ICardBtn {
+  text?: string;
+  color?: string;
+  path?: string;
+  exist?: boolean;
+}
+
+interface IImg {
+  path: string;
+  backgroundColor: string;
+}
+
+interface ISubTitle {
+  color: string;
+  text: string;
+}
