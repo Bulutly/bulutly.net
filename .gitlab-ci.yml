@@ -66,14 +66,3 @@ deploy_next:
   only:
     - next
   needs: ["build"]
-
-destroy_next:
-  image: alpine/helm:3.2.1
-  stage: deploy
-  script:
-    - helm uninstall
-      "${CI_PROJECT_NAME}.next"
-      --namespace trader4-web
-  only:
-    - next
-  manual: true
