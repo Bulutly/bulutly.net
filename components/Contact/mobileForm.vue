@@ -1,5 +1,4 @@
 <template>
-  <div id="mobile-form-contact-height"></div>
   <section class="padding-20-0 mob-display-none">
     <div class="container">
       <div class="row justify-content-start">

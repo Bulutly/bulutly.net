@@ -14,7 +14,7 @@
           <div class="modpack-box">
             <div class="modpack-box-header">
               <a class="add-btn" href="#"><i class="fal fa-plus"></i></a>
-              <img src="~/assets/img/demo/games/vanilla.webp" alt="" />
+              <img src="img/demo/games/vanilla.webp" alt="" />
               <div class="text">
                 <h5 class="coodiv-text-8 font-weight-bold mb-0">
                   Minecraft Vanilla
@@ -35,7 +35,7 @@
           <div class="modpack-box">
             <div class="modpack-box-header">
               <a class="add-btn" href="#"><i class="fal fa-plus"></i></a>
-              <img src="~/assets/img/demo/games/sponge-vanilla.webp" alt="" />
+              <img src="img/demo/games/sponge-vanilla.webp" alt="" />
               <div class="text">
                 <h5 class="coodiv-text-8 font-weight-bold mb-0">
                   SpongeVanilla
@@ -56,7 +56,7 @@
           <div class="modpack-box">
             <div class="modpack-box-header">
               <a class="add-btn" href="#"><i class="fal fa-plus"></i></a>
-              <img src="~/assets/img/demo/games/spigot.webp" alt="" />
+              <img src="img/demo/games/spigot.webp" alt="" />
               <div class="text">
                 <h5 class="coodiv-text-8 font-weight-bold mb-0">Spigot</h5>
                 <p class="coodiv-text-12 mb-0">2 GB recommended</p>
@@ -75,7 +75,7 @@
           <div class="modpack-box">
             <div class="modpack-box-header">
               <a class="add-btn" href="#"><i class="fal fa-plus"></i></a>
-              <img src="~/assets/img/demo/games/snapshots.webp" alt="" />
+              <img src="img/demo/games/snapshots.webp" alt="" />
               <div class="text">
                 <h5 class="coodiv-text-8 font-weight-bold mb-0">Snapshots</h5>
                 <p class="coodiv-text-12 mb-0">2 GB recommended</p>
@@ -94,7 +94,7 @@
           <div class="modpack-box">
             <div class="modpack-box-header">
               <a class="add-btn" href="#"><i class="fal fa-plus"></i></a>
-              <img src="~/assets/img/demo/games/paper.webp" alt="" />
+              <img src="img/demo/games/paper.webp" alt="" />
               <div class="text">
                 <h5 class="coodiv-text-8 font-weight-bold mb-0">Paper</h5>
                 <p class="coodiv-text-12 mb-0">2 GB recommended</p>
@@ -113,7 +113,7 @@
           <div class="modpack-box">
             <div class="modpack-box-header">
               <a class="add-btn" href="#"><i class="fal fa-plus"></i></a>
-              <img src="~/assets/img/demo/games/craftbukkit.webp" alt="" />
+              <img src="img/demo/games/craftbukkit.webp" alt="" />
               <div class="text">
                 <h5 class="coodiv-text-8 font-weight-bold mb-0">Craftbukkit</h5>
                 <p class="coodiv-text-12 mb-0">2 GB recommended</p>
@@ -132,7 +132,7 @@
       <div class="section-product-introduction-image-wrapper">
         <div class="section-product-introduction-background"></div>
         <img
-          src="~/assets/img/demo/games/control-panel.png"
+          src="img/demo/games/control-panel.png"
           alt="statistics"
           title="statistics"
           class="section-product-introduction-image"

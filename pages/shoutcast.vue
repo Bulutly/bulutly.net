@@ -111,17 +111,18 @@
     </template>
   </Header>
 
-  <ShoutcastFeatures></ShoutcastFeatures>
+  <ShoutcastFeatures />
 
-  <ShoutcastRadioPricing></ShoutcastRadioPricing>
+  <ShoutcastRadioPricing />
 
-  <ShoutcastPartners></ShoutcastPartners>
+  <ShoutcastPartners />
 
-  <ShoutcastTools></ShoutcastTools>
+  <ShoutcastTools />
 
-  <ShoutcastMapServer></ShoutcastMapServer>
+  <ShoutcastMapServer />
 
-  <ShoutcastServices></ShoutcastServices>
+  <!-- <ShoutcastServices></ShoutcastServices> -->
+  <ServersFeatures />
 </template>
 
 <script lang="ts" setup>

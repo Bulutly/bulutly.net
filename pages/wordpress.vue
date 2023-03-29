@@ -47,16 +47,16 @@
 
   <Header></Header>
 
-  <WordpressBanner></WordpressBanner>
-  <WordpressDomainInfo></WordpressDomainInfo>
-  <WordpressHosting></WordpressHosting>
+  <WordpressBanner />
+  <WordpressDomainInfo />
+  <WordpressHosting />
 
-  <WordpressEcommerce></WordpressEcommerce>
+  <AboutFeatures />
 
-  <WordpressCustomers></WordpressCustomers>
-  <WordpressPrice></WordpressPrice>
+  <WordpressCustomers />
+  <WordpressPrice />
 
-  <WordpressUserExperience></WordpressUserExperience>
+  <WordpressUserExperience />
 </template>
 
 <script lang="ts" setup>

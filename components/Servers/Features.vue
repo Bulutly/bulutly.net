@@ -1,7 +1,19 @@
 <template>
-  <section class="pt-20 pb-25">
+  <section class="pt-20 pb-15">
     <div class="container">
       <IndexFeaturesCards :data="cardData" />
+      <div class="cta-row-careers mt-20">
+        <div class="cta-row-careers_container">
+          <h3>Need a self-managed VPS?</h3>
+          <p class="body-lg">
+            We also offer self-managed VPS hosting plans starting at $ 4.99/mo.
+          </p>
+
+          <NuxtLink :to="{ name: 'vps-reseller' }" tabindex="0">
+            Read more
+          </NuxtLink>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -24,8 +36,8 @@ const cardData = ref<IFeatureCard[]>([
       exist: true,
     },
     image: {
-      path: "img/demo/features/yellow-feature.png",
-      backgroundColor: "#ff5059",
+      path: "img/demo/features/services.png",
+      backgroundColor: "transparent",
     },
   },
   {
@@ -44,8 +56,27 @@ const cardData = ref<IFeatureCard[]>([
       exist: true,
     },
     image: {
-      path: "img/demo/features/red-feature.png",
-      backgroundColor: "#fede48",
+      path: "img/demo/features/services-2.png",
+      backgroundColor: "transparent",
+    },
+  },
+  {
+    title: " A fast track to more sales.",
+    subtitle: {
+      text: "ECOMMERCE",
+      color: "#ee9823",
+    },
+    description:
+      "Did you know that 57% of users will leave your site if it takes longer than 3 seconds to load? That’s a lot of lost revenue. And with Web Hosting Plus, your pages load faster than shared hosting,so more visitors convert to customers.   With our latest optimized server hardware, you'll get faster sites — up to nearly 40% average improvement in overall server response times*.",
+    button: {
+      path: "/dedicated",
+      text: "Start your building your online store",
+      color: "dark",
+      exist: true,
+    },
+    image: {
+      path: "img/demo/features/services-3.png",
+      backgroundColor: "transparent",
     },
   },
 ]);

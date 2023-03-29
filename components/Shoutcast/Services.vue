@@ -35,7 +35,7 @@
             style="background-color: transparent"
             class="section_text_graphic_image">
             <img
-              src="~/assets/img/demo/features/services.png"
+              src="img/demo/features/services.png"
               alt=""
               title=""
               loading="lazy" />
@@ -49,7 +49,7 @@
             style="background-color: transparent"
             class="section_text_graphic_image">
             <img
-              src="~/assets/img/demo/features/services-2.png"
+              src="img/demo/features/services-2.png"
               alt=""
               title=""
               loading="lazy" />
@@ -122,7 +122,7 @@
             style="background-color: transparent"
             class="section_text_graphic_image">
             <img
-              src="~/assets/img/demo/features/services-3.png"
+              src="img/demo/features/services-3.png"
               alt=""
               title=""
               loading="lazy" />
