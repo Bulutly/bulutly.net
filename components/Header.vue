@@ -1,63 +1,40 @@
 <template>
-  <div
-    id="coodiv-header"
-    class="d-flex mx-auto flex-column moon-edition"
-    :class="$global.headerClass">
+  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition" :class="$global.headerClass">
     <slot name="span" />
     <!-- Fixed navbar -->
-    <nav
-      id="coodiv-navbar-header"
-      class="navbar navbar-expand-md fixed-header-layout">
+    <nav id="coodiv-navbar-header" class="navbar navbar-expand-md fixed-header-layout">
       <div class="container main-header-coodiv-s">
         <NuxtLink class="navbar-brand" :to="{ name: 'index' }">
-          <img class="w-logo" src="img/header/logo.png" alt="bulutly logo" />
-          <img class="b-logo" src="img/header/logo.png" alt="bulutly logo" />
+          <img class="w-logo" style="position: absolute;top: -5px;" src="img/header/logo.png" alt="bulutly logo" />
+          <img class="b-logo" style="position: absolute;top: -5px;" src="img/header/logo.png" alt="bulutly logo" />
         </NuxtLink>
-        <button
-          class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto"
-          @click="showCollaps = !showCollaps"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#staticBackdrop">
+        <button class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto" @click="showCollaps = !showCollaps"
+          data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <div
-          class="collapse navbar-collapse navbar-offcanvas offcanvas offcanvas-start"
-          id="offcanvas-menu-home">
+        <div class="collapse navbar-collapse navbar-offcanvas offcanvas offcanvas-start" id="offcanvas-menu-home">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mega-menu demos-dropdown dropdown active">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                id="header-first-drop-down"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Homepage</a
-              >
-              <div
-                class="dropdown-menu coodiv-menu-dropdown"
-                aria-labelledby="header-first-drop-down">
+              <a class="nav-link" href="#" role="button" id="header-first-drop-down" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Homepage</a>
+              <div class="dropdown-menu coodiv-menu-dropdown" aria-labelledby="header-first-drop-down">
                 <div class="dropdown-menu-wrapper">
                   <div class="row justify-content-start">
                     <div class="demos-wrapper col-md-6 col-12 py-7 px-8">
                       <h5 class="title">
                         Check pre-made Bredh 2.0 homepages
-                        <small
-                          >sales support, suggest and recommend products in a
-                          chat conversation.</small
-                        >
+                        <small>sales support, suggest and recommend products in a
+                          chat conversation.</small>
                       </h5>
                       <div class="row justify-content-start">
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img src="img/demo/demos/sefar.jpg" alt="" />
                             <div class="text">
-                              <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                              <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Sefar <span class="new-tag">NEW</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -73,8 +50,7 @@
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img src="img/demo/demos/hoggar.jpg" alt="" />
                             <div class="text">
-                              <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                              <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Hoggar <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -89,8 +65,7 @@
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img src="img/demo/demos/atlas.jpg" alt="" />
                             <div class="text">
-                              <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                              <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Atlas <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -105,8 +80,7 @@
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img src="img/demo/demos/chrea.jpg" alt="" />
                             <div class="text">
-                              <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                              <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Chrea <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -120,32 +94,25 @@
                       </div>
                     </div>
 
-                    <div
-                      class="demos-wrapper border-right-0 col-md-6 col-12 py-7 px-8">
+                    <div class="demos-wrapper border-right-0 col-md-6 col-12 py-7 px-8">
                       <h5 class="title mb-2">
-                        Features sub-pages<small
-                          >Using bredh elements you can build any page you
-                          want.</small
-                        >
+                        Features sub-pages<small>Using bredh elements you can build any page you
+                          want.</small>
                       </h5>
                       <div class="row justify-content-start mt-10">
                         <div class="col-md-6 col-12">
                           <ul class="domo-pages-wrapper">
-                            <li v-for="link in homePageLinks">
+                            <li v-for="(link, index) in homePageLinks" :key="index">
                               <NuxtLink :to="link.link">
                                 {{ link.title }}
                               </NuxtLink>
-                              <span
-                                v-if="link.isHot"
-                                class="badge badge-pill badge-warning"
-                                >HOT!</span
-                              >
+                              <span v-if="link.isHot" class="badge badge-pill badge-warning">HOT!</span>
                             </li>
                           </ul>
                         </div>
                         <div class="col-md-6 col-12">
                           <ul class="domo-pages-wrapper">
-                            <li v-for="link in secondHomePageLinks">
+                            <li v-for="(link, index) in secondHomePageLinks" :key="index">
                               <NuxtLink :to="link.link">
                                 {{ link.title }}
                               </NuxtLink>
@@ -160,29 +127,14 @@
             </li>
 
             <li class="nav-item megamenu dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                id="services-megamenu"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Services</a
-              >
-              <div
-                class="dropdown-menu coodiv-menu-dropdown"
-                aria-labelledby="services-megamenu">
+              <a class="nav-link" href="#" role="button" id="services-megamenu" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Services</a>
+              <div class="dropdown-menu coodiv-menu-dropdown" aria-labelledby="services-megamenu">
                 <div class="dropdown-menu-wrapper">
-                  <div
-                    class="row justify-content-center bd-highlight mb-3 megamenu-items-header">
+                  <div class="row justify-content-center bd-highlight mb-3 megamenu-items-header">
                     <div class="col-md col-12 bd-highlight">
-                      <NuxtLink
-                        class="megamenu-services-box"
-                        :to="{ name: 'cloud-vps' }">
-                        <i
-                          style="background-color: #ff2934"
-                          class="fad fa-server"></i>
+                      <NuxtLink class="megamenu-services-box" :to="{ name: 'cloud-vps' }">
+                        <i style="background-color: #ff2934" class="fad fa-server"></i>
                         <h5 class="coodiv-text-9 mb-0">Managed VPS</h5>
                         <p class="coodiv-text-12">
                           Get 100% worry-free, Fully Managed VPS Hosting with
@@ -192,12 +144,8 @@
                     </div>
 
                     <div class="col-md col-12 bd-highlight">
-                      <NuxtLink
-                        class="megamenu-services-box"
-                        :to="{ name: 'dedicated' }">
-                        <i
-                          style="background-color: #fede48"
-                          class="fad fa-hdd"></i>
+                      <NuxtLink class="megamenu-services-box" :to="{ name: 'dedicated' }">
+                        <i style="background-color: #fede48" class="fad fa-hdd"></i>
                         <h5 class="coodiv-text-9 mb-0">Dedicated Webhosting</h5>
                         <p class="coodiv-text-12">
                           Trust your site to the world’s #1 web host with 2 TB
@@ -207,9 +155,7 @@
                     </div>
 
                     <div class="col-md col-12 bd-highlight">
-                      <NuxtLink
-                        class="megamenu-services-box"
-                        :to="{ name: 'games' }">
+                      <NuxtLink class="megamenu-services-box" :to="{ name: 'games' }">
                         <i class="fad fa-gamepad"></i>
                         <h5 class="coodiv-text-9 mb-0">Games Servers</h5>
                         <p class="coodiv-text-12">
@@ -220,12 +166,8 @@
                     </div>
 
                     <div class="col-md col-12 bd-highlight">
-                      <NuxtLink
-                        class="megamenu-services-box"
-                        :to="{ name: 'servers' }">
-                        <i
-                          style="background-color: #a2fbf3"
-                          class="fad fa-microchip"></i>
+                      <NuxtLink class="megamenu-services-box" :to="{ name: 'servers' }">
+                        <i style="background-color: #a2fbf3" class="fad fa-microchip"></i>
                         <h5 class="coodiv-text-9 mb-0">Managed Servers</h5>
                         <p class="coodiv-text-12">
                           Get powerful fully Managed single tentant, bare metal
@@ -245,18 +187,9 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                role="button"
-                id="webhosting-megamenu"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                href="#"
-                >Hosting <span class="nav-new-tag">New</span></a
-              >
-              <div
-                class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
+              <a class="nav-link" role="button" id="webhosting-megamenu" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" href="#">Hosting <span class="nav-new-tag">New</span></a>
+              <div class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
                 aria-labelledby="webhosting-megamenu">
                 <div class="dropdown-menu-wrapper min-padding">
                   <ul class="web-hosting-menu-header">
@@ -265,10 +198,8 @@
 
                       <NuxtLink :to="{ name: 'cloud-vps' }">
                         Managed VPS Hosting
-                        <span
-                          >cPanel/WHM, Plesk Obsidian for easy WordPress
-                          admin.</span
-                        >
+                        <span>cPanel/WHM, Plesk Obsidian for easy WordPress
+                          admin.</span>
                       </NuxtLink>
                     </li>
                     <li>
@@ -276,10 +207,8 @@
 
                       <NuxtLink :to="{ name: 'dedicated' }">
                         Dedicated Hosting
-                        <span
-                          >Trust your site to the world’s #1 web host, starting
-                          at $0.99.</span
-                        >
+                        <span>Trust your site to the world’s #1 web host, starting
+                          at $0.99.</span>
                       </NuxtLink>
                     </li>
                     <li>
@@ -287,10 +216,8 @@
 
                       <NuxtLink :to="{ name: 'icecast' }">
                         Icecast & SHOUTcast
-                        <span
-                          >Broadcast worry-free with unlimited internet radio
-                          hosting.</span
-                        >
+                        <span>Broadcast worry-free with unlimited internet radio
+                          hosting.</span>
                       </NuxtLink>
                     </li>
                     <li>
@@ -298,10 +225,8 @@
 
                       <NuxtLink :to="{ name: 'servers' }">
                         Managed Servers
-                        <span
-                          >Get powerful, bare metal servers to run
-                          mission-critical apps.</span
-                        >
+                        <span>Get powerful, bare metal servers to run
+                          mission-critical apps.</span>
                       </NuxtLink>
                     </li>
                     <li>
@@ -309,10 +234,8 @@
 
                       <NuxtLink :to="{ name: 'ssl' }">
                         SSL Certificates
-                        <span
-                          >domain SSL certificates only secure a single unique
-                          domain or subdomain.</span
-                        >
+                        <span>domain SSL certificates only secure a single unique
+                          domain or subdomain.</span>
                       </NuxtLink>
                     </li>
                   </ul>
@@ -321,21 +244,12 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                id="header-help-drop-down"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Help<span class="sr-only">(current)</span></a
-              >
-              <ul
-                class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header"
+              <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Help<span class="sr-only">(current)</span></a>
+              <ul class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header"
                 aria-labelledby="header-help-drop-down">
                 <div class="dropdown-menu-wrapper min-padding">
-                  <li v-for="link in helpLinks">
+                  <li v-for="(link, index) in helpLinks" :key="index">
                     <NuxtLink class="dropdown-item" :to="link.link">
                       {{ link.title }}
                     </NuxtLink>
@@ -345,37 +259,26 @@
             </li>
 
             <li class="nav-item two-collomn-drop-down dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                id="header-pages-drop-down"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Pages<span class="sr-only">(current)</span></a
-              >
-              <div
-                class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
+              <a class="nav-link" href="#" role="button" id="header-pages-drop-down" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Pages<span class="sr-only">(current)</span></a>
+              <div class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
                 aria-labelledby="header-pages-drop-down">
-                <div
-                  class="dropdown-menu-wrapper min-padding row justify-content-center pages-links">
+                <div class="dropdown-menu-wrapper min-padding row justify-content-center pages-links">
                   <h5 class="title coodiv-text-9 col-12 mt-2 mb-5">
                     Bredh 2.0 features sub-pages
-                    <small class="d-block coodiv-text-12 color-opacity-5 mt-n2"
-                      >Build your project in minutes with the help of countless
-                      amazing features and elements of Bredh.</small
-                    >
+                    <small class="d-block coodiv-text-12 color-opacity-5 mt-n2">Build your project in minutes with the
+                      help of countless
+                      amazing features and elements of Bredh.</small>
                   </h5>
                   <ul class="col-md-4 col-12">
-                    <li v-for="link in pagesLinks">
+                    <li v-for="(link, index) in pagesLinks" :key="index">
                       <NuxtLink class="dropdown-item" :to="link.link">
                         {{ link.title }}
                       </NuxtLink>
                     </li>
                   </ul>
                   <ul class="col-md-4 col-12">
-                    <li v-for="link in secondPagesLinks">
+                    <li v-for="(link, index) in secondPagesLinks" :key="index">
                       <NuxtLink class="dropdown-item" :to="link.link">
                         {{ link.title }}
                       </NuxtLink>
@@ -383,16 +286,12 @@
                   </ul>
                   <ul class="col-md-4 col-12">
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'help-center' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'help-center' }">
                         help center
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'knowledgebase' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'knowledgebase' }">
                         knowledgebase
                       </NuxtLink>
                     </li>
@@ -407,23 +306,17 @@
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'contact-us' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'contact-us' }">
                         Contact us
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'authentication-sign-in' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'authentication-sign-in' }">
                         Signin
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'authentication-sign-up' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'authentication-sign-up' }">
                         Signup
                       </NuxtLink>
                     </li>
@@ -445,20 +338,12 @@
           </ul>
         </div>
 
-        <div
-          v-if="showCollaps"
-          :style="showCollaps ? 'left:0' : 'left:-250px'"
-          class="collapse navbar-collapse navbar-offcanvas offcanvas offcanvas-start"
-          id="offcanvas-menu-home">
+        <div v-if="showCollaps" :style="showCollaps ? 'left:0' : 'left:-250px'"
+          class="collapse navbar-collapse navbar-offcanvas offcanvas offcanvas-start" id="offcanvas-menu-home">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mega-menu demos-dropdown dropdown active">
               <button @click="hideSidebar" class="hideBtn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-x-lg"
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
                   viewBox="0 0 16 16">
                   <path
                     d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
@@ -467,36 +352,23 @@
             </li>
 
             <li class="nav-item mega-menu demos-dropdown dropdown active">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                id="header-first-drop-down"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Homepage</a
-              >
-              <div
-                class="dropdown-menu coodiv-menu-dropdown"
-                aria-labelledby="header-first-drop-down">
+              <a class="nav-link" href="#" role="button" id="header-first-drop-down" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Homepage</a>
+              <div class="dropdown-menu coodiv-menu-dropdown" aria-labelledby="header-first-drop-down">
                 <div class="dropdown-menu-wrapper">
                   <div class="row justify-content-start">
                     <div class="demos-wrapper col-md-6 col-12 py-7 px-8">
                       <h5 class="title">
                         Check pre-made Bredh 2.0 homepages
-                        <small
-                          >sales support, suggest and recommend products in a
-                          chat conversation.</small
-                        >
+                        <small>sales support, suggest and recommend products in a
+                          chat conversation.</small>
                       </h5>
                       <div class="row justify-content-start">
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img src="img/demo/demos/sefar.jpg" alt="" />
                             <div class="text">
-                              <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                              <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Sefar <span class="new-tag">NEW</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -512,8 +384,7 @@
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img src="img/demo/demos/hoggar.jpg" alt="" />
                             <div class="text">
-                              <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                              <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Hoggar <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -528,8 +399,7 @@
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img src="img/demo/demos/atlas.jpg" alt="" />
                             <div class="text">
-                              <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                              <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Atlas <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -544,8 +414,7 @@
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
                             <img src="img/demo/demos/chrea.jpg" alt="" />
                             <div class="text">
-                              <h5
-                                class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
+                              <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Chrea <span class="soon-tag">SOON</span>
                               </h5>
                               <p class="coodiv-text-12 mb-0">
@@ -559,32 +428,25 @@
                       </div>
                     </div>
 
-                    <div
-                      class="demos-wrapper border-right-0 col-md-6 col-12 py-7 px-8">
+                    <div class="demos-wrapper border-right-0 col-md-6 col-12 py-7 px-8">
                       <h5 class="title mb-2">
-                        Features sub-pages<small
-                          >Using bredh elements you can build any page you
-                          want.</small
-                        >
+                        Features sub-pages<small>Using bredh elements you can build any page you
+                          want.</small>
                       </h5>
                       <div class="row justify-content-start mt-10">
                         <div class="col-md-6 col-12">
                           <ul class="domo-pages-wrapper">
-                            <li v-for="link in homePageLinks">
+                            <li v-for="(link, index) in homePageLinks" :key="index">
                               <NuxtLink :to="link.link">
                                 {{ link.title }}
                               </NuxtLink>
-                              <span
-                                v-if="link.isHot"
-                                class="badge badge-pill badge-warning"
-                                >HOT!</span
-                              >
+                              <span v-if="link.isHot" class="badge badge-pill badge-warning">HOT!</span>
                             </li>
                           </ul>
                         </div>
                         <div class="col-md-6 col-12">
                           <ul class="domo-pages-wrapper">
-                            <li v-for="link in secondHomePageLinks">
+                            <li v-for="(link, index) in secondHomePageLinks" :key="index">
                               <NuxtLink :to="link.link">
                                 {{ link.title }}
                               </NuxtLink>
@@ -599,29 +461,14 @@
             </li>
 
             <li class="nav-item megamenu dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                id="services-megamenu"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Services</a
-              >
-              <div
-                class="dropdown-menu coodiv-menu-dropdown"
-                aria-labelledby="services-megamenu">
+              <a class="nav-link" href="#" role="button" id="services-megamenu" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Services</a>
+              <div class="dropdown-menu coodiv-menu-dropdown" aria-labelledby="services-megamenu">
                 <div class="dropdown-menu-wrapper">
-                  <div
-                    class="row justify-content-center bd-highlight mb-3 megamenu-items-header">
+                  <div class="row justify-content-center bd-highlight mb-3 megamenu-items-header">
                     <div class="col-md col-12 bd-highlight">
-                      <NuxtLink
-                        class="megamenu-services-box"
-                        :to="{ name: 'cloud-vps' }">
-                        <i
-                          style="background-color: #ff2934"
-                          class="fad fa-server"></i>
+                      <NuxtLink class="megamenu-services-box" :to="{ name: 'cloud-vps' }">
+                        <i style="background-color: #ff2934" class="fad fa-server"></i>
                         <h5 class="coodiv-text-9 mb-0">Managed VPS</h5>
                         <p class="coodiv-text-12">
                           Get 100% worry-free, Fully Managed VPS Hosting with
@@ -631,12 +478,8 @@
                     </div>
 
                     <div class="col-md col-12 bd-highlight">
-                      <NuxtLink
-                        class="megamenu-services-box"
-                        :to="{ name: 'dedicated' }">
-                        <i
-                          style="background-color: #fede48"
-                          class="fad fa-hdd"></i>
+                      <NuxtLink class="megamenu-services-box" :to="{ name: 'dedicated' }">
+                        <i style="background-color: #fede48" class="fad fa-hdd"></i>
                         <h5 class="coodiv-text-9 mb-0">Dedicated Webhosting</h5>
                         <p class="coodiv-text-12">
                           Trust your site to the world’s #1 web host with 2 TB
@@ -646,9 +489,7 @@
                     </div>
 
                     <div class="col-md col-12 bd-highlight">
-                      <NuxtLink
-                        class="megamenu-services-box"
-                        :to="{ name: 'games' }">
+                      <NuxtLink class="megamenu-services-box" :to="{ name: 'games' }">
                         <i class="fad fa-gamepad"></i>
                         <h5 class="coodiv-text-9 mb-0">Games Servers</h5>
                         <p class="coodiv-text-12">
@@ -659,12 +500,8 @@
                     </div>
 
                     <div class="col-md col-12 bd-highlight">
-                      <NuxtLink
-                        class="megamenu-services-box"
-                        :to="{ name: 'servers' }">
-                        <i
-                          style="background-color: #a2fbf3"
-                          class="fad fa-microchip"></i>
+                      <NuxtLink class="megamenu-services-box" :to="{ name: 'servers' }">
+                        <i style="background-color: #a2fbf3" class="fad fa-microchip"></i>
                         <h5 class="coodiv-text-9 mb-0">Managed Servers</h5>
                         <p class="coodiv-text-12">
                           Get powerful fully Managed single tentant, bare metal
@@ -684,18 +521,9 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                role="button"
-                id="webhosting-megamenu"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                href="#"
-                >Hosting <span class="nav-new-tag">New</span></a
-              >
-              <div
-                class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
+              <a class="nav-link" role="button" id="webhosting-megamenu" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" href="#">Hosting <span class="nav-new-tag">New</span></a>
+              <div class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
                 aria-labelledby="webhosting-megamenu">
                 <div class="dropdown-menu-wrapper min-padding">
                   <ul class="web-hosting-menu-header">
@@ -704,10 +532,8 @@
 
                       <NuxtLink :to="{ name: 'cloud-vps' }">
                         Managed VPS Hosting
-                        <span
-                          >cPanel/WHM, Plesk Obsidian for easy WordPress
-                          admin.</span
-                        >
+                        <span>cPanel/WHM, Plesk Obsidian for easy WordPress
+                          admin.</span>
                       </NuxtLink>
                     </li>
                     <li>
@@ -715,10 +541,8 @@
 
                       <NuxtLink :to="{ name: 'dedicated' }">
                         Dedicated Hosting
-                        <span
-                          >Trust your site to the world’s #1 web host, starting
-                          at $0.99.</span
-                        >
+                        <span>Trust your site to the world’s #1 web host, starting
+                          at $0.99.</span>
                       </NuxtLink>
                     </li>
                     <li>
@@ -726,10 +550,8 @@
 
                       <NuxtLink :to="{ name: 'icecast' }">
                         Icecast & SHOUTcast
-                        <span
-                          >Broadcast worry-free with unlimited internet radio
-                          hosting.</span
-                        >
+                        <span>Broadcast worry-free with unlimited internet radio
+                          hosting.</span>
                       </NuxtLink>
                     </li>
                     <li>
@@ -737,10 +559,8 @@
 
                       <NuxtLink :to="{ name: 'servers' }">
                         Managed Servers
-                        <span
-                          >Get powerful, bare metal servers to run
-                          mission-critical apps.</span
-                        >
+                        <span>Get powerful, bare metal servers to run
+                          mission-critical apps.</span>
                       </NuxtLink>
                     </li>
                     <li>
@@ -748,10 +568,8 @@
 
                       <NuxtLink :to="{ name: 'ssl' }">
                         SSL Certificates
-                        <span
-                          >domain SSL certificates only secure a single unique
-                          domain or subdomain.</span
-                        >
+                        <span>domain SSL certificates only secure a single unique
+                          domain or subdomain.</span>
                       </NuxtLink>
                     </li>
                   </ul>
@@ -760,21 +578,12 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                id="header-help-drop-down"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Help<span class="sr-only">(current)</span></a
-              >
-              <ul
-                class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header"
+              <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Help<span class="sr-only">(current)</span></a>
+              <ul class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header"
                 aria-labelledby="header-help-drop-down">
                 <div class="dropdown-menu-wrapper min-padding">
-                  <li v-for="link in helpLinks">
+                  <li v-for="(link, index) in helpLinks" :key="index">
                     <NuxtLink class="dropdown-item" :to="link.link">
                       {{ link.title }}
                     </NuxtLink>
@@ -784,37 +593,26 @@
             </li>
 
             <li class="nav-item two-collomn-drop-down dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                id="header-pages-drop-down"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Pages<span class="sr-only">(current)</span></a
-              >
-              <div
-                class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
+              <a class="nav-link" href="#" role="button" id="header-pages-drop-down" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Pages<span class="sr-only">(current)</span></a>
+              <div class="dropdown-menu coodiv-menu-dropdown coodiv-dropdown-header web-menu"
                 aria-labelledby="header-pages-drop-down">
-                <div
-                  class="dropdown-menu-wrapper min-padding row justify-content-center pages-links">
+                <div class="dropdown-menu-wrapper min-padding row justify-content-center pages-links">
                   <h5 class="title coodiv-text-9 col-12 mt-2 mb-5">
                     Bredh 2.0 features sub-pages
-                    <small class="d-block coodiv-text-12 color-opacity-5 mt-n2"
-                      >Build your project in minutes with the help of countless
-                      amazing features and elements of Bredh.</small
-                    >
+                    <small class="d-block coodiv-text-12 color-opacity-5 mt-n2">Build your project in minutes with the
+                      help of countless
+                      amazing features and elements of Bredh.</small>
                   </h5>
                   <ul class="col-md-4 col-12">
-                    <li v-for="link in pagesLinks">
+                    <li v-for="(link, index) in pagesLinks" :key="index">
                       <NuxtLink class="dropdown-item" :to="link.link">
                         {{ link.title }}
                       </NuxtLink>
                     </li>
                   </ul>
                   <ul class="col-md-4 col-12">
-                    <li v-for="link in secondPagesLinks">
+                    <li v-for="(link, index) in secondPagesLinks" :key="index">
                       <NuxtLink class="dropdown-item" :to="link.link">
                         {{ link.title }}
                       </NuxtLink>
@@ -822,16 +620,12 @@
                   </ul>
                   <ul class="col-md-4 col-12">
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'help-center' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'help-center' }">
                         help center
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'knowledgebase' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'knowledgebase' }">
                         knowledgebase
                       </NuxtLink>
                     </li>
@@ -846,23 +640,17 @@
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'contact-us' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'contact-us' }">
                         Contact us
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'authentication-sign-in' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'authentication-sign-in' }">
                         Signin
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink
-                        class="dropdown-item"
-                        :to="{ name: 'authentication-sign-up' }">
+                      <NuxtLink class="dropdown-item" :to="{ name: 'authentication-sign-up' }">
                         Signup
                       </NuxtLink>
                     </li>
@@ -885,46 +673,22 @@
         </div>
         <ul class="header-user-info-coodiv">
           <li class="dropdown">
-            <a
-              role="button"
-              id="header-login-dropdown"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              href="#"
-              >sign in</a
-            >
+            <a role="button" id="header-login-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              href="#">sign in</a>
             <!-- user header dropdown -->
-            <div
-              class="dropdown-menu coodiv-dropdown-header user-login-dropdown"
-              aria-labelledby="header-login-dropdown">
-              <form
-                class="user-login-dropdown-form"
-                action="signin.html"
-                data-form="validate">
+            <div class="dropdown-menu coodiv-dropdown-header user-login-dropdown" aria-labelledby="header-login-dropdown">
+              <form class="user-login-dropdown-form" action="signin.html" data-form="validate">
                 <div class="form-group username">
-                  <input
-                    type="email"
-                    name="username"
-                    placeholder="Your Email"
-                    class="form-control" />
+                  <input type="email" name="username" placeholder="Your Email" class="form-control" />
                   <i class="fal fa-at"></i>
                 </div>
 
                 <div class="form-group password">
-                  <input
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                    class="form-control" />
+                  <input type="password" name="password" placeholder="Password" class="form-control" />
                   <i class="fal fa-lock"></i>
                 </div>
 
-                <button
-                  data-toggle="tooltip"
-                  data-placement="left"
-                  title="login"
-                  class="user-login-dropdown-form-button"
+                <button data-toggle="tooltip" data-placement="left" title="login" class="user-login-dropdown-form-button"
                   type="submit">
                   <i class="fas fa-angle-right"></i>
                 </button>
@@ -1003,4 +767,28 @@ const secondPagesLinks = ref([
 ]);
 </script>
 
-<style></style>
+<style>
+@media (min-width: 1200px) {
+  .dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    display: unset;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    animation: fadeIn 0.4s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+</style>
