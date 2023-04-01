@@ -78,7 +78,7 @@
 
           <div class="col-10 col-md-5">
             <img
-              src="img/demo/features/services-2.png"
+              src="/img/demo/features/services-2.png"
               class="d-block mx-lg-auto img-fluid mt-n10 mb-15"
               alt="Bootstrap Themes"
               width="640"

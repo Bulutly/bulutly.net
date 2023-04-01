@@ -6,7 +6,7 @@
           <h5 class="res-titl">starter <span>encryption everywhere</span></h5>
           <span class="res-price">free</span>
           <span class="res-sub-text"
-            >basic encryption <img src="img/demo/ssl.png" alt=""
+            >basic encryption <img src="/img/demo/ssl.png" alt=""
           /></span>
 
           <div class="body-ress-v2">
@@ -25,7 +25,7 @@
           <h5 class="res-titl">personal <span>encryption everywhere</span></h5>
           <span class="res-price"><i>$</i>59</span>
           <span class="res-sub-text"
-            >advanced encryption <img src="img/demo/ssl.png" alt=""
+            >advanced encryption <img src="/img/demo/ssl.png" alt=""
           /></span>
 
           <div class="body-ress-v2">
@@ -44,7 +44,7 @@
           <h5 class="res-titl">enterpise <span>permium SSL</span></h5>
           <span class="res-price"><i>$</i>74</span>
           <span class="res-sub-text"
-            >best encryption <img src="img/demo/ssls.png" alt=""
+            >best encryption <img src="/img/demo/ssls.png" alt=""
           /></span>
 
           <div class="body-ress-v2">

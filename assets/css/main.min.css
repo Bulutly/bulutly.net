@@ -4038,7 +4038,7 @@ a:hover {
   position: static;
 }
 .dropdown.megamenu a .megamenu-toggle {
-  background: url(~/assets/img/header/navs/dropdown.png) no-repeat !important;
+  background: url(/img/header/navs/dropdown.png) no-repeat !important;
   position: absolute;
   width: 47px;
   height: 10px;
@@ -9023,7 +9023,7 @@ table#prices thead tr.price-dsc th.features.banner .banner-servers-box {
   }
 }
 .bg-img-header-new-moon {
-  background-image: url(img/header/h_bg_02.svg);
+  background-image: url(/img/header/h_bg_02.svg);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -11389,7 +11389,7 @@ table.levels-of-managment-table.table-striped tbody tr:nth-of-type(odd) {
   z-index: -1;
 }
 #coodiv-header.demopage-header {
-  background-image: url(~/assets/img/demo/demos-screen.png) !important;
+  background-image: url(/img/demo/demos-screen.png) !important;
   background-position: center center !important;
   background-size: cover !important;
 }

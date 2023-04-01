@@ -97,7 +97,7 @@
         <div class="carousel-nav-customers-text">
           <div class="carousel-cell">
             <div class="carousel-customrs-holder">
-              <img src="img/demo/faces/member1.jpg" alt="" />
+              <img src="/img/demo/faces/member1.jpg" alt="" />
               <a class="fb customrs-icons" href="#"
                 ><i class="fab fa-facebook-f"></i
               ></a>
@@ -112,7 +112,7 @@
 
           <div class="carousel-cell">
             <div class="carousel-customrs-holder">
-              <img src="img/demo/faces/member2.jpg" alt="" />
+              <img src="/img/demo/faces/member2.jpg" alt="" />
               <a class="fb customrs-icons" href="#"
                 ><i class="fab fa-facebook-f"></i
               ></a>
@@ -127,7 +127,7 @@
 
           <div class="carousel-cell">
             <div class="carousel-customrs-holder">
-              <img src="img/demo/faces/member3.jpg" alt="" />
+              <img src="/img/demo/faces/member3.jpg" alt="" />
               <a class="fb customrs-icons" href="#"
                 ><i class="fab fa-facebook-f"></i
               ></a>
@@ -142,7 +142,7 @@
 
           <div class="carousel-cell">
             <div class="carousel-customrs-holder">
-              <img src="img/demo/faces/member4.jpg" alt="" />
+              <img src="/img/demo/faces/member4.jpg" alt="" />
               <a class="fb customrs-icons" href="#"
                 ><i class="fab fa-facebook-f"></i
               ></a>
@@ -157,7 +157,7 @@
 
           <div class="carousel-cell">
             <div class="carousel-customrs-holder">
-              <img src="img/demo/faces/member5.jpg" alt="" />
+              <img src="/img/demo/faces/member5.jpg" alt="" />
               <a class="fb customrs-icons" href="#"
                 ><i class="fab fa-facebook-f"></i
               ></a>
@@ -172,7 +172,7 @@
 
           <div class="carousel-cell">
             <div class="carousel-customrs-holder">
-              <img src="img/demo/faces/member6.jpg" alt="" />
+              <img src="/img/demo/faces/member6.jpg" alt="" />
               <a class="fb customrs-icons" href="#"
                 ><i class="fab fa-facebook-f"></i
               ></a>

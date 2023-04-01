@@ -331,7 +331,7 @@
                 >With an annual term (60% savings)</span
               >
               <span class="res-sub-text"
-                >basic encryption <img src="img/demo/ssl.png" alt=""
+                >basic encryption <img src="/img/demo/ssl.png" alt=""
               /></span>
 
               <div class="body-ress-v2">
@@ -366,7 +366,7 @@
                 >With an annual term (60% savings)</span
               >
               <span class="res-sub-text"
-                >advanced encryption <img src="img/demo/ssl.png" alt=""
+                >advanced encryption <img src="/img/demo/ssl.png" alt=""
               /></span>
 
               <div class="body-ress-v2">
@@ -397,7 +397,7 @@
                 >With an annual term (60% savings)</span
               >
               <span class="res-sub-text"
-                >best encryption <img src="img/demo/ssls.png" alt=""
+                >best encryption <img src="/img/demo/ssls.png" alt=""
               /></span>
 
               <div class="body-ress-v2">
@@ -700,7 +700,7 @@
                 >With an annual term (60% savings)</span
               >
               <span class="res-sub-text"
-                >basic encryption <img src="img/demo/ssl.png" alt=""
+                >basic encryption <img src="/img/demo/ssl.png" alt=""
               /></span>
 
               <div class="body-ress-v2">
@@ -735,7 +735,7 @@
                 >With an annual term (60% savings)</span
               >
               <span class="res-sub-text"
-                >advanced encryption <img src="img/demo/ssl.png" alt=""
+                >advanced encryption <img src="/img/demo/ssl.png" alt=""
               /></span>
 
               <div class="body-ress-v2">
@@ -766,7 +766,7 @@
                 >With an annual term (60% savings)</span
               >
               <span class="res-sub-text"
-                >best encryption <img src="img/demo/ssls.png" alt=""
+                >best encryption <img src="/img/demo/ssls.png" alt=""
               /></span>
 
               <div class="body-ress-v2">

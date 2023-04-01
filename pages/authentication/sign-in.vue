@@ -50,7 +50,7 @@
       <div class="card">
         <div class="card-body text-left">
           <NuxtLink class="auth-content-logo-header" :to="{ name: 'index' }">
-            <img src="img/header/logo-w-f.png" alt="" />
+            <img src="/img/header/logo.png" alt="" />
           </NuxtLink>
 
           <h3 class="mb-4 auth-login-title">

@@ -55,7 +55,7 @@
               <small>We might be able to help you get it.</small>
             </div>
             <div class="d-flex broker-agent">
-              <img src="img/demo/faces/member3.jpg" alt="" />
+              <img src="/img/demo/faces/member3.jpg" alt="" />
               <div class="text">
                 <span class="title">Broker Service Fee</span>
                 <span class="price">$66.99</span>

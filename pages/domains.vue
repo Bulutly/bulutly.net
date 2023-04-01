@@ -80,35 +80,35 @@
               <div class="owl-carousel more-services-carousel owl-theme">
                 <div class="item">
                   <div class="domains-box-prices">
-                    <img src=" img/domain/black/com.png" alt="" />
+                    <img src=" /img/domain/black/com.png" alt="" />
                     <span class="ltd-price">$ 3.99‬</span>
                   </div>
                 </div>
 
                 <div class="item">
                   <div class="domains-box-prices">
-                    <img src="img/domain/black/org.png" alt="" />
+                    <img src="/img/domain/black/org.png" alt="" />
                     <span class="ltd-price">$ 3.99‬</span>
                   </div>
                 </div>
 
                 <div class="item">
                   <div class="domains-box-prices">
-                    <img src="img/domain/black/net.png" alt="" />
+                    <img src="/img/domain/black/net.png" alt="" />
                     <span class="ltd-price">$ 3.99‬</span>
                   </div>
                 </div>
 
                 <div class="item">
                   <div class="domains-box-prices">
-                    <img src="img/domain/black/shop.png" alt="" />
+                    <img src="/img/domain/black/shop.png" alt="" />
                     <span class="ltd-price">$ 3.99‬</span>
                   </div>
                 </div>
 
                 <div class="item">
                   <div class="domains-box-prices">
-                    <img src="img/domain/black/life.png" alt="" />
+                    <img src="/img/domain/black/life.png" alt="" />
                     <span class="ltd-price">$ 3.99‬</span>
                   </div>
                 </div>

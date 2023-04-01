@@ -2,7 +2,7 @@
   <section class="map-server-places-section position-relative mt-n30">
     <div class="container">
       <div class="map-gene-server-place">
-        <img src="img/maps/map.png" alt="" />
+        <img src="/img/maps/map.png" alt="" />
         <div class="server-places-spans">
           <span style="top: 34%; left: 17%">
             <b>USA Server</b> <small class="good">99.99%</small></span

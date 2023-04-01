@@ -33,7 +33,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half"></i>
             </div>
-            <img src="img/pertners/google.png" alt="" />
+            <img src="/img/pertners/google.png" alt="" />
             <h5>COODIV.NET</h5>
             <span>4.75/5</span>
           </div>
@@ -47,7 +47,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <img src="img/pertners/trust.png" alt="" />
+            <img src="/img/pertners/trust.png" alt="" />
             <h5>COODIV.NET</h5>
             <span>4.6/5</span>
           </div>
@@ -62,7 +62,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <img src="img/pertners/envato.png" alt="" />
+            <img src="/img/pertners/envato.png" alt="" />
             <h5>COODIV.NET</h5>
             <span>4.99/5</span>
           </div>
