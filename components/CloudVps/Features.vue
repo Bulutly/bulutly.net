@@ -25,7 +25,7 @@ const cardData = ref<IFeatureCard[]>([
       exist: true,
     },
     image: {
-      path: "img/demo/features/yellow-feature.png",
+      path: "/img/demo/features/yellow-feature.png",
       backgroundColor: "#fede48",
     },
   },
@@ -45,7 +45,7 @@ const cardData = ref<IFeatureCard[]>([
       exist: true,
     },
     image: {
-      path: "img/demo/features/red-feature.png",
+      path: "/img/demo/features/red-feature.png",
       backgroundColor: "#ff5059",
     },
   },

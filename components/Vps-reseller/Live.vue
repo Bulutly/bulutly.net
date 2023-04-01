@@ -7,7 +7,7 @@
             style="background-color: #56e7a5"
             class="section_text_graphic_image">
             <img
-              src="img/demo/features/feature-img-09.png"
+              src="/img/demo/features/feature-img-09.png"
               alt=""
               title=""
               loading="lazy" />

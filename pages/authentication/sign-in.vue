@@ -50,15 +50,13 @@
       <div class="card">
         <div class="card-body text-left">
           <NuxtLink class="auth-content-logo-header" :to="{ name: 'index' }">
-            <img src="img/header/logo-w-f.png" alt="" />
+            <img src="/img/header/logo.png" alt="" />
           </NuxtLink>
 
           <h3 class="mb-4 auth-login-title">
             Login to account
-            <span
-              >Sign up for your trial offer and instantly have deluxe hosting in
-              your account with free domain included.</span
-            >
+            <span>Sign up for your trial offer and instantly have deluxe hosting in
+              your account with free domain included.</span>
           </h3>
 
           <div class="entry__top mt-6 mb-10 social__sign__contanier">
@@ -99,8 +97,11 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script lang="ts" setup>
+// This will work in both `<script setup>` and `<script>`
+definePageMeta({
+  layout: "authentication",
+});
 </script>
 
 <style></style>

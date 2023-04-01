@@ -13,7 +13,7 @@
       <div class="row justify-content-start">
         <div class="col-md-4">
           <div class="games-server-plan">
-            <img src="img/demo/minecraft.png" alt="" />
+            <img src="/img/demo/minecraft.png" alt="" />
             <h5>minecraft servers <span>biggest game in 2019</span></h5>
             <ul>
               <li>Starting at <b>30 Players </b></li>
@@ -30,7 +30,7 @@
 
         <div class="col-md-4">
           <div class="games-server-plan">
-            <img src="img/demo/counter.png" alt="" />
+            <img src="/img/demo/counter.png" alt="" />
             <h5>counter strike servers <span>biggest game in 2019</span></h5>
             <ul>
               <li>Starting at <b>30 Players </b></li>
@@ -47,7 +47,7 @@
 
         <div class="col-md-4">
           <div class="games-server-plan">
-            <img src="img/demo/rust.png" alt="" />
+            <img src="/img/demo/rust.png" alt="" />
             <h5>rust servers <span>biggest game in 2019</span></h5>
             <ul>
               <li>Starting at <b>30 Players </b></li>

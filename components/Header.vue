@@ -5,8 +5,8 @@
     <nav id="coodiv-navbar-header" class="navbar navbar-expand-md fixed-header-layout">
       <div class="container main-header-coodiv-s">
         <NuxtLink class="navbar-brand" :to="{ name: 'index' }">
-          <img class="w-logo" style="position: absolute;top: -5px;" src="img/header/logo.png" alt="bulutly logo" />
-          <img class="b-logo" style="position: absolute;top: -5px;" src="img/header/logo.png" alt="bulutly logo" />
+          <img class="w-logo" style="position: absolute;top: -5px;" src="/img/header/logo.png" alt="bulutly logo" />
+          <img class="b-logo" style="position: absolute;top: -5px;" src="/img/header/logo.png" alt="bulutly logo" />
         </NuxtLink>
         <button class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto" @click="showCollaps = !showCollaps"
           data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
@@ -32,7 +32,7 @@
                       <div class="row justify-content-start">
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img src="img/demo/demos/sefar.jpg" alt="" />
+                            <img src="/img/demo/demos/sefar.jpg" alt="" />
                             <div class="text">
                               <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Sefar <span class="new-tag">NEW</span>
@@ -48,7 +48,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img src="img/demo/demos/hoggar.jpg" alt="" />
+                            <img src="/img/demo/demos/hoggar.jpg" alt="" />
                             <div class="text">
                               <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Hoggar <span class="soon-tag">SOON</span>
@@ -63,7 +63,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img src="img/demo/demos/atlas.jpg" alt="" />
+                            <img src="/img/demo/demos/atlas.jpg" alt="" />
                             <div class="text">
                               <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Atlas <span class="soon-tag">SOON</span>
@@ -78,7 +78,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img src="img/demo/demos/chrea.jpg" alt="" />
+                            <img src="/img/demo/demos/chrea.jpg" alt="" />
                             <div class="text">
                               <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Chrea <span class="soon-tag">SOON</span>
@@ -366,7 +366,7 @@
                       <div class="row justify-content-start">
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img src="img/demo/demos/sefar.jpg" alt="" />
+                            <img src="/img/demo/demos/sefar.jpg" alt="" />
                             <div class="text">
                               <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Sefar <span class="new-tag">NEW</span>
@@ -382,7 +382,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img src="img/demo/demos/hoggar.jpg" alt="" />
+                            <img src="/img/demo/demos/hoggar.jpg" alt="" />
                             <div class="text">
                               <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Hoggar <span class="soon-tag">SOON</span>
@@ -397,7 +397,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img src="img/demo/demos/atlas.jpg" alt="" />
+                            <img src="/img/demo/demos/atlas.jpg" alt="" />
                             <div class="text">
                               <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Atlas <span class="soon-tag">SOON</span>
@@ -412,7 +412,7 @@
 
                         <div class="col-md-6 col-12">
                           <NuxtLink class="demos-box" :to="{ name: 'index' }">
-                            <img src="img/demo/demos/chrea.jpg" alt="" />
+                            <img src="/img/demo/demos/chrea.jpg" alt="" />
                             <div class="text">
                               <h5 class="coodiv-text-8 d-flex justify-content-center align-items-center mb-0">
                                 Chrea <span class="soon-tag">SOON</span>

@@ -62,7 +62,7 @@
       <div class="section-product-introduction-image-wrapper">
         <div class="section-product-introduction-background"></div>
         <img
-          src="img/demo/games/control-panel.png"
+          src="/img/demo/games/control-panel.png"
           alt="statistics"
           title="statistics"
           class="section-product-introduction-image"

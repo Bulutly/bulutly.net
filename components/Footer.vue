@@ -69,7 +69,7 @@
         <div class="col-md-3 col-12 row justify-content-between">
           <div class="secure-img-footer-area col-12">
             <h5 class="quiq-links-footer-title">secure and contact</h5>
-            <img src="img/footer/secure.png" alt="" />
+            <img src="/img/footer/secure.png" alt="" />
             <span>this is for demo reason only</span>
           </div>
           <div
@@ -84,7 +84,7 @@
       <div class="mr-tp-40 row justify-content-between footer-area-under">
         <div class="col-md col-12 d-flex align-items-center">
           <a href="#"
-            ><img class="footer-logo-blue" src="img/header/logo-w.png" alt=""
+            ><img class="footer-logo-blue" src="/img/header/logo.png" alt=""
           /></a>
           <div class="footer-social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -131,7 +131,7 @@
                 href="#"
                 ><i class="fas fa-globe-asia"></i> english</a
               >
-              <div
+            <!--   <div
                 class="dropdown-menu dropupmenulagchanger"
                 aria-labelledby="dropupmenulagchanger">
                 <a class="dropdown-item" href="#">english</a>
@@ -142,12 +142,12 @@
                 <a class="dropdown-item" href="#">Dansk</a>
                 <a class="dropdown-item" href="#">Português</a>
                 <a class="dropdown-item" href="#">Deutsch</a>
-              </div>
+              </div> -->
             </div>
 
             <div class="lang-changer-drop-up">
               <a class="menu-btn-changer" href="#"
-                ><img src="img/flags/usa.svg" alt="" /> united states</a
+                ><img src="/img/flags/usa.svg" alt="" /> united states</a
               >
             </div>
           </div>
