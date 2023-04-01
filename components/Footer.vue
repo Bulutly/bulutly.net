@@ -131,7 +131,7 @@
                 href="#"
                 ><i class="fas fa-globe-asia"></i> english</a
               >
-              <div
+            <!--   <div
                 class="dropdown-menu dropupmenulagchanger"
                 aria-labelledby="dropupmenulagchanger">
                 <a class="dropdown-item" href="#">english</a>
@@ -142,7 +142,7 @@
                 <a class="dropdown-item" href="#">Dansk</a>
                 <a class="dropdown-item" href="#">Português</a>
                 <a class="dropdown-item" href="#">Deutsch</a>
-              </div>
+              </div> -->
             </div>
 
             <div class="lang-changer-drop-up">
