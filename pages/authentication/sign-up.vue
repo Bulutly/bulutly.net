@@ -74,8 +74,12 @@
   </div>
 </template>
 
-<script>
-export default {};
+
+<script lang="ts" setup>
+// This will work in both `<script setup>` and `<script>`
+definePageMeta({
+  layout: "authentication",
+});
 </script>
 
 <style></style>
