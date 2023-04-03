@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   app: {
     head: {
       title: "Trader4 - Just A Trader, Level Up Your Trading",
@@ -43,6 +44,10 @@ export default defineNuxtConfig({
 
       link: [{ rel: "icon", type: "image/*", href: "/favicon.svg" }],
       script: [
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-L5QLZBVBH1",
+          async: true,
+        },
         {
           src: "/js/vendors/bootstrap.bundle.min.js",
         },
