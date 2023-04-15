@@ -1,7 +1,7 @@
 {
   "name": "trader4-landing-app",
   "private": true,
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.1",
   "author": "trader4",
   "scripts": {
     "build": "nuxt build",
