@@ -17,8 +17,10 @@
     "nuxt": "^3.4.0"
   },
   "dependencies": {
+    "@werify/id-ts": "^1.2.0",
     "flowbite": "^1.6.5",
     "nuxt-icon": "^0.3.3",
-    "vee-validate": "^4.8.5"
+    "vee-validate": "^4.8.5",
+    "yup": "^1.1.1"
   }
 }
