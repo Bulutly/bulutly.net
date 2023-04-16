@@ -17,6 +17,8 @@
     "nuxt": "^3.4.0"
   },
   "dependencies": {
-    "flowbite": "^1.6.5"
+    "flowbite": "^1.6.5",
+    "nuxt-icon": "^0.3.3",
+    "vee-validate": "^4.8.5"
   }
 }
