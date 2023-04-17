@@ -177,6 +177,10 @@
 <script setup lang="ts">
 import { ErrorMessage, Field, Form } from "vee-validate";
 import * as Yup from "yup";
+import { werify } from '@werify/id-ts'
+
+const auth = werify()
+auth.config.baseURL = ''
 
 definePageMeta({
   layout: false,
