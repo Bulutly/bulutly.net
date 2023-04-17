@@ -4,8 +4,7 @@ node_modules
 .nitro
 .cache
 .output
-# .env
+.env
 dist
+.DS_Store
 package-lock.json
-.idea
-.output
