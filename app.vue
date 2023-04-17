@@ -3,6 +3,7 @@
     <NuxtPage />
   </NuxtLayout>
 </template>
-<script setup>
-
+<script setup lang="ts">
+// setup app
+useBootstrap();
 </script>
