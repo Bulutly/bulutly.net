@@ -3314,8 +3314,4 @@ import { initFlowbite } from "flowbite";
 onMounted(() => {
   initFlowbite();
 });
-
-definePageMeta({
-  layout: false,
-});
 </script>
