@@ -1,11 +1,17 @@
 <template>
   <div class="">
-    <section class="tag-box mx-4">
+    <section class="tag-box mx-4 py-4 relative">
       <ul
-        class="my-1 flex flex-row overflow-x-scroll content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300"
+        class="my-1 flex flex-row content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300 scroll-smooth overflow-x-scroll lg:overflow-x-hidden"
         ref="tagBox"
       >
-        <button   @click="moveBack" class="absolute">back</button>
+        <button
+          v-if="showBackButton"
+          @click="moveBack"
+          class="absolute md:block hidden z-10 -left-4 top-3 rounded-xl py-2 px-3 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+        >
+          <Icon name="mdi:arrow-left-thick" size="20px" c />
+        </button>
 
         <li
           v-for="(tag, index) in tags"
@@ -14,7 +20,13 @@
         >
           {{ tag }}
         </li>
-        <button @click="moveNext" class="absolute right-0">next</button>
+        <button
+          v-if="showNextButton"
+          @click="moveNext"
+          class="absolute md:block hidden z-10 -right-4 top-3 rounded-xl py-2 px-3 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+        >
+          <Icon name="mdi:arrow-right-thick" />
+        </button>
       </ul>
     </section>
 
@@ -96,7 +108,6 @@ const tags = ref([
   "kubernetes",
   "aws",
   "azure",
-  "google cloud",
   "firebase",
   "mongodb",
   "mysql",
@@ -108,31 +119,36 @@ const tags = ref([
   "github",
   "gitlab",
   "bitbucket",
-  "jenkins",
-  "travis",
-  "circleci",
-  "heroku",
-  "netlify",
-  "vercel",
-  "digital ocean",
-  "vultr",
-  "linode",
-  "cloudflare",
-  "nginx",
+
 ]);
 
-const tagBox = ref(null);
+const tagBox = ref<Ref | null>(null);
+const showBackButton = ref(false);
+const showNextButton = ref(true);
 
 const moveBack = () => {
-  if (tagBox.value.scrollLeft > 0) tagBox.value.scrollLeft -= 100;
- 
+  if (tagBox.value.scrollLeft > 0) {
+    tagBox.value.scrollLeft -= 200;
+    tagBox.value.scrollBeh;
+    if (!showNextButton.value) {
+      showNextButton.value = true;
+    }
+  } else {
+    showBackButton.value = false;
+  }
 };
 const moveNext = () => {
   if (
     tagBox.value.scrollLeft <
     tagBox.value.scrollWidth - tagBox.value.clientWidth
-  )
-    tagBox.value.scrollLeft += 100;
+  ) {
+    tagBox.value.scrollLeft += 200;
+    if (!showBackButton.value) {
+      showBackButton.value = true;
+    }
+  } else {
+    showNextButton.value = false;
+  }
 };
 </script>
 <style>
