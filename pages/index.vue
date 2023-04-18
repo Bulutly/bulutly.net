@@ -1,6 +1,9 @@
 <template>
   <div class="">
-    <section class="tag-box mx-4 py-4 relative mx-auto" :style="sidebar ? 'max-width:calc(55vw)' : 'max-width:calc(80vw)'">
+    <section
+      class="tag-box py-4 relative mx-auto"
+      :style="sidebar ? 'max-width:calc(55vw)' : 'max-width:calc(80vw)'"
+    >
       <ul
         class="my-1 flex flex-row content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300 scroll-smooth overflow-x-scroll lg:overflow-x-hidden"
         ref="tagBox"
@@ -10,7 +13,7 @@
           @click="moveBack"
           class="absolute md:block hidden z-10 -left-4 top-3 rounded-xl py-2 px-3 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
         >
-          <Icon name="mdi:chevron-left" size="20px"  />
+          <Icon name="mdi:chevron-left" size="20px" />
         </button>
 
         <li
@@ -29,7 +32,51 @@
         </button>
       </ul>
     </section>
+    <section
+      class="bg-white dark:bg-gray-800 h-60 rounded-2xl mt-2 mb-5 flex flex-row p-2 gap-2"
+    >
+      <div class="basis-2/3">
+        <nuxt-img
+          src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+          fit="cover"
+          class="rounded-2xl  h-full w-full object-cover object-center"
+          alt="TODO:later"
+        />
+      </div>
 
+      <div
+        class="max-w-sm basis-1/3 bg-white rounded-2xl dark:bg-gray-800 h-full w-full"
+      >
+        <a href="#">
+          <nuxt-img
+            class=" mx-auto rounded-t-lg h-1/2 object-cover object-center"
+            src="https://flowbite.com/docs/images/products/apple-watch.png"
+            fit="cover"
+            alt="product image"
+          />
+        </a>
+        <div class="px-5 pb-5">
+          <a href="#">
+            <h5
+              class="text-sm my-2 font-semibold tracking-tight text-gray-900 dark:text-white"
+            >
+              Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
+            </h5>
+          </a>
+
+          <div class="flex items-center justify-between">
+            <span class="text-3xl font-bold text-gray-900 dark:text-white"
+              >$599</span
+            >
+            <a
+              href="#"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="">
       <div class="py-1 mx-auto max-w-screen-xl">
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -173,7 +220,6 @@
   </div>
 </template>
 <script lang="ts" setup>
-
 const tags = ref([
   "All",
   "vue",
@@ -254,6 +300,4 @@ const moveNext = () => {
   }
 };
 </script>
-<style>
-
-</style>
+<style></style>
