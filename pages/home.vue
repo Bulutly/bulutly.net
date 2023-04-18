@@ -1,21 +1,25 @@
 <template>
   <div class="">
-    <section class="tag-box">
+    <section class="tag-box mx-4">
       <ul
-        class="my-4 flex flex-row overflow-x-scroll content-container space-x-4"
+        class="my-1 flex flex-row overflow-x-scroll content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300"
+        ref="tagBox"
       >
+        <button   @click="moveBack" class="absolute">back</button>
+
         <li
           v-for="(tag, index) in tags"
           :key="index"
-          class="px-3 py-1 rounded-xl my-auto bg-white text-gray-600 cursor-pointer"
+          class="px-3 py-1 rounded-xl my-auto bg-white text-gray-600 cursor-pointer dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
         >
           {{ tag }}
         </li>
+        <button @click="moveNext" class="absolute right-0">next</button>
       </ul>
     </section>
 
     <section class="">
-      <div class="py-8 mx-auto max-w-screen-xl">
+      <div class="py-1 mx-auto max-w-screen-xl">
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <div
             v-for="(tag, index) in 12"
@@ -29,7 +33,7 @@
                 alt="Jese Leos"
               />
               <div
-                class="mx-8 bg-white w-11 h-11 flex flex-row justify-center rounded-2xl absolute -bottom-1"
+                class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-2xl absolute -bottom-1"
               >
                 <img
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
@@ -45,7 +49,7 @@
               <p class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light">
                 Jese drives the technical strategy of ...
               </p>
-              <p class="text-gray-400 text-xs">22M views . 3 years ago</p>
+              <p class="text-gray-400 text-xs pb-2">22M views . 3 years ago</p>
             </div>
           </div>
         </div>
@@ -116,9 +120,23 @@ const tags = ref([
   "cloudflare",
   "nginx",
 ]);
+
+const tagBox = ref(null);
+
+const moveBack = () => {
+  if (tagBox.value.scrollLeft > 0) tagBox.value.scrollLeft -= 100;
+ 
+};
+const moveNext = () => {
+  if (
+    tagBox.value.scrollLeft <
+    tagBox.value.scrollWidth - tagBox.value.clientWidth
+  )
+    tagBox.value.scrollLeft += 100;
+};
 </script>
 <style>
 .tag-box {
-  max-width: calc(75vw);
+  max-width: calc(70vw);
 }
 </style>
