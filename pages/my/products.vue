@@ -1647,11 +1647,11 @@
               <div id="tooltip-fullscreen" role="tooltip"
                 class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
                 data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="
-                    position: absolute;
-                    inset: 0px auto auto 0px;
-                    margin: 0px;
-                    transform: translate3d(0px, 335px, 0px);
-                  ">
+                      position: absolute;
+                      inset: 0px auto auto 0px;
+                      margin: 0px;
+                      transform: translate3d(0px, 335px, 0px);
+                    ">
                 Show full screen
                 <div class="tooltip-arrow" data-popper-arrow=""></div>
               </div>
@@ -1660,7 +1660,7 @@
               <textarea id="description" rows="8"
                 class="block w-full px-0 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
                 placeholder="Write product description here" required="">
-  Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US</textarea>
+    Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US</textarea>
             </div>
           </div>
         </div>
