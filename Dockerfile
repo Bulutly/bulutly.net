@@ -19,6 +19,8 @@ RUN npm cache clean --force
 ADD . .
 
 # Generate public assets
+RUN npm run build
+
 RUN npm run generate
 
 # nginx production environment
