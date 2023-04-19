@@ -190,7 +190,7 @@
                                 </div>
                                 <div class="py-2 px-4 bg-gray-50 rounded-b-lg dark:bg-gray-700">
                                     <textarea id="description" rows="8"
-                                        class="block px-0 w-full text-sm text-gray-800 bg-gray-50 border-0 dark:bg-gray-700 focus:ring-0 dark:text-white dark:placeholder-gray-400"
+                                        class="block px-0 w-full outline-none text-sm text-gray-800 bg-gray-50 border-0 dark:bg-gray-700 focus:ring-0 dark:text-white dark:placeholder-gray-400"
                                         placeholder="Write a description here" required></textarea>
                                 </div>
                             </div>
