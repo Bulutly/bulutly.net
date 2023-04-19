@@ -195,4 +195,31 @@ const tags = ref([
   "gitlab",
   "bitbucket",
 ]);
-
+const tagBox = ref<Ref | null>(null);
+const showBackButton = ref(false);
+const showNextButton = ref(true);
+const moveBack = () => {
+  if (tagBox.value.scrollLeft > 0) {
+    tagBox.value.scrollLeft -= 200;
+    tagBox.value.scrollBeh;
+    if (!showNextButton.value) {
+      showNextButton.value = true;
+    }
+  } else {
+    showBackButton.value = false;
+  }
+};
+const moveNext = () => {
+  if (
+    tagBox.value.scrollLeft <
+    tagBox.value.scrollWidth - tagBox.value.clientWidth
+  ) {
+    tagBox.value.scrollLeft += 200;
+    if (!showBackButton.value) {
+      showBackButton.value = true;
+    }
+  } else {
+    showNextButton.value = false;
+  }
+};
+</script>
