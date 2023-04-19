@@ -4,12 +4,12 @@
   "version": "1.0.0-alpha.1",
   "author": "trader4",
   "scripts": {
-    "build": "npm run build-submodules; nuxt build",
+    "build": "npm run build-submodules && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "build-submodules": "cd base-layers; npm i; npm run build"
+    "build-submodules": "cd base-layers && npm i && npm run build"
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.4.0",
