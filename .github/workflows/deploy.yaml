@@ -29,6 +29,8 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: 'true'
 
       - name: Lowecase the repo name
         run: |
@@ -73,6 +75,8 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: 'true'
 
       - name: Lowecase the repo name
         run: |
