@@ -54,7 +54,7 @@
                   Join millions of businesses
                 </h3>
                 <p class="mb-2 font-light text-gray-500 dark:text-gray-400">
-                  Flowbite is trusted by ambitious startups and enterprises of
+                  Trader4 is trusted by ambitious startups and enterprises of
                   every size.
                 </p>
               </div>
@@ -184,7 +184,6 @@ const loginUser = async () => {
   const { data, error } = await useAuth('mamad@mamad.com')
   console.log(data);
 };
-
 
 
 const schema = Yup.object({
