@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.name }}
   annotations:
     kubernetes.io/ingress.class: {{ .Values.ingressController }}
-    cert-manager.io/cluster-issuer: le-clusterissuer
+    cert-manager.io/cluster-issuer: {{ .Values.tls.clusterIssuer }}
 spec:
   {{- if .Values.tls.enabled }}
   tls:
