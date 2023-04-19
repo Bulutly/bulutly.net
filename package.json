@@ -19,6 +19,7 @@
     "nuxt-icon": "^0.3.3"
   },
   "dependencies": {
+    "@nuxt/image-edge": "^1.0.0-28020728.5df24eb",
     "@werify/id-ts": "^1.2.0",
     "flowbite": "^1.6.5",
     "nuxt-icon": "^0.3.3",
