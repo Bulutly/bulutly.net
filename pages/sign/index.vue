@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Block start -->
-    <section class="dark:bg-gray-900 flex flex-col min-h-screen justify-center items-center">
+    <section class="dark:bg-gray-900 rounded-xl mt-3">
       <div class="max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:gap-20 lg:py-16 lg:grid-cols-12">
         <div class="flex-col justify-between hidden col-span-6 mr-auto lg:flex xl:mb-0">
           <div>
@@ -178,12 +178,14 @@
 import { ErrorMessage, Field, Form } from "vee-validate";
 import * as Yup from "yup";
 
-
 const identifier = ref("");
 
-const loginUser = () => {
-  console.log(identifier.value);
+const loginUser = async () => {
+  const { data, error } = await useAuth('mamad@mamad.com')
+  console.log(data);
 };
+
+
 
 const schema = Yup.object({
   email: Yup.string().email().required().label("ID"),
