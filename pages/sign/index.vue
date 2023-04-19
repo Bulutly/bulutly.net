@@ -178,10 +178,6 @@
 import { ErrorMessage, Field, Form } from "vee-validate";
 import * as Yup from "yup";
 
-definePageMeta({
-  layout: false,
-});
-
 const identifier = ref("");
 
 const loginUser = () => {
