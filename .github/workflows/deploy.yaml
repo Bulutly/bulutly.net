@@ -104,7 +104,7 @@ jobs:
         with:
           exec: |
             helm upgrade --install \
-              "${{ github.event.repository.name }}.${{ env.BRANCH_NAME }}" \
+              "${{ env.RELEASE_NAME }}.${{ env.BRANCH_NAME }}" \
               --namespace ${{ env.RELEASE_NAMESPACE }} \
               --set name="${{ env.RELEASE_NAME }}" \
               --set domainName="${{ env.RELEASE_DOMAIN }}" \
