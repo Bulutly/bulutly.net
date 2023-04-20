@@ -8,7 +8,7 @@
         <button
           v-if="showBackButton"
           @click="moveBack"
-          class="absolute md:block hidden z-10 -left-4 top-3 rounded-xl py-2 px-3 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+          class="absolute md:block hidden z-10 -left-1 top-3 rounded-xl p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
         >
           <Icon name="mdi:chevron-left" size="20px" />
         </button>
@@ -16,14 +16,14 @@
         <li
           v-for="(tag, index) in tags"
           :key="index"
-          class="px-3 py-1 rounded-xl my-auto bg-white text-gray-600 cursor-pointer dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+          class="px-3 py-1 rounded-xl my-auto bg-white text-gray-600 cursor-pointer dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out transform"
         >
           {{ tag }}
         </li>
         <button
           v-if="showNextButton"
           @click="moveNext"
-          class="absolute md:block hidden z-10 -right-4 top-3 rounded-xl py-2 px-3 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+          class="absolute md:block hidden z-10 -right-1 top-3 rounded-xl p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
         >
           <Icon name="mdi:chevron-right" size="20px" />
         </button>
