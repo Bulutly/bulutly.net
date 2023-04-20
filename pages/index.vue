@@ -1,9 +1,6 @@
 <template>
   <div class="">
-    <section
-      class="tag-box py-4 relative mx-auto"
-      :style="sidebar ? 'max-width:calc(55vw)' : 'max-width:calc(80vw)'"
-    >
+    <section class="tag-box py-4 relative mx-auto">
       <ul
         class="my-1 flex flex-row content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300 scroll-smooth overflow-x-scroll lg:overflow-x-hidden"
         ref="tagBox"
@@ -32,7 +29,7 @@
         </button>
       </ul>
     </section>
-    <section
+    <!-- <section
       class="bg-white dark:bg-gray-800 lg:h-60 h-96 rounded-2xl mt-2 mb-5 flex flex-col md:flex-row p-2 gap-2"
     >
       <div class="md:basis-2/3 h-1/2 md:h-full w-full">
@@ -76,7 +73,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="">
       <div class="py-1 mx-auto">
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
