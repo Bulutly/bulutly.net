@@ -5,7 +5,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.0.0-alpha.2]
+### Added
+- Update Pricing Page Content
+- Add `my/finance` base templates as discounts, transactions, subscriptions, and payments.
+- Add `my/trading-accounts` base templates.
+### Changed
+- Update `auth/sign` and `auth/verify` pages.
+- Update `my/products` page.
+- Update `/help` as folder, not single file.
 
+### Removed
+- Remove `home.vue` as repeated file.
+
+###
 ### [Feature/auth-pages](https://github.com/traderfour/Trader4.net/tree/feature/auth-pages)
 ### Added
 - installed Werify/id-ts v1.2.0 package
