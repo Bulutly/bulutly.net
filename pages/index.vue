@@ -3,28 +3,24 @@
     <section class="tag-box py-4 relative mx-auto">
       <ul
         class="my-1 flex flex-row content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300 scroll-smooth overflow-x-scroll lg:overflow-x-hidden"
-        ref="tagBox"
-      >
+        ref="tagBox">
         <button
           v-if="showBackButton"
           @click="moveBack"
-          class="absolute md:block hidden z-10 -left-1 top-3 rounded-xl p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-        >
+          class="absolute md:block hidden z-10 -left-1 top-3 rounded-xl p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
           <Icon name="mdi:chevron-left" size="20px" />
         </button>
 
         <li
           v-for="(tag, index) in tags"
           :key="index"
-          class="px-3 py-1 rounded-xl my-auto bg-white text-gray-600 cursor-pointer dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out transform"
-        >
+          class="px-3 py-1 rounded-sm my-auto bg-white text-gray-600 cursor-pointer dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out transform">
           {{ tag }}
         </li>
         <button
           v-if="showNextButton"
           @click="moveNext"
-          class="absolute md:block hidden z-10 -right-1 top-3 rounded-xl p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-        >
+          class="absolute md:block hidden z-10 -right-1 top-3 rounded-xl p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
           <Icon name="mdi:chevron-right" size="20px" />
         </button>
       </ul>
@@ -79,22 +75,18 @@
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <template v-for="(tag, index) in 4" :key="index">
             <div
-              class="bg-white rounded-3xl shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            >
+              class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
               <a href="#" class="relative">
                 <img
-                  class="p-4 w-full rounded-3xl h-44 object-cover"
+                  class="w-full rounded-sm h-44 object-cover"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                  alt="Jese Leos"
-                />
+                  alt="Jese Leos" />
                 <div
-                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-2xl absolute -bottom-1"
-                >
+                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1">
                   <img
                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                    class="w-10 h-10 rounded-2xl my-auto"
-                    alt=""
-                  />
+                    class="w-10 h-10 rounded-sm my-auto"
+                    alt="" />
                 </div>
               </a>
               <div class="px-5 pb-0 my-2">
@@ -102,8 +94,7 @@
                   >Get started with the range component to receive ...
                 </span>
                 <p
-                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
-                >
+                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light">
                   Jese drives the technical strategy of ...
                 </p>
                 <p class="text-gray-400 text-xs pb-2">
@@ -112,22 +103,18 @@
               </div>
             </div>
             <div
-              class="bg-white rounded-3xl shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            >
+              class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
               <a href="#" class="relative">
                 <img
-                  class="p-4 w-full rounded-3xl h-44 object-cover"
+                  class="w-full rounded-sm h-44 object-cover"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
-                  alt="Jese Leos"
-                />
+                  alt="Jese Leos" />
                 <div
-                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-2xl absolute -bottom-1"
-                >
+                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1">
                   <img
                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                    class="w-10 h-10 rounded-2xl my-auto"
-                    alt=""
-                  />
+                    class="w-10 h-10 rounded-sm my-auto"
+                    alt="" />
                 </div>
               </a>
               <div class="px-5 pb-0 my-2">
@@ -135,8 +122,7 @@
                   >Get started with the range component to receive ...
                 </span>
                 <p
-                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
-                >
+                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light">
                   Jese drives the technical strategy of ...
                 </p>
                 <p class="text-gray-400 text-xs pb-2">
@@ -145,22 +131,18 @@
               </div>
             </div>
             <div
-              class="bg-white rounded-3xl shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            >
+              class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
               <a href="#" class="relative">
                 <img
-                  class="p-4 w-full rounded-3xl h-44 object-cover"
+                  class="w-full rounded-sm h-44 object-cover"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png"
-                  alt="Jese Leos"
-                />
+                  alt="Jese Leos" />
                 <div
-                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-2xl absolute -bottom-1"
-                >
+                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1">
                   <img
                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                    class="w-10 h-10 rounded-2xl my-auto"
-                    alt=""
-                  />
+                    class="w-10 h-10 rounded-sm my-auto"
+                    alt="" />
                 </div>
               </a>
               <div class="px-5 pb-0 my-2">
@@ -168,8 +150,7 @@
                   >Get started with the range component to receive ...
                 </span>
                 <p
-                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
-                >
+                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light">
                   Jese drives the technical strategy of ...
                 </p>
                 <p class="text-gray-400 text-xs pb-2">
@@ -178,22 +159,18 @@
               </div>
             </div>
             <div
-              class="bg-white rounded-3xl shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            >
+              class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
               <a href="#" class="relative">
                 <img
-                  class="p-4 w-full rounded-3xl h-44 object-cover"
+                  class="w-full rounded-sm h-44 object-cover"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
-                  alt="Jese Leos"
-                />
+                  alt="Jese Leos" />
                 <div
-                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-2xl absolute -bottom-1"
-                >
+                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1">
                   <img
                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                    class="w-10 h-10 rounded-2xl my-auto"
-                    alt=""
-                  />
+                    class="w-10 h-10 rounded-sm my-auto"
+                    alt="" />
                 </div>
               </a>
               <div class="px-5 pb-0 my-2">
@@ -201,8 +178,7 @@
                   >Get started with the range component to receive ...
                 </span>
                 <p
-                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
-                >
+                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light">
                   Jese drives the technical strategy of ...
                 </p>
                 <p class="text-gray-400 text-xs pb-2">
