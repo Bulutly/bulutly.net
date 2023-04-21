@@ -1,13 +1,11 @@
 <template>
   <div>
     <section class="bg-gray-50 dark:bg-gray-900">
-      <div
-        class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-20 lg:py-16 lg:grid-cols-12"
-      >
-        <div
-          class="w-full col-span-6 mx-auto bg-white rounded-sm shadow dark:bg-gray-800 md:mt-0 sm:max-w-lg xl:p-0"
-        >
-          <div class="p-6 space-y-4 lg:space-y-6 sm:p-8">
+      <div class="grid items-center mx-auto lg:py-16 py-10 grid-cols-12">
+        <div class="lg:col-span-6 col-span-full rounded-sm">
+          <div
+            class="p-6 space-y-4 lg:space-y-6 bg-white mx-auto md:max-w-lg w-full dark:bg-transparent sm:p-8"
+          >
             <h1
               class="text-xl font-bold leading-tight tracking-tight text-gray-900 sm:text-2xl dark:text-white"
             >
@@ -119,7 +117,6 @@
               </div>
               <button
                 type="submit"
-                disabled
                 class="w-full disabled:bg-gray-400 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Get Verify Code
@@ -127,9 +124,8 @@
             </Form>
           </div>
         </div>
-        <div class="mr-auto place-self-center lg:col-span-4">
+        <div class="lg:col-span-6 lg:flex hidden justify-end">
           <img
-            class="hidden mx-auto lg:flex"
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/authentication/illustration.svg"
             alt="illustration"
           />

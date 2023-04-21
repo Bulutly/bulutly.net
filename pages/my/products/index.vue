@@ -1,7 +1,7 @@
 <template>
   <!-- Start block -->
   <section
-    class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5 antialiased rounded-2xl my-5 py-5"
+    class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5 antialiased rounded-sm my-5 py-5"
   >
     <div class="mx-auto max-w-screen-2xl">
       <div

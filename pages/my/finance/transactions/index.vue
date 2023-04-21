@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-gray-50 dark:bg-gray-900 py-3 sm:py-5">
-    <div class="mx-auto max-w-screen-2xl px-4 lg:px-12">
+  <section class="bg-gray-50 dark:bg-gray-900">
+    <div class="mx-auto">
       <div
         class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-sm overflow-hidden"
       >

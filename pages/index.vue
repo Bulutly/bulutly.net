@@ -30,19 +30,19 @@
       </ul>
     </section>
     <!-- <section
-      class="bg-white dark:bg-gray-800 lg:h-60 h-96 rounded-2xl mt-2 mb-5 flex flex-col md:flex-row p-2 gap-2"
+      class="bg-white dark:bg-gray-800 lg:h-60 h-96 rounded-sm mt-2 mb-5 flex flex-col md:flex-row p-2 gap-2"
     >
       <div class="md:basis-2/3 h-1/2 md:h-full w-full">
         <nuxt-img
           src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
           fit="cover"
-          class="rounded-2xl object-cover object-center h-full w-full"
+          class="rounded-sm object-cover object-center h-full w-full"
           alt="TODO:later"
         />
       </div>
 
       <div
-        class="max-w-sm md:basis-1/3 bg-white rounded-2xl dark:bg-gray-800 h-full w-full max-h-48"
+        class="max-w-sm md:basis-1/3 bg-white rounded-sm dark:bg-gray-800 h-full w-full max-h-48"
       >
         <a href="#">
           <nuxt-img

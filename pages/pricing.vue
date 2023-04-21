@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-white dark:bg-gray-900 rounded-sm px-5 mt-5">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+  <section class="bg-white dark:bg-gray-900 rounded-sm">
+    <div class="py-8 px-4 mx-auto lg:p-10">
       <div class="max-w-screen-md mb-8 lg:mb-16">
         <h2
           class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
@@ -434,7 +434,7 @@
     </div>
 
     <div
-      class="flex items-start p-4 bg-white border border-gray-100 top-6 dark:bg-gray-700 dark:border-gray-600"
+      class="flex items-start p-4 bg-white border justify-center border-gray-100 top-6 dark:bg-gray-700 dark:border-gray-600"
     >
       <div
         class="flex flex-col items-center mb-3 mr-4 md:items-center md:flex-row md:mb-0"
@@ -469,7 +469,7 @@
       </div>
     </div>
 
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="py-8 px-4 lg:py-16 lg:px-6">
       <div id="detailed-pricing" class="overflow-x-auto mt-8 w-full">
         <div class="overflow-hidden min-w-max">
           <div

@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-gray-50 dark:bg-gray-900 py-3 sm:py-5">
-    <div class="mx-auto max-w-screen-2xl px-4 lg:px-12">
+  <section class="bg-gray-50 dark:bg-gray-900">
+    <div class="mx-auto">
       <div
         class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-sm overflow-hidden"
       >
@@ -113,7 +113,7 @@
                           <input
                             type="checkbox"
                             value=""
-                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 dark:bg-gray-600 dark:border-gray-500"
                           />
                           In progress
                         </label>
@@ -126,7 +126,7 @@
                             type="checkbox"
                             value=""
                             checked=""
-                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 dark:bg-gray-600 dark:border-gray-500"
                           />
                           In review
                         </label>
@@ -138,7 +138,7 @@
                           <input
                             type="checkbox"
                             value=""
-                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 dark:bg-gray-600 dark:border-gray-500"
                           />
                           Completed
                         </label>
@@ -150,7 +150,7 @@
                           <input
                             type="checkbox"
                             value=""
-                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 dark:bg-gray-600 dark:border-gray-500"
                           />
                           Canceled
                         </label>
@@ -173,7 +173,7 @@
                             type="checkbox"
                             value=""
                             checked=""
-                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 dark:bg-gray-600 dark:border-gray-500"
                           />
                           5-10 peoples
                         </label>
@@ -185,7 +185,7 @@
                           <input
                             type="checkbox"
                             value=""
-                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 dark:bg-gray-600 dark:border-gray-500"
                           />
                           10+ peoples
                         </label>
@@ -197,7 +197,7 @@
                           <input
                             type="checkbox"
                             value=""
-                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            class="w-4 h-4 mr-2 bg-gray-100 border-gray-300 rounded-sm text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 dark:bg-gray-600 dark:border-gray-500"
                           />
                           More than 10 peoples
                         </label>
@@ -304,7 +304,7 @@
                 type="radio"
                 value=""
                 name="show-only"
-                class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
                 for="all-tasks"
@@ -318,7 +318,7 @@
                 type="radio"
                 value=""
                 name="show-only"
-                class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
                 for="completed"
@@ -332,7 +332,7 @@
                 type="radio"
                 value=""
                 name="show-only"
-                class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
                 for="in-progress"
@@ -346,7 +346,7 @@
                 type="radio"
                 value=""
                 name="show-only"
-                class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
                 for="in-review"
@@ -369,7 +369,7 @@
                     <input
                       id="checkbox-all"
                       type="checkbox"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-all" class="sr-only">checkbox</label>
                   </div>
@@ -396,7 +396,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
@@ -585,7 +585,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
@@ -773,7 +773,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
@@ -957,7 +957,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
@@ -1140,7 +1140,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
@@ -1329,7 +1329,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
@@ -1512,7 +1512,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
@@ -1690,7 +1690,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
@@ -1878,7 +1878,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
@@ -2056,7 +2056,7 @@
                       id="checkbox-table-search-1"
                       type="checkbox"
                       onclick="event.stopPropagation()"
-                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 rounded-sm border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label for="checkbox-table-search-1" class="sr-only"
                       >checkbox</label
