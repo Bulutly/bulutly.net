@@ -141,8 +141,10 @@ import * as Yup from "yup";
 
 const identifier = ref("");
 
-const loginUser = () => {
-  useAuth(identifier.value)
+const loginUser = async () => {
+  const { auth } = await useAuth();
+  auth
+    .requestOTP(identifier.value, "/v1/oauth/request-otp")
     .then((res) => {
       console.log(res);
     })
