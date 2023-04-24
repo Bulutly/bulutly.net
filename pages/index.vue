@@ -84,141 +84,155 @@
     </section> -->
     <section class="">
       <div class="py-1 mx-auto">
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <template v-for="(tag, index) in 4" :key="index">
-            <div
-              class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            >
-              <a href="#" class="relative">
-                <img
-                  class="w-full rounded-sm h-44 object-cover"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                  alt="Jese Leos"
-                />
-                <div
-                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
-                >
+        <div>
+          <!-- search from base-layers -->
+          <div
+            v-if="search"
+            class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          >
+            <template v-for="(tag, index) in 12" :key="index">
+              <SharedCardSkeleton />
+            </template>
+          </div>
+          <div
+            v-else
+            class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          >
+            <template v-for="(tag, index) in 4" :key="index">
+              <div
+                class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+              >
+                <a href="#" class="relative">
                   <img
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                    class="w-10 h-10 rounded-sm my-auto"
-                    alt=""
+                    class="w-full rounded-sm h-44 object-cover"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                    alt="Jese Leos"
                   />
+                  <div
+                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
+                  >
+                    <img
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
+                      class="w-10 h-10 rounded-sm my-auto"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="px-5 pb-0 my-2">
+                  <span class="text-xs font-bold dark:text-gray-100"
+                    >Get started with the range component to receive ...
+                  </span>
+                  <p
+                    class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
+                  >
+                    Jese drives the technical strategy of ...
+                  </p>
+                  <p class="text-gray-400 text-xs pb-2">
+                    22M views . 3 years ago
+                  </p>
                 </div>
-              </a>
-              <div class="px-5 pb-0 my-2">
-                <span class="text-xs font-bold dark:text-gray-100"
-                  >Get started with the range component to receive ...
-                </span>
-                <p
-                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
-                >
-                  Jese drives the technical strategy of ...
-                </p>
-                <p class="text-gray-400 text-xs pb-2">
-                  22M views . 3 years ago
-                </p>
               </div>
-            </div>
-            <div
-              class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            >
-              <a href="#" class="relative">
-                <img
-                  class="w-full rounded-sm h-44 object-cover"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
-                  alt="Jese Leos"
-                />
-                <div
-                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
-                >
+              <div
+                class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+              >
+                <a href="#" class="relative">
                   <img
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                    class="w-10 h-10 rounded-sm my-auto"
-                    alt=""
+                    class="w-full rounded-sm h-44 object-cover"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+                    alt="Jese Leos"
                   />
+                  <div
+                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
+                  >
+                    <img
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
+                      class="w-10 h-10 rounded-sm my-auto"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="px-5 pb-0 my-2">
+                  <span class="text-xs font-bold dark:text-gray-100"
+                    >Get started with the range component to receive ...
+                  </span>
+                  <p
+                    class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
+                  >
+                    Jese drives the technical strategy of ...
+                  </p>
+                  <p class="text-gray-400 text-xs pb-2">
+                    22M views . 3 years ago
+                  </p>
                 </div>
-              </a>
-              <div class="px-5 pb-0 my-2">
-                <span class="text-xs font-bold dark:text-gray-100"
-                  >Get started with the range component to receive ...
-                </span>
-                <p
-                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
-                >
-                  Jese drives the technical strategy of ...
-                </p>
-                <p class="text-gray-400 text-xs pb-2">
-                  22M views . 3 years ago
-                </p>
               </div>
-            </div>
-            <div
-              class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            >
-              <a href="#" class="relative">
-                <img
-                  class="w-full rounded-sm h-44 object-cover"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png"
-                  alt="Jese Leos"
-                />
-                <div
-                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
-                >
+              <div
+                class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+              >
+                <a href="#" class="relative">
                   <img
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                    class="w-10 h-10 rounded-sm my-auto"
-                    alt=""
+                    class="w-full rounded-sm h-44 object-cover"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png"
+                    alt="Jese Leos"
                   />
+                  <div
+                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
+                  >
+                    <img
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
+                      class="w-10 h-10 rounded-sm my-auto"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="px-5 pb-0 my-2">
+                  <span class="text-xs font-bold dark:text-gray-100"
+                    >Get started with the range component to receive ...
+                  </span>
+                  <p
+                    class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
+                  >
+                    Jese drives the technical strategy of ...
+                  </p>
+                  <p class="text-gray-400 text-xs pb-2">
+                    22M views . 3 years ago
+                  </p>
                 </div>
-              </a>
-              <div class="px-5 pb-0 my-2">
-                <span class="text-xs font-bold dark:text-gray-100"
-                  >Get started with the range component to receive ...
-                </span>
-                <p
-                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
-                >
-                  Jese drives the technical strategy of ...
-                </p>
-                <p class="text-gray-400 text-xs pb-2">
-                  22M views . 3 years ago
-                </p>
               </div>
-            </div>
-            <div
-              class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-            >
-              <a href="#" class="relative">
-                <img
-                  class="w-full rounded-sm h-44 object-cover"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
-                  alt="Jese Leos"
-                />
-                <div
-                  class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
-                >
+              <div
+                class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+              >
+                <a href="#" class="relative">
                   <img
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                    class="w-10 h-10 rounded-sm my-auto"
-                    alt=""
+                    class="w-full rounded-sm h-44 object-cover"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                    alt="Jese Leos"
                   />
+                  <div
+                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
+                  >
+                    <img
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
+                      class="w-10 h-10 rounded-sm my-auto"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="px-5 pb-0 my-2">
+                  <span class="text-xs font-bold dark:text-gray-100"
+                    >Get started with the range component to receive ...
+                  </span>
+                  <p
+                    class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
+                  >
+                    Jese drives the technical strategy of ...
+                  </p>
+                  <p class="text-gray-400 text-xs pb-2">
+                    22M views . 3 years ago
+                  </p>
                 </div>
-              </a>
-              <div class="px-5 pb-0 my-2">
-                <span class="text-xs font-bold dark:text-gray-100"
-                  >Get started with the range component to receive ...
-                </span>
-                <p
-                  class="mt-1 mb-1 text-gray-500 dark:text-gray-400 font-light"
-                >
-                  Jese drives the technical strategy of ...
-                </p>
-                <p class="text-gray-400 text-xs pb-2">
-                  22M views . 3 years ago
-                </p>
               </div>
-            </div>
-          </template>
+            </template>
+          </div>
         </div>
       </div>
     </section>
@@ -228,10 +242,11 @@
 const tags = ref([]);
 const baseUrl = useRuntimeConfig().public.baseUrl;
 
-onMounted(async () => {
-  const { data, error } = await useFetch(`${baseUrl}/v1/categories`);
-  tags.value = data.value.results;
-});
+const { data, error } = await useApi("/v1/categories");
+// const { data, error } = await useFetch(`${baseUrl}/v1/categories`);
+tags.value = data.results;
+
+console.log(search.value);
 const tagBox = ref<Ref | null>(null);
 
 const { locale } = useI18n();
