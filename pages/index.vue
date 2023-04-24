@@ -228,10 +228,10 @@
 const tags = ref([]);
 const baseUrl = useRuntimeConfig().public.baseUrl;
 
-onMounted(async () => {
-  const { data, error } = await useFetch(`${baseUrl}/v1/categories`);
-  tags.value = data.value.results;
-});
+const { data, error } = await useApi("/v1/categories");
+// const { data, error } = await useFetch(`${baseUrl}/v1/categories`);
+tags.value = data.results;
+
 const tagBox = ref<Ref | null>(null);
 
 const { locale } = useI18n();
