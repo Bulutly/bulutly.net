@@ -1,14 +1,15 @@
 <template>
   <div class="">
     <section class="tag-box py-4 relative mx-auto">
-      <ul dir="ltr"
-        class="my-1   flex flex-row content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300 scroll-smooth overflow-x-scroll lg:overflow-x-hidden"
+      <ul
+        dir="ltr"
+        class="my-1 flex flex-row content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300 scroll-smooth overflow-x-scroll lg:overflow-x-hidden"
         ref="tagBox"
       >
         <button
           v-if="showBackButton"
           @click="moveBack"
-          class=" absolute md:block hidden z-10 -left-1 top-3 rounded-sm p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
+          class="absolute md:block hidden z-10 -left-1 top-3 rounded-sm p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
         >
           <Icon name="mdi:chevron-left" size="20px" />
         </button>
@@ -16,9 +17,9 @@
         <li
           v-for="(tag, index) in tags"
           :key="index"
-          class="px-3 py-1 rounded-sm my-auto bg-white text-gray-600 cursor-pointer dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out transform"
+          class="px-3 py-1 min-w-fit rounded-sm my-auto bg-white text-gray-600 cursor-pointer dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out transform"
         >
-          {{ tag }}
+          {{ tag.title }}
         </li>
         <button
           v-if="showNextButton"
@@ -217,56 +218,13 @@
   </div>
 </template>
 <script lang="ts" setup>
-const tags = ref([
-  "All",
-  "vue",
-  "react",
-  "angular",
-  "node",
-  "javascript",
-  "typescript",
-  "css",
-  "html",
-  "java",
-  "python",
-  "c#",
-  "c++",
-  "c",
-  "php",
-  "ruby",
-  "go",
-  "swift",
-  "kotlin",
-  "rust",
-  "scala",
-  "dart",
-  "flutter",
-  "android",
-  "ios",
-  "windows",
-  "linux",
-  "macos",
-  "ubuntu",
-  "debian",
-  "centos",
-  "fedora",
-  "arch",
-  "docker",
-  "kubernetes",
-  "aws",
-  "azure",
-  "firebase",
-  "mongodb",
-  "mysql",
-  "postgresql",
-  "redis",
-  "graphql",
-  "rest",
-  "git",
-  "github",
-  "gitlab",
-  "bitbucket",
-]);
+const tags = ref([]);
+const baseUrl = useRuntimeConfig().public.baseUrl;
+
+onMounted(async () => {
+  const { data, error } = await useFetch(`${baseUrl}/v1/categories`);
+  tags.value = data.value.results;
+});
 const tagBox = ref<Ref | null>(null);
 const showBackButton = ref(false);
 const showNextButton = ref(true);
