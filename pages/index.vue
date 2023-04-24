@@ -8,7 +8,7 @@
         <button
           v-if="showBackButton"
           @click="moveBack"
-          class="absolute md:block hidden z-10 top-3 rounded-sm p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
+          class="absolute md:block hidden z-10 top-3 rounded p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
           :class="isRTL ? '-right-1' : '-left-1'"
         >
           <Icon
@@ -20,7 +20,7 @@
         <li
           v-for="(tag, index) in tags"
           :key="index"
-          class="px-3 py-1 min-w-fit rounded-sm my-auto bg-white text-gray-600 cursor-pointer dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out transform"
+          class="px-3 py-1 min-w-fit rounded my-auto bg-white text-gray-600 cursor-pointer dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-300 ease-in-out transform"
         >
           {{ tag.title }}
         </li>
@@ -28,7 +28,7 @@
           v-if="showNextButton"
           @click="moveNext"
           :class="isRTL ? '-left-6' : '-right-1'"
-          class="absolute md:block hidden z-10 top-3 rounded-sm p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
+          class="absolute md:block hidden z-10 top-3 rounded p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
         >
           <Icon
             :name="isRTL ? 'mdi:chevron-left' : 'mdi:chevron-right'"
@@ -38,19 +38,19 @@
       </ul>
     </section>
     <!-- <section
-      class="bg-white dark:bg-gray-800 lg:h-60 h-96 rounded-sm mt-2 mb-5 flex flex-col md:flex-row p-2 gap-2"
+      class="bg-white dark:bg-gray-800 lg:h-60 h-96 rounded mt-2 mb-5 flex flex-col md:flex-row p-2 gap-2"
     >
       <div class="md:basis-2/3 h-1/2 md:h-full w-full">
         <nuxt-img
           src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
           fit="cover"
-          class="rounded-sm object-cover object-center h-full w-full"
+          class="rounded object-cover object-center h-full w-full"
           alt="TODO:later"
         />
       </div>
 
       <div
-        class="max-w-sm md:basis-1/3 bg-white rounded-sm dark:bg-gray-800 h-full w-full max-h-48"
+        class="max-w-sm md:basis-1/3 bg-white rounded dark:bg-gray-800 h-full w-full max-h-48"
       >
         <a href="#">
           <nuxt-img
@@ -75,7 +75,7 @@
             >
             <a
               href="#"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >Add to cart</a
             >
           </div>
@@ -100,20 +100,20 @@
           >
             <template v-for="(tag, index) in 4" :key="index">
               <div
-                class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                class="bg-white rounded shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
               >
                 <a href="#" class="relative">
                   <img
-                    class="w-full rounded-sm h-44 object-cover"
+                    class="w-full rounded h-44 object-cover"
                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                     alt="Jese Leos"
                   />
                   <div
-                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
+                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded absolute -bottom-1"
                   >
                     <img
                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                      class="w-10 h-10 rounded-sm my-auto"
+                      class="w-10 h-10 rounded my-auto"
                       alt=""
                     />
                   </div>
@@ -133,20 +133,20 @@
                 </div>
               </div>
               <div
-                class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                class="bg-white rounded shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
               >
                 <a href="#" class="relative">
                   <img
-                    class="w-full rounded-sm h-44 object-cover"
+                    class="w-full rounded h-44 object-cover"
                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
                     alt="Jese Leos"
                   />
                   <div
-                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
+                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded absolute -bottom-1"
                   >
                     <img
                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                      class="w-10 h-10 rounded-sm my-auto"
+                      class="w-10 h-10 rounded my-auto"
                       alt=""
                     />
                   </div>
@@ -166,20 +166,20 @@
                 </div>
               </div>
               <div
-                class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                class="bg-white rounded shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
               >
                 <a href="#" class="relative">
                   <img
-                    class="w-full rounded-sm h-44 object-cover"
+                    class="w-full rounded h-44 object-cover"
                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png"
                     alt="Jese Leos"
                   />
                   <div
-                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
+                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded absolute -bottom-1"
                   >
                     <img
                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                      class="w-10 h-10 rounded-sm my-auto"
+                      class="w-10 h-10 rounded my-auto"
                       alt=""
                     />
                   </div>
@@ -199,20 +199,20 @@
                 </div>
               </div>
               <div
-                class="bg-white rounded-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                class="bg-white rounded shadow-sm dark:bg-gray-800 dark:border-gray-700 font my-2 hover:shadow-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
               >
                 <a href="#" class="relative">
                   <img
-                    class="w-full rounded-sm h-44 object-cover"
+                    class="w-full rounded h-44 object-cover"
                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
                     alt="Jese Leos"
                   />
                   <div
-                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded-sm absolute -bottom-1"
+                    class="mx-8 bg-white dark:bg-gray-300 w-11 h-11 flex flex-row justify-center rounded absolute -bottom-1"
                   >
                     <img
                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                      class="w-10 h-10 rounded-sm my-auto"
+                      class="w-10 h-10 rounded my-auto"
                       alt=""
                     />
                   </div>
@@ -240,7 +240,6 @@
 </template>
 <script lang="ts" setup>
 const tags = ref([]);
-const baseUrl = useRuntimeConfig().public.baseUrl;
 
 const { data, error } = await useApi("/v1/categories");
 // const { data, error } = await useFetch(`${baseUrl}/v1/categories`);

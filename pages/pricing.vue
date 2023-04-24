@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-gray-900 rounded-sm">
+  <section class="bg-white dark:bg-gray-900 rounded">
     <div class="py-8 px-4 mx-auto lg:p-10">
       <div class="max-w-screen-md mb-8 lg:mb-16">
         <h2
@@ -105,7 +105,7 @@
           </ul>
           <a
             href="#"
-            class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-sm text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
+            class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
             >Get started</a
           >
         </div>
@@ -225,7 +225,7 @@
           </ul>
           <a
             href="#"
-            class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-sm text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
+            class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
             >Get started</a
           >
         </div>
@@ -426,7 +426,7 @@
           </ul>
           <a
             href="#"
-            class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-sm text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
+            class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
             >Get started</a
           >
         </div>
@@ -463,7 +463,7 @@
       <div class="flex items-end flex-shrink-0">
         <a
           href="#"
-          class="px-5 py-2 mr-2 text-xs font-medium text-white bg-blue-700 rounded-sm hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          class="px-5 py-2 mr-2 text-xs font-medium text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >Contact Us</a
         >
       </div>
@@ -2527,21 +2527,21 @@
             <div>
               <a
                 href="#"
-                class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-sm text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
+                class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
                 >Buy now</a
               >
             </div>
             <div>
               <a
                 href="#"
-                class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-sm text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
+                class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
                 >Buy now</a
               >
             </div>
             <div>
               <a
                 href="#"
-                class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-sm text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
+                class="text-white block w-full bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
                 >Buy now</a
               >
             </div>
