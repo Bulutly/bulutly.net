@@ -246,7 +246,6 @@ const { data, error } = await useApi("/v1/categories");
 // const { data, error } = await useFetch(`${baseUrl}/v1/categories`);
 tags.value = data.results;
 
-console.log(search.value);
 const tagBox = ref<Ref | null>(null);
 
 const { locale } = useI18n();
