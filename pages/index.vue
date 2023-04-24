@@ -1,16 +1,20 @@
 <template>
   <div class="">
     <section class="tag-box py-4 relative mx-auto">
-      <ul dir="ltr"
-        class="my-1   flex flex-row content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300 scroll-smooth overflow-x-scroll lg:overflow-x-hidden"
+      <ul
+        class="my-1 flex flex-row content-container space-x-4 text-sm font-semibold text-gray-600 dark:text-gray-300 scroll-smooth overflow-x-scroll lg:overflow-x-hidden"
         ref="tagBox"
       >
         <button
           v-if="showBackButton"
           @click="moveBack"
-          class=" absolute md:block hidden z-10 -left-1 top-3 rounded-sm p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
+          class="absolute md:block hidden z-10 top-3 rounded-sm p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
+          :class="isRTL ? '-right-1' : '-left-1'"
         >
-          <Icon name="mdi:chevron-left" size="20px" />
+          <Icon
+            :name="isRTL ? 'mdi:chevron-right' : 'mdi:chevron-left'"
+            size="20px"
+          />
         </button>
 
         <li
@@ -23,9 +27,13 @@
         <button
           v-if="showNextButton"
           @click="moveNext"
-          class="absolute md:block hidden z-10 -right-1 top-3 rounded-sm p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
+          :class="isRTL ? '-left-6' : '-right-1'"
+          class="absolute md:block hidden z-10 top-3 rounded-sm p-2 shadow-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out transform hover:bg-slate-200"
         >
-          <Icon name="mdi:chevron-right" size="20px" />
+          <Icon
+            :name="isRTL ? 'mdi:chevron-left' : 'mdi:chevron-right'"
+            size="20px"
+          />
         </button>
       </ul>
     </section>
@@ -268,12 +276,32 @@ const tags = ref([
   "bitbucket",
 ]);
 const tagBox = ref<Ref | null>(null);
+
+const { locale } = useI18n();
+const rtlLangList = [
+  "ar",
+  "he",
+  "fa",
+  "ur",
+  "ps",
+  "sd",
+  "ug",
+  "ur",
+  "yi",
+  "ur",
+];
+const isRTL = rtlLangList.includes(locale.value);
+
 const showBackButton = ref(false);
 const showNextButton = ref(true);
 const moveBack = () => {
-  if (tagBox.value.scrollLeft > 0) {
-    tagBox.value.scrollLeft -= 200;
-    tagBox.value.scrollBeh;
+  if (isRTL ? tagBox.value.scrollLeft < 0 : tagBox.value.scrollLeft > 0) {
+    if (isRTL) {
+      tagBox.value.scrollLeft += 200;
+    } else {
+      tagBox.value.scrollLeft -= 200;
+    }
+
     if (!showNextButton.value) {
       showNextButton.value = true;
     }
@@ -286,7 +314,12 @@ const moveNext = () => {
     tagBox.value.scrollLeft <
     tagBox.value.scrollWidth - tagBox.value.clientWidth
   ) {
-    tagBox.value.scrollLeft += 200;
+    if (isRTL) {
+      tagBox.value.scrollLeft -= 200;
+    } else {
+      tagBox.value.scrollLeft += 200;
+    }
+
     if (!showBackButton.value) {
       showBackButton.value = true;
     }
