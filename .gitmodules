@@ -1,4 +1,4 @@
 [submodule "base-layers"]
 	path = base-layers
-  url = git@github.com:Bulutly/base-layers.git
+	url = https://github.com/Bulutly/base-layers.git
   branch = main
