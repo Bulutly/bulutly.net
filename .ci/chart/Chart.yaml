@@ -5,8 +5,8 @@ version: 0.0.1
 description: A helm chart for bulutly web project
 home: https://github.com/bulutly/bulutly.net
 maintainers:
-- name: Alireza Josheghani
-  url: https://github.com/mrjosh
+- name: DevOps
+  url: https://github.com/
 sources:
 - https://github.com/bulutly/bulutly.net
 type: application
