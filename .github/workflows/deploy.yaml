@@ -62,13 +62,6 @@ jobs:
           username: ${{ secrets.GHCR_USER }}
           password: ${{ secrets.GHCR_TOKEN }}
 
-      - name: login to private registry
-        uses: docker/login-action@v2
-        with:
-          registry: ${{ secrets.GITLAB_REGISTRY_URL }}
-          username: ${{ secrets.GITLAB_REGISTRY_USER }}
-          password: ${{ secrets.GITLAB_REGISTRY_PASS }}
-
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
@@ -102,17 +95,16 @@ jobs:
       - name: "Set IMG_TAG variable"
         run: echo 'IMG_TAG=${{ env.BRANCH_NAME }}-${{ steps.vars.outputs.sha_short }}' >>$GITHUB_ENV
 
-      - name: "Set RELEASE_DOMAIN to NEXT_RELEASE_DOMAIN if branch is next"
+      - name: "Set RELEASE_DOMAIN to next if branch is next"
         if: env.BRANCH_NAME == 'next'
         run: echo 'RELEASE_DOMAIN=${{ env.NEXT_RELEASE_DOMAIN }}' >>$GITHUB_ENV
 
-      - name: "Set RELEASE_NAME if to NEXT_RELEASE_NAME branch is next"
+      - name: "Set RELEASE_NAME if to next branch is next"
         if: env.BRANCH_NAME == 'next'
         run: echo 'RELEASE_NAME=next-${{ env.RELEASE_NAME }}' >>$GITHUB_ENV
 
-      - name: Run Helm and Deploy on Main Branch
+      - name: Run Helm and Deploy
         uses: WyriHaximus/github-action-helm3@v3
-        if: env.BRANCH_NAME == 'main'
         with:
           exec: |
             helm upgrade --install \
@@ -125,58 +117,7 @@ jobs:
               --set tls.enabled="true" \
               --set tls.clusterIssuer="cf-letsencrypt" \
               --set tls.secretName="${{ env.BRANCH_NAME }}-${{ env.RELEASE_NAME }}-net-tls" \
-              --set app.debug="${{ secrets.APP_DEBUG }}" \
-              --set app.en="${{ secrets.APP_ENV }}" \
-              --set app.key="${{ secrets.APP_KEY }}" \
-              --set app.url="${{ secrets.APP_URL }}" \
-              --set app.db.connection="${{ secrets.DB_CONNECTION }}" \
-              --set app.db.database="${{ secrets.DB_DATABASE }}" \
-              --set app.db.host="${{ secrets.DB_HOST }}" \
-              --set app.db.port="${{ secrets.DB_PORT }}" \
-              --set app.db.user="${{ secrets.DB_USER }}" \
-              --set app.db.pass="${{ secrets.DB_PASS }}" \
-              --set app.mongodb.host="${{ secrets.MONGO_DB_HOST }}" \
-              --set app.mongodb.port="${{ secrets.MONGO_DB_PORT }}" \
-              --set app.mongodb.user="${{ secrets.MONGO_DB_USER }}" \
-              --set app.mongodb.pass="${{ secrets.MONGO_DB_PASS }}" \
-              --set app.mongodb.database="${{ secrets.MONGO_DB_DATABASE }}" \
               --create-namespace \
               --atomic \
               .ci/chart
           kubeconfig: '${{ secrets.KUBECONFIG }}'
-
-      - name: Run Helm and Deploy on Next Branch
-        uses: WyriHaximus/github-action-helm3@v3
-        if: env.BRANCH_NAME == 'next'
-        with:
-          exec: |
-            helm upgrade --install \
-              "${{ env.RELEASE_NAME }}.${{ env.BRANCH_NAME }}" \
-              --namespace ${{ env.RELEASE_NAMESPACE }} \
-              --set name="${{ env.RELEASE_NAME }}" \
-              --set domainName="${{ env.RELEASE_DOMAIN }}" \
-              --set image.repository="${{ env.IMG_NAME }}" \
-              --set image.tag="${{ env.IMG_TAG }}" \
-              --set tls.enabled="true" \
-              --set tls.clusterIssuer="cf-letsencrypt" \
-              --set tls.secretName="${{ env.BRANCH_NAME }}-${{ env.RELEASE_NAME }}-net-tls" \
-              --set app.debug="${{ secrets.NEXT_APP_DEBUG }}" \
-              --set app.env="${{ secrets.NEXT_APP_ENV }}" \
-              --set app.key="${{ secrets.NEXT_APP_KEY }}" \
-              --set app.url="${{ secrets.NEXT_APP_URL }}" \
-              --set app.db.connection="${{ secrets.NEXT_DB_CONNECTION }}" \
-              --set app.db.database="${{ secrets.NEXT_DB_DATABASE }}" \
-              --set app.db.host="${{ secrets.NEXT_DB_HOST }}" \
-              --set app.db.port="${{ secrets.NEXT_DB_PORT }}" \
-              --set app.db.user="${{ secrets.NEXT_DB_USER }}" \
-              --set app.db.pass="${{ secrets.NEXT_DB_PASS }}" \
-              --set app.mongodb.host="${{ secrets.NEXT_MONGO_DB_HOST }}" \
-              --set app.mongodb.port="${{ secrets.NEXT_MONGO_DB_PORT }}" \
-              --set app.mongodb.user="${{ secrets.NEXT_MONGO_DB_USER }}" \
-              --set app.mongodb.pass="${{ secrets.NEXT_MONGO_DB_PASS }}" \
-              --set app.mongodb.database="${{ secrets.NEXT_MONGO_DB_DATABASE }}" \
-              --create-namespace \
-              --atomic \
-              .ci/chart
-          kubeconfig: '${{ secrets.KUBECONFIG }}'
-
