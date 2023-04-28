@@ -8,10 +8,10 @@ on:
 
 env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
-  RELEASE_NAME: Bulutly-web
-  RELEASE_NAMESPACE: Bulutly-web
-  RELEASE_DOMAIN: Bulutly.net
-  NEXT_RELEASE_DOMAIN: next-Bulutly.net
+  RELEASE_NAME: bulutly-web
+  RELEASE_NAMESPACE: bulutly-web
+  RELEASE_DOMAIN: bulutly.net
+  NEXT_RELEASE_DOMAIN: next.bulutly.net
 
 jobs:
   lint:
