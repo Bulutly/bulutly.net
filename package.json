@@ -1,8 +1,8 @@
 {
-  "name": "trader4-landing-app",
+  "name": "bulutly-landing-app",
   "private": true,
   "version": "1.0.0-alpha.1",
-  "author": "trader4",
+  "author": "bulutly",
   "scripts": {
     "build": "npm run build-submodules && nuxt build",
     "dev": "nuxt dev",

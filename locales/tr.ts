@@ -1,10 +1,10 @@
 export default {
   meta: {
-    title: "Trader4 Landing Page TURKISH",
+    title: "Bulutly Landing Page TURKISH",
     description:
-      "Trader4 Landing Page is a platform for creating and managing your own decentralized exchange. It is a fork of Uniswap V3, and is built on top of the Polygon network.",
+      "Bulutly Landing Page is a platform for creating and managing your own decentralized exchange. It is a fork of Uniswap V3, and is built on top of the Polygon network.",
   },
   index: {
-    title: "Trader4 Landing Page",
+    title: "Bulutly Landing Page",
   },
 };
